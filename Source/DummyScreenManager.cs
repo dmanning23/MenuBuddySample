@@ -21,7 +21,7 @@ namespace MenuBuddySample
 		/// <param name="game">Game.</param>
 		public DummyScreenManager(Game game)
 			: base(game,
-				   "ArialBlack72",
+				"ArialBlack48",
 			       "ArialBlack48",
 			       "ArialBlack24",
 			       "menu move",

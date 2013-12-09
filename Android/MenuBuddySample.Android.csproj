@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F83C4702-A5B3-4256-9957-0E6C89B90C96}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MenuBuddySample.Android</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>MenuBuddySample.Android</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="OpenTK" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\Source\BackgroundScreen.cs">
+      <Link>BackgroundScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\DummyScreenManager.cs">
+      <Link>DummyScreenManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\Game1.cs">
+      <Link>Game1.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\MainMenuScreen.cs">
+      <Link>MainMenuScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\OptionsScreen.cs">
+      <Link>OptionsScreen.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Splash.png" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Assets\Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack10.xnb">
+      <Link>Assets\Content\ArialBlack10.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack14.xnb">
+      <Link>Assets\Content\ArialBlack14.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack24.xnb">
+      <Link>Assets\Content\ArialBlack24.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack48.xnb">
+      <Link>Assets\Content\ArialBlack48.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack72.xnb">
+      <Link>Assets\Content\ArialBlack72.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack96.xnb">
+      <Link>Assets\Content\ArialBlack96.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu move.xnb">
+      <Link>Assets\Content\menu move.xnb</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu select.xnb">
+      <Link>Assets\Content\menu select.xnb</Link>
+    </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\externals\FontBuddy\Android\FontBuddyLib.Android.csproj">
+      <Project>{970D0C93-407B-4372-B236-0E799B22D90E}</Project>
+      <Name>FontBuddyLib.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\GameTimer\Android\GameTimer.Android.csproj">
+      <Project>{1D645493-3A2F-496C-B405-A687749D74CE}</Project>
+      <Name>GameTimer.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\HadoukInput\Android\HadoukInput.Android.csproj">
+      <Project>{D3C24A24-49A5-4D98-955A-09E2F320AD45}</Project>
+      <Name>HadoukInput.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\MonoGame\ThirdParty\Lidgren.Network\Lidgren.Network.Android.csproj">
+      <Project>{565129E0-4EE5-4F6F-B403-C3484C9740BE}</Project>
+      <Name>Lidgren.Network.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\MenuBuddy\Android\MenuBuddy.Android.csproj">
+      <Project>{E0E3A3B6-B8EA-4CF5-AFEC-8A193E170952}</Project>
+      <Name>MenuBuddy.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\MonoGame\MonoGame.Framework\MonoGame.Framework.Android.csproj">
+      <Project>{BA9476CF-99BA-4D03-92F2-73D2C5E58883}</Project>
+      <Name>MonoGame.Framework.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\ResolutionBuddy\Android\ResolutionBuddy.Android.csproj">
+      <Project>{8C893C25-E7DE-4B40-8165-AD10F2EDCCA1}</Project>
+      <Name>ResolutionBuddy.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -25,15 +25,6 @@ namespace MenuBuddySample
 			Resolution.Init(ref graphics);
 			Content.RootDirectory = "Content";
 
-			// Change Virtual Resolution
-
-			//Resolution.SetDesiredResolution(320, 240);
-			//Resolution.SetDesiredResolution(640, 480);
-			Resolution.SetDesiredResolution(1280, 720);
-
-			//Resolution.SetScreenResolution(320, 300, false);
-			Resolution.SetScreenResolution(1280, 720, true);
-
 			// Create the screen manager component.
 			_ScreenManager = new DummyScreenManager(this);
 
@@ -52,6 +43,12 @@ namespace MenuBuddySample
 		/// </summary>
 		protected override void Initialize()
 		{
+			// Change Virtual Resolution
+			Resolution.SetDesiredResolution(1280, 720);
+
+			//set the desired resolution
+			Resolution.SetScreenResolution(640, 480, true);
+
 			// TODO: Add your initialization logic here
 			base.Initialize();
 		}
@@ -93,10 +90,8 @@ namespace MenuBuddySample
 			// Clear to Black
 			graphics.GraphicsDevice.Clear(Color.Black);
 
-			#if WINDOWS
 			// Calculate Proper Viewport according to Aspect Ratio
 			Resolution.ResetViewport();
-			#endif
 
 			// The real drawing happens inside the screen manager component.
 			base.Draw(gameTime);
