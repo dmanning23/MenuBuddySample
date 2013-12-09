@@ -1,0 +1,24 @@
+[submodule "externals/MenuBuddy"]
+	path = externals/MenuBuddy
+	url = git@github.com:dmanning23/MenuBuddy.git
+[submodule "externals/ResolutionBuddy"]
+	path = externals/ResolutionBuddy
+	url = git@github.com:dmanning23/ResolutionBuddy.git
+[submodule "externals/HadoukInput"]
+	path = externals/HadoukInput
+	url = git@github.com:dmanning23/HadoukInput.git
+[submodule "externals/GameTimer"]
+	path = externals/GameTimer
+	url = git@github.com:dmanning23/GameTimer.git
+[submodule "externals/FontBuddy"]
+	path = externals/FontBuddy
+	url = git@github.com:dmanning23/FontBuddy.git
+[submodule "externals/MonoGame"]
+	path = externals/MonoGame
+	url = git@github.com:dmanning23/MonoGame.git
+[submodule "externals/Filename"]
+	path = externals/Filename
+	url = git@github.com:dmanning23/Filename.git
+[submodule "externals/XNA"]
+	path = externals/XNA
+	url = git@github.com:dmanning23/XnaCompiledResources.git

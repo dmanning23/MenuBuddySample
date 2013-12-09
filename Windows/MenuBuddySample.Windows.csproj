@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34E4FCD9-66D6-4EB9-B9BB-F63DADA306AF}</ProjectGuid>
+    <ProjectTypeGuids>{9B831FEF-F496-498F-9FE8-180DA5CB4258};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MenuBuddySample.Windows</RootNamespace>
+    <MonoGamePlatform>WindowsGL</MonoGamePlatform>
+    <AssemblyName>MenuBuddySample.Windows</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\Source\Game1.cs">
+      <Link>Game1.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\BackgroundScreen.cs">
+      <Link>BackgroundScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\DummyScreenManager.cs">
+      <Link>DummyScreenManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\MainMenuScreen.cs">
+      <Link>MainMenuScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\OptionsScreen.cs">
+      <Link>OptionsScreen.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\externals\Filename\Windows\Filename.Windows.csproj">
+      <Project>{2A84DFE8-75E0-4774-BAAF-00629ED44405}</Project>
+      <Name>Filename.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\FontBuddy\Windows\FontBuddy.Windows.csproj">
+      <Project>{65B5BB5D-0C69-4DDB-8DE6-F6B91C41279D}</Project>
+      <Name>FontBuddy.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\GameTimer\Windows\GameTimer.Windows.csproj">
+      <Project>{6B6D4188-5C03-4E16-923B-96FDBC85B91A}</Project>
+      <Name>GameTimer.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\HadoukInput\Windows\HadoukInput.Windows.csproj">
+      <Project>{85D723F7-83EF-4C75-82BA-9385D0AC8448}</Project>
+      <Name>HadoukInput.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\MonoGame\ThirdParty\Lidgren.Network\Lidgren.Network.Windows.csproj">
+      <Project>{AE483C29-042E-4226-BA52-D247CE7676DA}</Project>
+      <Name>Lidgren.Network.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\MenuBuddy\Windows\MenuBuddy.Windows.csproj">
+      <Project>{E83F9EAA-EB6B-4801-8BEF-C602D34EBFD3}</Project>
+      <Name>MenuBuddy.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\MonoGame\MonoGame.Framework\MonoGame.Framework.WindowsGL.csproj">
+      <Project>{7DE47032-A904-4C29-BD22-2D235E8D91BA}</Project>
+      <Name>MonoGame.Framework.WindowsGL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\ResolutionBuddy\Windows\ResolutionBuddy.Windows.csproj">
+      <Project>{28342DF0-0089-4A2A-B3D4-6DCD65D6D8E4}</Project>
+      <Name>ResolutionBuddy.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack24.xnb">
+      <Link>Content\ArialBlack24.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack48.xnb">
+      <Link>Content\ArialBlack48.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack72.xnb">
+      <Link>Content\ArialBlack72.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu move.xnb">
+      <Link>Content\menu move.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu select.xnb">
+      <Link>Content\menu select.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
