@@ -33,6 +33,7 @@ namespace MenuBuddySample
 
 			// Activate the first screens.
 			_ScreenManager.AddScreen(_ScreenManager.GetMainMenuScreenStack(), null);
+			_ScreenManager.SetTopScreen(new TopScreen(), null);
 		}
 
 		/// <summary>
