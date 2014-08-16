@@ -1,4 +1,5 @@
 using MenuBuddy;
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -19,6 +20,8 @@ namespace MenuBuddySample
 		private readonly MenuEntry buttnutsEntry;
 		private int currentButtnuts = 0;
 
+		MenuEntry touchMenuEntry;
+
 		#endregion
 
 		#region Initialization
@@ -29,19 +32,20 @@ namespace MenuBuddySample
 		public OptionsScreen()
 			: base("Options")
 		{
+			MenuTitleOffset = -64.0f;
+
 			// Create our menu entries.
 			buttnutsEntry = new MenuEntry(string.Empty);
-
+			buttnutsEntry.Selected += ButtnutsEntrySelected;
 			SetMenuEntryText();
+			MenuEntries.Add(buttnutsEntry);
+
+			touchMenuEntry = new MenuEntry("Touch Menus");
+			touchMenuEntry.Selected += TouchMenuEntrySelected;
+			MenuEntries.Add(touchMenuEntry);
 
 			var backMenuEntry = new MenuEntry("Back");
-
-			// Hook up menu event handlers.
-			buttnutsEntry.Selected += ButtnutsEntrySelected;
 			backMenuEntry.Selected += OnCancel;
-
-			// Add entries to the menu.
-			MenuEntries.Add(buttnutsEntry);
 			MenuEntries.Add(backMenuEntry);
 		}
 
@@ -64,9 +68,14 @@ namespace MenuBuddySample
 		{
 			//increment the mic
 			currentButtnuts++;
-
 			SetMenuEntryText();
 		}
+
+		private void TouchMenuEntrySelected(object sender, EventArgs e)
+		{
+			ScreenManager.TouchMenus = !ScreenManager.TouchMenus;
+			touchMenuEntry.Text = string.Format("Touch Menus: {0}", ScreenManager.TouchMenus);
+		} 
 		
 		#endregion
 	}

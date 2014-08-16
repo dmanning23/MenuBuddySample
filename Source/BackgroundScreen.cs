@@ -1,4 +1,5 @@
 using System;
+using ResolutionBuddy;
 using FontBuddyLib;
 using MenuBuddy;
 using Microsoft.Xna.Framework;
@@ -94,7 +95,7 @@ namespace MenuBuddySample
 			//Draw the game title!
 			_titleText.ShadowColor = new Color(0.15f, 0.15f, 0.15f, TransitionAlpha);
 			_titleText.Write("MenuBuddySample!!!",
-			                new Vector2(ScreenRect.Center.X, ScreenRect.Center.Y * 0.05f),
+							new Vector2(Resolution.TitleSafeArea.Center.X, Resolution.TitleSafeArea.Center.Y * 0.05f),
 			                Justify.Center,
 			                1.5f,
 			                new Color(0.85f, 0.85f, 0.85f, TransitionAlpha),
@@ -103,8 +104,8 @@ namespace MenuBuddySample
 
 			//draw "dannobot games"
 			_dannobotText.Write("@DannobotGames",
-			                   new Vector2((ScreenRect.Right * 0.97f),
-			                               ((ScreenRect.Bottom) - (_dannobotText.Font.MeasureString("@DannobotGames").Y * 0.65f))),
+							   new Vector2((Resolution.TitleSafeArea.Right * 0.97f),
+										   ((Resolution.TitleSafeArea.Bottom) - (_dannobotText.Font.MeasureString("@DannobotGames").Y * 0.65f))),
 			                   Justify.Right,
 			                   0.5f,
 			                   new Color(0.85f, 0.85f, 0.85f, TransitionAlpha),

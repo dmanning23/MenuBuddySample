@@ -28,7 +28,7 @@ namespace MenuBuddySample
 			// Create the screen manager component.
 			_ScreenManager = new DummyScreenManager(this);
 
-			_ScreenManager.ClearColor = new Color(0.5f, 0.5f, 0.5f);
+			_ScreenManager.ClearColor = new Color(0.1f, 0.5f, 0.1f);
 			Components.Add(_ScreenManager);
 
 			// Activate the first screens.
@@ -74,11 +74,12 @@ namespace MenuBuddySample
 		protected override void Update(GameTime gameTime)
 		{
 			// For Mobile devices, this logic will close the Game when the Back button is pressed
-			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+			if ((GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed) ||
+				Keyboard.GetState().IsKeyDown(Keys.Escape))
 			{
 				Exit();
 			}
-			// TODO: Add your update logic here			
+			// TODO: Add your update logic here
 			base.Update(gameTime);
 		}
 
@@ -89,7 +90,7 @@ namespace MenuBuddySample
 		protected override void Draw(GameTime gameTime)
 		{
 			// Clear to Black
-			graphics.GraphicsDevice.Clear(Color.Black);
+			graphics.GraphicsDevice.Clear(_ScreenManager.ClearColor);
 
 			// Calculate Proper Viewport according to Aspect Ratio
 			Resolution.ResetViewport();
