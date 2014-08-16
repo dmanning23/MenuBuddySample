@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.Input;
 using ResolutionBuddy;
 using MenuBuddy;
+using BasicPrimitiveBuddy;
 
 namespace MenuBuddySample
 {
@@ -17,6 +18,8 @@ namespace MenuBuddySample
 		SpriteBatch spriteBatch;
 
 		private readonly DummyScreenManager _ScreenManager;
+
+		XNABasicPrimitive prim;
 
 		public Game1()
 		{
@@ -48,7 +51,7 @@ namespace MenuBuddySample
 			Resolution.SetDesiredResolution(1280, 720);
 
 			//set the desired resolution
-			Resolution.SetScreenResolution(640, 480, true);
+			Resolution.SetScreenResolution(640, 480, false);
 
 			// TODO: Add your initialization logic here
 			base.Initialize();
@@ -63,7 +66,8 @@ namespace MenuBuddySample
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
-			//TODO: use this.Content to load your game content here 
+			prim = new XNABasicPrimitive(GraphicsDevice, spriteBatch);
+			prim.Thickness = 3.0f;
 		}
 
 		/// <summary>
@@ -79,6 +83,7 @@ namespace MenuBuddySample
 			{
 				Exit();
 			}
+
 			// TODO: Add your update logic here
 			base.Update(gameTime);
 		}
@@ -97,6 +102,14 @@ namespace MenuBuddySample
 
 			// The real drawing happens inside the screen manager component.
 			base.Draw(gameTime);
+
+			var mouse = Mouse.GetState();
+			var mousePos = new Vector2((float)mouse.X, (float)mouse.Y);
+
+			//draw a circle around the mouse cursor
+			spriteBatch.Begin();
+			prim.Circle(mousePos, 5.0f, Color.Red);
+			spriteBatch.End();
 		}
 	}
 }
