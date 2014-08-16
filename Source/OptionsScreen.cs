@@ -21,6 +21,7 @@ namespace MenuBuddySample
 		private int currentButtnuts = 0;
 
 		MenuEntry touchMenuEntry;
+		MenuEntry textRectEntry;
 
 		#endregion
 
@@ -43,6 +44,10 @@ namespace MenuBuddySample
 			touchMenuEntry = new MenuEntry("Touch Menus");
 			touchMenuEntry.Selected += TouchMenuEntrySelected;
 			MenuEntries.Add(touchMenuEntry);
+
+			textRectEntry = new MenuEntry("Text Rect");
+			textRectEntry.Selected += RectMenuEntrySelected;
+			MenuEntries.Add(textRectEntry);
 
 			var backMenuEntry = new MenuEntry("Back");
 			backMenuEntry.Selected += OnCancel;
@@ -75,6 +80,12 @@ namespace MenuBuddySample
 		{
 			ScreenManager.TouchMenus = !ScreenManager.TouchMenus;
 			touchMenuEntry.Text = string.Format("Touch Menus: {0}", ScreenManager.TouchMenus);
+		}
+
+		private void RectMenuEntrySelected(object sender, EventArgs e)
+		{
+			TextSelectionRect = !TextSelectionRect;
+			textRectEntry.Text = string.Format("Text Rect: {0}", TextSelectionRect);
 		} 
 		
 		#endregion
