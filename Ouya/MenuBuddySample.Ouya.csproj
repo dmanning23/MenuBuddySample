@@ -8,16 +8,16 @@
     <ProjectGuid>{F83C4702-A5B3-4256-9957-0E6C89B90C96}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>MenuBuddySample.Android</RootNamespace>
+    <RootNamespace>MenuBuddySample.Ouya</RootNamespace>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
-    <AssemblyName>MenuBuddySample.Android</AssemblyName>
+    <AssemblyName>MenuBuddySample.Ouya</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,9 +66,6 @@
     <Compile Include="..\Source\OptionsScreen.cs">
       <Link>OptionsScreen.cs</Link>
     </Compile>
-    <Compile Include="..\Source\TopScreen.cs">
-      <Link>TopScreen.cs</Link>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -111,33 +108,9 @@
     </AndroidAsset>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\externals\FontBuddy\Android\FontBuddyLib.Android.csproj">
-      <Project>{970D0C93-407B-4372-B236-0E799B22D90E}</Project>
-      <Name>FontBuddyLib.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\externals\GameTimer\Android\GameTimer.Android.csproj">
-      <Project>{1D645493-3A2F-496C-B405-A687749D74CE}</Project>
-      <Name>GameTimer.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\externals\HadoukInput\Android\HadoukInput.Android.csproj">
-      <Project>{D3C24A24-49A5-4D98-955A-09E2F320AD45}</Project>
-      <Name>HadoukInput.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\externals\MenuBuddy\Android\MenuBuddy.Android.csproj">
-      <Project>{E0E3A3B6-B8EA-4CF5-AFEC-8A193E170952}</Project>
-      <Name>MenuBuddy.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\externals\MonoGame\MonoGame.Framework\MonoGame.Framework.Android.csproj">
-      <Project>{BA9476CF-99BA-4D03-92F2-73D2C5E58883}</Project>
-      <Name>MonoGame.Framework.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\externals\ResolutionBuddy\Android\ResolutionBuddy.Android.csproj">
-      <Project>{8C893C25-E7DE-4B40-8165-AD10F2EDCCA1}</Project>
-      <Name>ResolutionBuddy.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\externals\BasicPrimitiveBuddy\Android\BasicPrimitiveBuddy.Android.csproj">
-      <Project>{F793F13D-E131-4A2F-8EF0-7E8299FADE57}</Project>
-      <Name>BasicPrimitiveBuddy.Android</Name>
+    <ProjectReference Include="..\externals\MonoGame\ThirdParty\Lidgren.Network\Lidgren.Network.Android.csproj">
+      <Project>{565129E0-4EE5-4F6F-B403-C3484C9740BE}</Project>
+      <Name>Lidgren.Network.Android</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

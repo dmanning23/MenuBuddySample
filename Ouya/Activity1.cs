@@ -8,9 +8,6 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Content;
 using Microsoft.Xna.Framework;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
 namespace MenuBuddySample.Android
 {
@@ -30,8 +27,9 @@ namespace MenuBuddySample.Android
 			base.OnCreate(bundle);
 
 			// Create our OpenGL view, and display it
+			Game1.Activity = this;
 			var g = new Game1();
-			SetContentView((View)g.Services.GetService(typeof(View)));
+			SetContentView(g.Window);
 			g.Run();
 		}
 	}
