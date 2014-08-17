@@ -28,3 +28,6 @@
 [submodule "externals/BasicPrimitiveBuddy"]
 	path = externals/BasicPrimitiveBuddy
 	url = git@github.com:dmanning23/BasicPrimitiveBuddy.git
+[submodule "externals/TouchScreenBuddy"]
+	path = externals/TouchScreenBuddy
+	url = git@github.com:dmanning23/TouchScreenBuddy.git

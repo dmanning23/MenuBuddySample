@@ -1,4 +1,5 @@
 using System;
+using TouchScreenBuddy;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Storage;
@@ -28,9 +29,12 @@ namespace MenuBuddySample
 			Resolution.Init(ref graphics);
 			Content.RootDirectory = "Content";
 
+			//create the touch manager component
+			var touches = new TouchManager(this, Resolution.ScreenToGameCoord);
+			Components.Add(touches);
+
 			// Create the screen manager component.
 			_ScreenManager = new DummyScreenManager(this);
-
 			_ScreenManager.ClearColor = new Color(0.1f, 0.5f, 0.1f);
 			Components.Add(_ScreenManager);
 

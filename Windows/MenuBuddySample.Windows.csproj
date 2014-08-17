@@ -99,6 +99,10 @@
       <Project>{28342DF0-0089-4A2A-B3D4-6DCD65D6D8E4}</Project>
       <Name>ResolutionBuddy.Windows</Name>
     </ProjectReference>
+    <ProjectReference Include="..\externals\TouchScreenBuddy\Windows\TouchScreenBuddy.Windows.csproj">
+      <Project>{764d3dc6-927a-45ee-901d-ea07966dde72}</Project>
+      <Name>TouchScreenBuddy.Windows</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack24.xnb">

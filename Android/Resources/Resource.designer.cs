@@ -32,6 +32,7 @@ namespace MenuBuddySample.Android
 			global::MenuBuddy.Android.Resource.String.library_name = global::MenuBuddySample.Android.Resource.String.library_name;
 			global::ResolutionBuddy.Android.Resource.String.library_name = global::MenuBuddySample.Android.Resource.String.library_name;
 			global::BasicPrimitiveBuddy.Android.Resource.String.library_name = global::MenuBuddySample.Android.Resource.String.library_name;
+			global::TouchScreenBuddy.Android.Resource.String.library_name = global::MenuBuddySample.Android.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
