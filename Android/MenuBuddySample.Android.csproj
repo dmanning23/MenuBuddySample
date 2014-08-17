@@ -108,6 +108,9 @@
     <AndroidAsset Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu select.xnb">
       <Link>Assets\Content\menu select.xnb</Link>
     </AndroidAsset>
+    <AndroidAsset Include="..\externals\MenuBuddy\Source\Content\gradient.png">
+      <Link>Assets\Content\gradient.png</Link>
+    </AndroidAsset>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\externals\FontBuddy\Android\FontBuddyLib.Android.csproj">

@@ -43,7 +43,9 @@ namespace MenuBuddySample
 
 			touchMenuEntry = new MenuEntry("Touch Menus");
 			touchMenuEntry.Selected += TouchMenuEntrySelected;
+			#if !ANDROID
 			MenuEntries.Add(touchMenuEntry);
+			#endif
 
 			textRectEntry = new MenuEntry("Text Rect");
 			textRectEntry.Selected += RectMenuEntrySelected;

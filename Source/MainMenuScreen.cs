@@ -55,7 +55,7 @@ namespace MenuBuddySample
 		protected void OnExit(object sender, PlayerIndexEventArgs e)
 		{
 			const string message = "Are you sure you want to exit?";
-			var confirmExitMessageBox = new MessageBoxScreen(message);
+			var confirmExitMessageBox = new MessageBoxScreen(message, !ScreenManager.TouchMenus);
 			confirmExitMessageBox.Accepted += ConfirmExitMessageBoxAccepted;
 			ScreenManager.AddScreen(confirmExitMessageBox, e.PlayerIndex);
 		}
