@@ -27,6 +27,9 @@ namespace MenuBuddySample
 			       "menu move",
 			       "menu select")
 		{
+			#if ANDROID
+			TouchMenus = true;
+			#endif
 		}
 
 		/// <summary>
