@@ -1,16 +1,8 @@
-using System;
-using System.IO;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Content;
 using Microsoft.Xna.Framework;
-using Android.Runtime;
 using Android.Views;
-using Android.Widget;
 
 namespace MenuBuddySample.Android
 {
