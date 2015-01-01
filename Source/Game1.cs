@@ -56,7 +56,7 @@ namespace MenuBuddySample
 			Resolution.SetDesiredResolution(1280, 720);
 
 			//set the desired resolution
-			Resolution.SetScreenResolution(640, 480, true);
+			Resolution.SetScreenResolution(640, 480, false);
 
 			// TODO: Add your initialization logic here
 			base.Initialize();
@@ -107,26 +107,6 @@ namespace MenuBuddySample
 
 			// The real drawing happens inside the screen manager component.
 			base.Draw(gameTime);
-
-			spriteBatch.Begin();
-#if WINDOWS
-			var mouse = Mouse.GetState();
-			var mousePos = new Vector2((float)mouse.X, (float)mouse.Y);
-
-			//draw a circle around the mouse cursor
-			prim.Circle(mousePos, 5.0f, Color.Red);
-#endif
-			//go though the points that are being touched
-			TouchCollection touchCollection = TouchPanel.GetState();
-			foreach (var touch in touchCollection)
-			{
-				if ((touch.State == TouchLocationState.Pressed) || (touch.State == TouchLocationState.Moved))
-				{
-					//draw a circle around each touch point
-					prim.Circle(touch.Position, 40.0f, new Color(1.0f, 1.0f, 1.0f, 0.25f));
-				}
-			}
-			spriteBatch.End();
 		}
 	}
 }

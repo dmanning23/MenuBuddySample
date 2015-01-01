@@ -17,14 +17,17 @@ namespace MenuBuddySample
 		{
 			// Create our menu entries.
 			var optionsMenuEntry = new MenuEntry("Options");
+			var touchMenuEntry = new MenuEntry("Touch Test");
 			var exitMenuEntry = new MenuEntry("Exit");
 
 			// Hook up menu event handlers.
 			optionsMenuEntry.Selected += OptionsMenuEntrySelected;
+			touchMenuEntry.Selected += TouchMenuEntrySelected;
 			exitMenuEntry.Selected += OnExit;
 
 			// Add entries to the menu.
 			MenuEntries.Add(optionsMenuEntry);
+			MenuEntries.Add(touchMenuEntry);
 			MenuEntries.Add(exitMenuEntry); //TODO: only remove this entry for the demo
 		}
 
@@ -47,6 +50,15 @@ namespace MenuBuddySample
 		{
 			//screen to adjust mic sensitivity
 			ScreenManager.AddScreen(new OptionsScreen(), null);
+		}
+
+		/// <summary>
+		/// Event handler for when the High Scores menu entry is selected.
+		/// </summary>
+		private void TouchMenuEntrySelected(object sender, PlayerIndexEventArgs e)
+		{
+			//screen to adjust mic sensitivity
+			ScreenManager.AddScreen(new TouchOptionsScreen(), null);
 		}
 
 		/// <summary>

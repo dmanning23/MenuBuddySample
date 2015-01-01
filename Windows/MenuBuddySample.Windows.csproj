@@ -46,6 +46,9 @@
     <Compile Include="..\Source\TopScreen.cs">
       <Link>TopScreen.cs</Link>
     </Compile>
+    <Compile Include="..\Source\TouchOptionsScreen.cs">
+      <Link>TouchOptionsScreen.cs</Link>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\Source\Game1.cs">
@@ -124,6 +127,18 @@
     </Content>
     <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu select.xnb">
       <Link>Content\menu select.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Source\Content\AButton.png">
+      <Link>Content\AButton.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Source\Content\BackButton.png">
+      <Link>Content\BackButton.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Source\Content\Potion3a.png">
+      <Link>Content\Potion3a.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="SDL.dll">
