@@ -10,7 +10,7 @@ namespace MenuBuddySample
 	/// screen, and gives the user a chance to configure the game
 	/// in various hopefully useful ways.
 	/// </summary>
-	internal class TouchOptionsScreen : TouchScreen
+	internal class TouchOptionsScreen : MenuScreen
 	{
 		#region Fields
 
@@ -41,17 +41,18 @@ namespace MenuBuddySample
 			SetMenuEntryText();
 			buttnutsEntry.ButtonRect = new Rectangle(32, 32, 256, 128);
 			buttnutsEntry.Image = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
-			Entries.Add(buttnutsEntry);
+			MenuEntries.Add(buttnutsEntry);
 
-			var touchMenuEntry = new TouchEntry("Touch this menu");
-			touchMenuEntry.ButtonRect = new Rectangle(256, 128, 256, 128);
-			Entries.Add(touchMenuEntry);
+			var touchMenuEntry = new TouchFillEntry("Touch this menu");
+			touchMenuEntry.ButtonRect = new Rectangle(700, 400, 300, 300);
+			touchMenuEntry.Image = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
+			MenuEntries.Add(touchMenuEntry);
 
 			var backMenuEntry = new TouchEntry("Back");
 			backMenuEntry.Selected += OnCancel;
 			backMenuEntry.ButtonRect = new Rectangle(300, 512, 128, 128);
 			backMenuEntry.Image = ScreenManager.Game.Content.Load<Texture2D>("BackButton");
-			Entries.Add(backMenuEntry);
+			MenuEntries.Add(backMenuEntry);
 
 			base.LoadContent();
 		}
