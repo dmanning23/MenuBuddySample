@@ -35,8 +35,9 @@ namespace MenuBuddySample
 			//create the touch manager component
 			var touches = new TouchManager(this, Resolution.ScreenToGameCoord);
 
-			//add the touch helper for menus
-			var touchHelper = new TouchInputHelper(this);
+			//add the input helper for menus
+			//var input = new TouchInputHelper(this);
+			var input = new ControllerInputHelper(this);
 
 			var styles = new DefaultStyles(this);
 
@@ -92,8 +93,7 @@ namespace MenuBuddySample
 		protected override void Update(GameTime gameTime)
 		{
 			// For Mobile devices, this logic will close the Game when the Back button is pressed
-			if ((GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed) ||
-				Keyboard.GetState().IsKeyDown(Keys.Escape))
+			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
 			{
 				Exit();
 			}

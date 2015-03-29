@@ -17,7 +17,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// menu entry to change the buttnus
 		/// </summary>
-		private readonly MenuEntry buttnutsEntry;
+		private MenuEntry buttnutsEntry;
 		private int currentButtnuts = 0;
 
 		MenuEntry touchMenuEntry;
@@ -34,6 +34,11 @@ namespace MenuBuddySample
 			: base("Options")
 		{
 			MenuTitleOffset = new Point(0, -64);
+		}
+
+		public override void LoadContent()
+		{
+			base.LoadContent();
 
 			// Create our menu entries.
 			buttnutsEntry = new MenuEntry(Style, string.Empty);
