@@ -59,9 +59,6 @@
     <Compile Include="..\Source\BackgroundScreen.cs">
       <Link>BackgroundScreen.cs</Link>
     </Compile>
-    <Compile Include="..\Source\DummyScreenManager.cs">
-      <Link>DummyScreenManager.cs</Link>
-    </Compile>
     <Compile Include="..\Source\MainMenuScreen.cs">
       <Link>MainMenuScreen.cs</Link>
     </Compile>
@@ -103,6 +100,30 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\externals\MenuBuddy\Source\Content\AlphaGradient.png">
+      <Link>Content\AlphaGradient.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\MenuBuddy\Source\Content\Cancel.png">
+      <Link>Content\Cancel.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\MenuBuddy\Source\Content\gradient.png">
+      <Link>Content\gradient.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\MenuBuddy\Source\Content\hourglass.png">
+      <Link>Content\hourglass.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\MenuBuddy\Source\Content\MenuMove.wav">
+      <Link>Content\MenuMove.wav</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\externals\MenuBuddy\Source\Content\MenuSelect.wav">
+      <Link>Content\MenuSelect.wav</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArialBlack24.xnb">
       <Link>Content\ArialBlack24.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -16,12 +16,14 @@ namespace MenuBuddySample
 	/// </summary>
 	public class Game1 : Game
 	{
+		#region Properties
+
 		GraphicsDeviceManager graphics;
-		SpriteBatch spriteBatch;
+		private ScreenManager _ScreenManager;
 
-		private readonly DummyScreenManager _ScreenManager;
+		#endregion //Properties
 
-		XnaBasicPrimitive prim;
+		#region Methods
 
 		public Game1()
 		{
@@ -36,13 +38,32 @@ namespace MenuBuddySample
 			//add the touch helper for menus
 			var touchHelper = new TouchInputHelper(this);
 
+			var styles = new DefaultStyles(this);
+
+			styles.MenuTitleFontName = @"ArialBlack72";
+			styles.MenuEntryFontName = @"ArialBlack48";
+			styles.MessageBoxFontName = @"ArialBlack24";
+			styles.MenuSelectSoundName = @"MenuSelect";
+			styles.MenuChangeSoundName = @"MenuMove";
+			styles.MessageBoxBackground = @"gradient";
+			styles.ButtonBackground = @"AlphaGradient";
+
 			// Create the screen manager component.
-			_ScreenManager = new DummyScreenManager(this);
+			_ScreenManager = new ScreenManager(this, GetMainMenuScreenStack);
 			_ScreenManager.ClearColor = new Color(0.1f, 0.5f, 0.1f);
 
 			// Activate the first screens.
-			_ScreenManager.AddScreen(_ScreenManager.GetMainMenuScreenStack(), null);
+			_ScreenManager.AddScreen(GetMainMenuScreenStack(), null);
 			_ScreenManager.SetTopScreen(new TopScreen(), null);
+		}
+
+		/// <summary>
+		/// Get the set of screens needed for the main menu
+		/// </summary>
+		/// <returns>The gameplay screen stack.</returns>
+		public IScreen[] GetMainMenuScreenStack()
+		{
+			return new IScreen[] { new BackgroundScreen(), new MainMenuScreen() };
 		}
 
 		/// <summary>
@@ -61,19 +82,6 @@ namespace MenuBuddySample
 
 			// TODO: Add your initialization logic here
 			base.Initialize();
-		}
-
-		/// <summary>
-		/// LoadContent will be called once per game and is the place to load
-		/// all of your content.
-		/// </summary>
-		protected override void LoadContent()
-		{
-			// Create a new SpriteBatch, which can be used to draw textures.
-			spriteBatch = new SpriteBatch(GraphicsDevice);
-
-			prim = new XnaBasicPrimitive(GraphicsDevice, spriteBatch);
-			prim.Thickness = 3.0f;
 		}
 
 		/// <summary>
@@ -109,6 +117,8 @@ namespace MenuBuddySample
 			// The real drawing happens inside the screen manager component.
 			base.Draw(gameTime);
 		}
+
+		#endregion //Methods
 	}
 }
 
