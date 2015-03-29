@@ -1,7 +1,7 @@
+using FontBuddyLib;
 using MenuBuddy;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using FontBuddyLib;
 using ResolutionBuddy;
 
 namespace MenuBuddySample
@@ -9,7 +9,7 @@ namespace MenuBuddySample
 	/// <summary>
 	/// This screen displays on top of all the other screens
 	/// </summary>
-	internal class TopScreen : GameScreen
+	internal class TopScreen : Screen
 	{
 		#region Fields
 
@@ -18,17 +18,17 @@ namespace MenuBuddySample
 		/// <summary>
 		/// current location of the text
 		/// </summary>
-		Vector2 TextLocation = Vector2.Zero;
+		Vector2 _textLocation = Vector2.Zero;
 
 		/// <summary>
 		/// current direction the text is travelling in
 		/// </summary>
-		Vector2 TextDirection;
+		Vector2 _textDirection;
 
 		/// <summary>
 		/// thing for writing text
 		/// </summary>
-		FontBuddy Text;
+		readonly FontBuddy _text;
 
 		#endregion //Fields
 
@@ -37,10 +37,10 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Constructor fills in the menu contents.
 		/// </summary>
-		public TopScreen()
+		public TopScreen():base("top")
 		{
-			TextDirection = new Vector2(TextVelocity, TextVelocity);
-			Text = new FontBuddy();
+			_textDirection = new Vector2(TextVelocity, TextVelocity);
+			_text = new FontBuddy();
 		}
 
 		#endregion //Initialization
@@ -49,7 +49,8 @@ namespace MenuBuddySample
 
 		public override void LoadContent()
 		{
-			Text.Font = ScreenManager.Game.Content.Load<SpriteFont>("ArialBlack48");
+			base.LoadContent();
+			_text.Font = ScreenManager.Game.Content.Load<SpriteFont>("ArialBlack48");
 		}
 
 		public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
@@ -57,25 +58,25 @@ namespace MenuBuddySample
 			base.Update(gameTime, otherScreenHasFocus, coveredByOtherScreen);
 
 			//move the text
-			TextLocation += TextDirection;
+			_textLocation += _textDirection;
 
 			//bounce the text off the walls
-			if (TextLocation.X <= 0)
+			if (_textLocation.X <= 0)
 			{
-				TextDirection.X = TextVelocity;
+				_textDirection.X = TextVelocity;
 			}
-			else if ((TextLocation.X + 128) >= Resolution.ScreenArea.Right)
+			else if ((_textLocation.X + 128) >= Resolution.ScreenArea.Right)
 			{
-				TextDirection.X = -TextVelocity;
+				_textDirection.X = -TextVelocity;
 			}
 
-			if (TextLocation.Y <= 0)
+			if (_textLocation.Y <= 0)
 			{
-				TextDirection.Y = TextVelocity;
+				_textDirection.Y = TextVelocity;
 			}
-			else if ((TextLocation.Y + 128) >= Resolution.ScreenArea.Bottom)
+			else if ((_textLocation.Y + 128) >= Resolution.ScreenArea.Bottom)
 			{
-				TextDirection.Y = -TextVelocity;
+				_textDirection.Y = -TextVelocity;
 			}
 		}
 
@@ -85,7 +86,7 @@ namespace MenuBuddySample
 
 			//draw the text
 			ScreenManager.SpriteBatchBegin();
-			Text.Write("Top Screen!!!", TextLocation, Justify.Center, 1.0f, Color.Cyan, ScreenManager.SpriteBatch, 0.0f);
+			_text.Write("Top Screen!!!", _textLocation, Justify.Center, 1.0f, Color.Cyan, ScreenManager.SpriteBatch, Time);
 			ScreenManager.SpriteBatchEnd();
 		}
 

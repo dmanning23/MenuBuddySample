@@ -17,7 +17,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// menu entry to change the buttnus
 		/// </summary>
-		private TouchEntry buttnutsEntry;
+		private ImageButton buttnutsEntry;
 		private int currentButtnuts = 0;
 
 		#endregion
@@ -30,29 +30,28 @@ namespace MenuBuddySample
 		public TouchOptionsScreen()
 			: base("Touch Options")
 		{
-			MenuTitleOffset = -64.0f;
+			MenuTitleOffset = new Point(0, -64);
 		}
 
 		public override void LoadContent()
 		{
 			// Create our menu entries.
-			buttnutsEntry = new TouchEntry(string.Empty);
+			buttnutsEntry = new ImageButton(Style, string.Empty);
 			buttnutsEntry.Selected += ButtnutsEntrySelected;
 			SetMenuEntryText();
-			buttnutsEntry.ButtonRect = new Rectangle(32, 32, 256, 128);
-			buttnutsEntry.Image = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
-			MenuEntries.Add(buttnutsEntry);
+			buttnutsEntry.Rect = new Rectangle(32, 32, 256, 128);
+			buttnutsEntry.Image.Texture = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
+			AddItem(buttnutsEntry);
 
-			var touchMenuEntry = new TouchFillEntry("Touch this menu");
-			touchMenuEntry.ButtonRect = new Rectangle(700, 400, 300, 300);
-			touchMenuEntry.Image = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
-			MenuEntries.Add(touchMenuEntry);
+			var touchMenuEntry = new ImageButton(Style, "Touch this menu");
+			touchMenuEntry.Rect = new Rectangle(700, 400, 300, 300);
+			touchMenuEntry.Image.Texture = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
+			AddItem(touchMenuEntry);
 
-			var backMenuEntry = new TouchEntry("Back");
+			var backMenuEntry = new Button(Style, "Back");
 			backMenuEntry.Selected += OnCancel;
-			backMenuEntry.ButtonRect = new Rectangle(300, 512, 128, 128);
-			backMenuEntry.Image = ScreenManager.Game.Content.Load<Texture2D>("BackButton");
-			MenuEntries.Add(backMenuEntry);
+			backMenuEntry.Rect = new Rectangle(300, 512, 128, 128);
+			AddItem(backMenuEntry);
 
 			base.LoadContent();
 		}

@@ -42,7 +42,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
@@ -82,10 +81,6 @@
       <Project>{0faa1286-7bfa-4765-8b51-62e438cb121d}</Project>
       <Name>BasicPrimitiveBuddy.Windows</Name>
     </ProjectReference>
-    <ProjectReference Include="..\externals\Filename\Windows\Filename.Windows.csproj">
-      <Project>{2A84DFE8-75E0-4774-BAAF-00629ED44405}</Project>
-      <Name>Filename.Windows</Name>
-    </ProjectReference>
     <ProjectReference Include="..\externals\FontBuddy\Windows\FontBuddy.Windows.csproj">
       <Project>{65B5BB5D-0C69-4DDB-8DE6-F6B91C41279D}</Project>
       <Name>FontBuddy.Windows</Name>
@@ -93,10 +88,6 @@
     <ProjectReference Include="..\externals\GameTimer\Windows\GameTimer.Windows.csproj">
       <Project>{6B6D4188-5C03-4E16-923B-96FDBC85B91A}</Project>
       <Name>GameTimer.Windows</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\externals\HadoukInput\Windows\HadoukInput.Windows.csproj">
-      <Project>{85D723F7-83EF-4C75-82BA-9385D0AC8448}</Project>
-      <Name>HadoukInput.Windows</Name>
     </ProjectReference>
     <ProjectReference Include="..\externals\MenuBuddy\Windows\MenuBuddy.Windows.csproj">
       <Project>{E83F9EAA-EB6B-4801-8BEF-C602D34EBFD3}</Project>

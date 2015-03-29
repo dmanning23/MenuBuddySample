@@ -1,7 +1,7 @@
 using MenuBuddy;
-using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 
 namespace MenuBuddySample
 {
@@ -33,27 +33,23 @@ namespace MenuBuddySample
 		public OptionsScreen()
 			: base("Options")
 		{
-			MenuTitleOffset = -64.0f;
+			MenuTitleOffset = new Point(0, -64);
 
 			// Create our menu entries.
-			buttnutsEntry = new MenuEntry(string.Empty);
+			buttnutsEntry = new MenuEntry(Style, string.Empty);
 			buttnutsEntry.Selected += ButtnutsEntrySelected;
 			SetMenuEntryText();
-			MenuEntries.Add(buttnutsEntry);
+			AddMenuEntry(buttnutsEntry);
 
-			touchMenuEntry = new MenuEntry("Touch Menus");
-			touchMenuEntry.Selected += TouchMenuEntrySelected;
-			#if !ANDROID
-			MenuEntries.Add(touchMenuEntry);
-			#endif
+			touchMenuEntry = new MenuEntry(Style, "Touch Menus");
+			AddMenuEntry(touchMenuEntry);
 
-			textRectEntry = new MenuEntry("Text Rect");
-			textRectEntry.Selected += RectMenuEntrySelected;
-			MenuEntries.Add(textRectEntry);
+			textRectEntry = new MenuEntry(Style, "Text Rect");
+			AddMenuEntry(textRectEntry);
 
-			var backMenuEntry = new MenuEntry("Back");
+			var backMenuEntry = new MenuEntry(Style, "Back");
 			backMenuEntry.Selected += OnCancel;
-			MenuEntries.Add(backMenuEntry);
+			AddMenuEntry(backMenuEntry);
 		}
 
 		/// <summary>
@@ -77,18 +73,6 @@ namespace MenuBuddySample
 			currentButtnuts++;
 			SetMenuEntryText();
 		}
-
-		private void TouchMenuEntrySelected(object sender, EventArgs e)
-		{
-			ScreenManager.TouchMenus = !ScreenManager.TouchMenus;
-			touchMenuEntry.Text = string.Format("Touch Menus: {0}", ScreenManager.TouchMenus);
-		}
-
-		private void RectMenuEntrySelected(object sender, EventArgs e)
-		{
-			TextSelectionRect = !TextSelectionRect;
-			textRectEntry.Text = string.Format("Text Rect: {0}", TextSelectionRect);
-		} 
 		
 		#endregion
 	}

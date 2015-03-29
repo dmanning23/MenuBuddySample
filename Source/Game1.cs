@@ -21,7 +21,7 @@ namespace MenuBuddySample
 
 		private readonly DummyScreenManager _ScreenManager;
 
-		XNABasicPrimitive prim;
+		XnaBasicPrimitive prim;
 
 		public Game1()
 		{
@@ -32,12 +32,13 @@ namespace MenuBuddySample
 
 			//create the touch manager component
 			var touches = new TouchManager(this, Resolution.ScreenToGameCoord);
-			Components.Add(touches);
+
+			//add the touch helper for menus
+			var touchHelper = new TouchInputHelper(this);
 
 			// Create the screen manager component.
 			_ScreenManager = new DummyScreenManager(this);
 			_ScreenManager.ClearColor = new Color(0.1f, 0.5f, 0.1f);
-			Components.Add(_ScreenManager);
 
 			// Activate the first screens.
 			_ScreenManager.AddScreen(_ScreenManager.GetMainMenuScreenStack(), null);
@@ -71,7 +72,7 @@ namespace MenuBuddySample
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
-			prim = new XNABasicPrimitive(GraphicsDevice, spriteBatch);
+			prim = new XnaBasicPrimitive(GraphicsDevice, spriteBatch);
 			prim.Thickness = 3.0f;
 		}
 

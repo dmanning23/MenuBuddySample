@@ -12,7 +12,7 @@ namespace MenuBuddySample
 	/// It draws a background image that remains fixed in place regardless
 	/// of whatever transitions the screens on top of it may be doing.
 	/// </summary>
-	internal class BackgroundScreen : GameScreen
+	internal class BackgroundScreen : Screen
 	{
 		#region Member Variables
 
@@ -29,8 +29,8 @@ namespace MenuBuddySample
 		/// </summary>
 		public BackgroundScreen()
 		{
-			TransitionOnTime = TimeSpan.FromSeconds(0.5);
-			TransitionOffTime = TimeSpan.FromSeconds(0.5);
+			Transition.OnTime = TimeSpan.FromSeconds(0.5);
+			Transition.OffTime = TimeSpan.FromSeconds(0.5);
 
 			_titleText = new RainbowTextBuddy();
 			_dannobotText = new FontBuddy();
@@ -45,12 +45,12 @@ namespace MenuBuddySample
 		/// </summary>
 		public override void LoadContent()
 		{
-			_titleText.Font = ScreenManager.TitleFont;
+			_titleText.Font = ScreenManager.Game.Content.Load<SpriteFont>("ArialBlack48");
 			_titleText.ShadowOffset = new Vector2(-5.0f, 3.0f);
 			_titleText.ShadowSize = 1.025f;
 			_titleText.RainbowSpeed = 4.0f;
 
-			_dannobotText.Font = ScreenManager.MenuFont;
+			_dannobotText.Font = ScreenManager.Game.Content.Load<SpriteFont>("ArialBlack24");
 
 			base.LoadContent();
 		}
@@ -67,40 +67,25 @@ namespace MenuBuddySample
 		#region Update and Draw
 
 		/// <summary>
-		/// Updates the background screen. Unlike most screens, this should not
-		/// transition off even if it has been covered by another screen: it is
-		/// supposed to be covered, after all! This overload forces the
-		/// coveredByOtherScreen parameter to false in order to stop the base
-		/// Update method wanting to transition off.
-		/// </summary>
-		public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
-		{
-			base.Update(gameTime, otherScreenHasFocus, false);
-		}
-
-		/// <summary>
 		/// Draws the background screen.
 		/// </summary>
 		public override void Draw(GameTime gameTime)
 		{
 			SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
 
-			//Get the game time in seconds
-			double time = gameTime.TotalGameTime.TotalSeconds;
-
 			ScreenManager.SpriteBatchBegin();
 
 			Rectangle screenFullRect = ResolutionBuddy.Resolution.ScreenArea;
 
 			//Draw the game title!
-			_titleText.ShadowColor = new Color(0.15f, 0.15f, 0.15f, TransitionAlpha);
+			_titleText.ShadowColor = new Color(0.15f, 0.15f, 0.15f, Transition.Alpha);
 			_titleText.Write("MenuBuddySample!!!",
 							new Vector2(Resolution.TitleSafeArea.Center.X, Resolution.TitleSafeArea.Center.Y * 0.05f),
 			                Justify.Center,
 			                1.5f,
-			                new Color(0.85f, 0.85f, 0.85f, TransitionAlpha),
+			                new Color(0.85f, 0.85f, 0.85f, Transition.Alpha),
 			                spriteBatch,
-			                time);
+			                Time);
 
 			//draw "dannobot games"
 			_dannobotText.Write("@DannobotGames",
@@ -108,9 +93,9 @@ namespace MenuBuddySample
 										   ((Resolution.TitleSafeArea.Bottom) - (_dannobotText.Font.MeasureString("@DannobotGames").Y * 0.65f))),
 			                   Justify.Right,
 			                   0.5f,
-			                   new Color(0.85f, 0.85f, 0.85f, TransitionAlpha),
+			                   new Color(0.85f, 0.85f, 0.85f, Transition.Alpha),
 			                   spriteBatch,
-			                   time);
+							   Time);
 
 			ScreenManager.SpriteBatchEnd();
 		}

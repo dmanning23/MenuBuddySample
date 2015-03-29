@@ -1,6 +1,5 @@
 using MenuBuddy;
 using Microsoft.Xna.Framework;
-
 #if OUYA
 using Ouya.Console.Api;
 #endif
@@ -20,30 +19,23 @@ namespace MenuBuddySample
 		/// </summary>
 		/// <param name="game">Game.</param>
 		public DummyScreenManager(Game game)
-			: base(game,
-				"ArialBlack48",
-			       "ArialBlack48",
-			       "ArialBlack24",
-			       "menu move",
-			       "menu select")
+			: base(game)
 		{
-			#if ANDROID
-			TouchMenus = true;
-			#endif
+		}
+
+		protected override void LoadContent()
+		{
+			//TODO: load up the styles for this game
+			base.LoadContent();
 		}
 
 		/// <summary>
 		/// Get the set of screens needed for the main menu
 		/// </summary>
 		/// <returns>The gameplay screen stack.</returns>
-		public override GameScreen[] GetMainMenuScreenStack()
+		public override IScreen[] GetMainMenuScreenStack()
 		{
-			return new GameScreen[] {new BackgroundScreen(), new MainMenuScreen()};
-		}
-
-		public override void Initialize()
-		{
-			base.Initialize();
+			return new IScreen[] {new BackgroundScreen(), new MainMenuScreen()};
 		}
 
 		#endregion //Methods

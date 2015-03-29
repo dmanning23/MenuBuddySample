@@ -31,3 +31,12 @@
 [submodule "externals/TouchScreenBuddy"]
 	path = externals/TouchScreenBuddy
 	url = git@github.com:dmanning23/TouchScreenBuddy.git
+[submodule "externals/Vector2Extensions"]
+	path = externals/Vector2Extensions
+	url = git@github.com:dmanning23/Vector2Extensions.git
+[submodule "externals/MouseBuddy"]
+	path = externals/MouseBuddy
+	url = git@github.com:dmanning23/MouseBuddy.git
+[submodule "externals/RandomExtensions"]
+	path = externals/RandomExtensions
+	url = git@github.com:dmanning23/RandomExtensions.git

@@ -13,22 +13,9 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Constructor fills in the menu contents.
 		/// </summary>
-		public MainMenuScreen() : base("")
+		public MainMenuScreen()
+			: base("")
 		{
-			// Create our menu entries.
-			var optionsMenuEntry = new MenuEntry("Options");
-			var touchMenuEntry = new MenuEntry("Touch Test");
-			var exitMenuEntry = new MenuEntry("Exit");
-
-			// Hook up menu event handlers.
-			optionsMenuEntry.Selected += OptionsMenuEntrySelected;
-			touchMenuEntry.Selected += TouchMenuEntrySelected;
-			exitMenuEntry.Selected += OnExit;
-
-			// Add entries to the menu.
-			MenuEntries.Add(optionsMenuEntry);
-			MenuEntries.Add(touchMenuEntry);
-			MenuEntries.Add(exitMenuEntry); //TODO: only remove this entry for the demo
 		}
 
 		#endregion //Initialization
@@ -37,6 +24,22 @@ namespace MenuBuddySample
 
 		public override void LoadContent()
 		{
+			base.LoadContent();
+
+			// Create our menu entries.
+			var optionsMenuEntry = new MenuEntry(Style, "Options");
+			var touchMenuEntry = new MenuEntry(Style, "Touch Test");
+			var exitMenuEntry = new MenuEntry(Style, "Exit");
+
+			// Hook up menu event handlers.
+			optionsMenuEntry.Selected += OptionsMenuEntrySelected;
+			touchMenuEntry.Selected += TouchMenuEntrySelected;
+			exitMenuEntry.Selected += OnExit;
+
+			// Add entries to the menu.
+			AddMenuEntry(optionsMenuEntry);
+			AddMenuEntry(touchMenuEntry);
+			AddMenuEntry(exitMenuEntry); //TODO: only remove this entry for the demo
 		}
 
 		#endregion //Methods
@@ -67,7 +70,7 @@ namespace MenuBuddySample
 		protected void OnExit(object sender, PlayerIndexEventArgs e)
 		{
 			const string message = "Are you sure you want to exit?";
-			var confirmExitMessageBox = new MessageBoxScreen(message, !ScreenManager.TouchMenus);
+			var confirmExitMessageBox = new MessageBoxScreen(message, false);
 			confirmExitMessageBox.Accepted += ConfirmExitMessageBoxAccepted;
 			ScreenManager.AddScreen(confirmExitMessageBox, e.PlayerIndex);
 		}
@@ -89,7 +92,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Ignore the cancel message from the main menu
 		/// </summary>
-		protected override void OnCancel(PlayerIndex playerIndex)
+		public override void OnCancel(PlayerIndex? playerIndex)
 		{
 			//do nothing here!
 		}
