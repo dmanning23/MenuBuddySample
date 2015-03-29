@@ -78,7 +78,7 @@ namespace MenuBuddySample
 			Resolution.SetDesiredResolution(1280, 720);
 
 			//set the desired resolution
-			Resolution.SetScreenResolution(640, 480, false);
+			Resolution.SetScreenResolution(1280, 720, false);
 
 			// TODO: Add your initialization logic here
 			base.Initialize();

@@ -14,7 +14,7 @@ namespace MenuBuddySample
 		/// Constructor fills in the menu contents.
 		/// </summary>
 		public MainMenuScreen()
-			: base("")
+			: base("Main Menu")
 		{
 		}
 
@@ -27,9 +27,9 @@ namespace MenuBuddySample
 			base.LoadContent();
 
 			// Create our menu entries.
-			var optionsMenuEntry = new MenuEntry(Style, "Options");
-			var touchMenuEntry = new MenuEntry(Style, "Touch Test");
-			var exitMenuEntry = new MenuEntry(Style, "Exit");
+			var optionsMenuEntry = new MenuEntry(ScreenManager.Styles.MenuEntryStyle, "Options");
+			var touchMenuEntry = new MenuEntry(ScreenManager.Styles.MenuEntryStyle, "Touch Test");
+			var exitMenuEntry = new MenuEntry(ScreenManager.Styles.MenuEntryStyle, "Exit");
 
 			// Hook up menu event handlers.
 			optionsMenuEntry.Selected += OptionsMenuEntrySelected;

@@ -30,6 +30,10 @@ namespace MenuBuddySample
 		/// </summary>
 		readonly FontBuddy _text;
 
+		private Vector2 _textSize;
+
+		private const string Message = "Top Screen!!!";
+
 		#endregion //Fields
 
 		#region Initialization
@@ -37,7 +41,8 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Constructor fills in the menu contents.
 		/// </summary>
-		public TopScreen():base("top")
+		public TopScreen()
+			: base("top")
 		{
 			_textDirection = new Vector2(TextVelocity, TextVelocity);
 			_text = new FontBuddy();
@@ -51,6 +56,8 @@ namespace MenuBuddySample
 		{
 			base.LoadContent();
 			_text.Font = ScreenManager.Game.Content.Load<SpriteFont>("ArialBlack48");
+
+			_textSize = _text.Font.MeasureString(Message);
 		}
 
 		public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
@@ -61,20 +68,20 @@ namespace MenuBuddySample
 			_textLocation += _textDirection;
 
 			//bounce the text off the walls
-			if (_textLocation.X <= 0)
+			if (_textLocation.X <= Resolution.TitleSafeArea.Left)
 			{
 				_textDirection.X = TextVelocity;
 			}
-			else if ((_textLocation.X + 128) >= Resolution.ScreenArea.Right)
+			else if (_textLocation.X >= Resolution.TitleSafeArea.Right)
 			{
 				_textDirection.X = -TextVelocity;
 			}
 
-			if (_textLocation.Y <= 0)
+			if (_textLocation.Y <= Resolution.TitleSafeArea.Top)
 			{
 				_textDirection.Y = TextVelocity;
 			}
-			else if ((_textLocation.Y + 128) >= Resolution.ScreenArea.Bottom)
+			else if (_textLocation.Y >= Resolution.TitleSafeArea.Bottom)
 			{
 				_textDirection.Y = -TextVelocity;
 			}
@@ -84,9 +91,11 @@ namespace MenuBuddySample
 		{
 			base.Draw(gameTime);
 
+			Vector2 textpos = _textLocation - (_textSize / 2f);
+
 			//draw the text
 			ScreenManager.SpriteBatchBegin();
-			_text.Write("Top Screen!!!", _textLocation, Justify.Center, 1.0f, Color.Cyan, ScreenManager.SpriteBatch, Time);
+			_text.Write(Message, textpos, Justify.Center, 1.0f, Color.Cyan, ScreenManager.SpriteBatch, Time);
 			ScreenManager.SpriteBatchEnd();
 		}
 
