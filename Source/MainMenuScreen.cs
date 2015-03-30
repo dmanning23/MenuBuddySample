@@ -39,7 +39,7 @@ namespace MenuBuddySample
 			// Add entries to the menu.
 			AddMenuEntry(optionsMenuEntry);
 			AddMenuEntry(touchMenuEntry);
-			AddMenuEntry(exitMenuEntry); //TODO: only remove this entry for the demo
+			AddMenuEntry(exitMenuEntry);
 		}
 
 		#endregion //Methods

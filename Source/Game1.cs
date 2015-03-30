@@ -39,7 +39,9 @@ namespace MenuBuddySample
 			//var input = new TouchInputHelper(this);
 			var input = new ControllerInputHelper(this);
 
-			var styles = new DefaultStyles(this);
+			var gameStyle = new StyleSheet();
+			gameStyle.HasOutline = true;
+			var styles = new DefaultStyles(this, gameStyle);
 
 			styles.MenuTitleFontName = @"ArialBlack72";
 			styles.MenuEntryFontName = @"ArialBlack48";
