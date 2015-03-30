@@ -39,7 +39,7 @@ namespace MenuBuddySample
 			buttnutsEntry = new ImageButton(Style, string.Empty);
 			buttnutsEntry.Selected += ButtnutsEntrySelected;
 			SetMenuEntryText();
-			buttnutsEntry.Rect = new Rectangle(32, 32, 256, 128);
+			buttnutsEntry.Rect = new Rectangle(0, 0, 256, 128);
 			buttnutsEntry.Image.Texture = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
 			AddItem(buttnutsEntry);
 
