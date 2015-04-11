@@ -45,12 +45,12 @@ namespace MenuBuddySample
 		/// </summary>
 		public override void LoadContent()
 		{
-			_titleText.Font = ScreenManager.Game.Content.Load<SpriteFont>("ArialBlack48");
+			_titleText.Font = ScreenManager.Game.Content.Load<SpriteFont>(@"Fonts\ArialBlack48");
 			_titleText.ShadowOffset = new Vector2(-5.0f, 3.0f);
 			_titleText.ShadowSize = 1.025f;
 			_titleText.RainbowSpeed = 4.0f;
 
-			_dannobotText.Font = ScreenManager.Game.Content.Load<SpriteFont>("ArialBlack24");
+			_dannobotText.Font = ScreenManager.Game.Content.Load<SpriteFont>(@"Fonts\ArialBlack24");
 
 			base.LoadContent();
 		}
