@@ -13,6 +13,12 @@ namespace MenuBuddySample
 		{
 		}
 
+		protected override void InitStyles()
+		{
+			base.InitStyles();
+			GameStyle.GameStyle.HasOutline = true;
+		}
+
 		/// <summary>
 		/// Get the set of screens needed for the main menu
 		/// </summary>
