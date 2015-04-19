@@ -17,7 +17,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// menu entry to change the buttnus
 		/// </summary>
-		private ImageButton buttnutsEntry;
+		private RelativeLayoutButton buttnutsEntry;
 		private int currentButtnuts = 0;
 
 		#endregion
@@ -35,48 +35,53 @@ namespace MenuBuddySample
 
 		public override void LoadContent()
 		{
-			// Create our menu entries.
-			buttnutsEntry = new ImageButton(Style, string.Empty);
-			buttnutsEntry.Selected += ButtnutsEntrySelected;
-			SetMenuEntryText();
-			buttnutsEntry.Rect = new Rectangle(0, 0, 256, 128);
-			buttnutsEntry.Image.Texture = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
-			AddItem(buttnutsEntry);
+			//// Create our menu entries.
+			//buttnutsEntry = new RelativeLayoutButton(Style);
+			//buttnutsEntry.Selected += ButtnutsEntrySelected;
+			//SetMenuEntryText();
+			//buttnutsEntry.Rect = new Rectangle(0, 0, 256, 128);
 
-			var touchMenuEntry = new ImageButton(Style, "Touch this menu");
-			touchMenuEntry.Rect = new Rectangle(700, 400, 300, 300);
-			touchMenuEntry.Image.Texture = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
-			AddItem(touchMenuEntry);
+			//StyleSheet imageStyle = Style;
+			//imageStyle.Texture = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
+			//var image = new Image(imageStyle);
+			//image.Vertical = VerticalAlignment.Center;
+			//image.Horizontal = HorizontalAlignment.Center;
+			//buttnutsEntry.AddItem(buttnutsEntry);
 
-			var backMenuEntry = new Button(Style, "Back");
-			backMenuEntry.Selected += OnCancel;
-			backMenuEntry.Rect = new Rectangle(300, 512, 128, 128);
-			AddItem(backMenuEntry);
+			//var touchMenuEntry = new ImageButton(Style, "Touch this menu");
+			//touchMenuEntry.Rect = new Rectangle(700, 400, 300, 300);
+			//touchMenuEntry.Image.Texture = ScreenManager.Game.Content.Load<Texture2D>("Potion3a");
+			//AddItem(touchMenuEntry);
+
+			//var backMenuEntry = new Button(Style, "Back");
+			//backMenuEntry.Selected += OnCancel;
+			//backMenuEntry.Rect = new Rectangle(300, 512, 128, 128);
+			//AddItem(backMenuEntry);
 
 			base.LoadContent();
 		}
 
-		/// <summary>
-		/// Fills in the latest values for the options screen menu text.
-		/// </summary>
-		private void SetMenuEntryText()
-		{
-			buttnutsEntry.Text = string.Format("buttnuts: {0}", currentButtnuts.ToString());
-		}
+		///// <summary>
+		///// Fills in the latest values for the options screen menu text.
+		///// </summary>
+		//private void SetMenuEntryText()
+		//{
+		//	buttnutsEntry.Text = string.Format("buttnuts: {0}", currentButtnuts.ToString());
+		//}
 
 		#endregion
 
 		#region Handle Input
 
-		/// <summary>
-		/// Event handler for when the buttnuts selection menu entry is selected.
-		/// </summary>
-		private void ButtnutsEntrySelected(object sender, PlayerIndexEventArgs e)
-		{
-			//increment the mic
-			currentButtnuts++;
-			SetMenuEntryText();
-		}
+		///// <summary>
+		///// Event handler for when the buttnuts selection menu entry is selected.
+		///// </summary>
+		//private void ButtnutsEntrySelected(object sender, PlayerIndexEventArgs e)
+		//{
+		//	//increment the mic
+		//	currentButtnuts++;
+		//	SetMenuEntryText();
+		//}
 		
 		#endregion
 	}
