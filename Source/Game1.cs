@@ -16,7 +16,7 @@ namespace MenuBuddySample
 		protected override void InitStyles()
 		{
 			base.InitStyles();
-			GameStyle.GameStyle.HasOutline = true;
+			//GameStyle.GameStyle.HasOutline = true;
 		}
 
 		/// <summary>
