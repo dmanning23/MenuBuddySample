@@ -41,18 +41,18 @@ namespace MenuBuddySample
 			base.LoadContent();
 
 			// Create our menu entries.
-			buttnutsEntry = new MenuEntry(Style, string.Empty);
+			buttnutsEntry = new MenuEntry(string.Empty);
 			buttnutsEntry.Selected += ButtnutsEntrySelected;
 			SetMenuEntryText();
 			AddMenuEntry(buttnutsEntry);
 
-			touchMenuEntry = new MenuEntry(Style, "Touch Menus");
+			touchMenuEntry = new MenuEntry("Touch Menus");
 			AddMenuEntry(touchMenuEntry);
 
-			textRectEntry = new MenuEntry(Style, "Text Rect");
+			textRectEntry = new MenuEntry("Text Rect");
 			AddMenuEntry(textRectEntry);
 
-			var backMenuEntry = new MenuEntry(Style, "Back");
+			var backMenuEntry = new MenuEntry("Back");
 			backMenuEntry.Selected += OnCancel;
 			AddMenuEntry(backMenuEntry);
 		}

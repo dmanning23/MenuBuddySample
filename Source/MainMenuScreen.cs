@@ -27,9 +27,9 @@ namespace MenuBuddySample
 			base.LoadContent();
 
 			// Create our menu entries.
-			var optionsMenuEntry = new MenuEntry(ScreenManager.Styles.MenuEntryStyle, "Options");
-			var touchMenuEntry = new MenuEntry(ScreenManager.Styles.MenuEntryStyle, "Touch Test");
-			var exitMenuEntry = new MenuEntry(ScreenManager.Styles.MenuEntryStyle, "Exit");
+			var optionsMenuEntry = new MenuEntry("Options");
+			var touchMenuEntry = new MenuEntry("Touch Test");
+			var exitMenuEntry = new MenuEntry("Exit");
 
 			// Hook up menu event handlers.
 			optionsMenuEntry.Selected += OptionsMenuEntrySelected;

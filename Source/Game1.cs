@@ -5,7 +5,8 @@ namespace MenuBuddySample
 	/// <summary>
 	/// This is the main type for your game
 	/// </summary>
-	public class Game1 : ControllerGame
+	//public class Game1 : ControllerGame
+	public class Game1 : TouchGame
 	{
 		#region Methods
 
