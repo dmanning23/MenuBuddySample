@@ -104,6 +104,10 @@
       <Project>{6B6D4188-5C03-4E16-923B-96FDBC85B91A}</Project>
       <Name>GameTimer.Windows</Name>
     </ProjectReference>
+    <ProjectReference Include="..\externals\HadoukInput\Windows\HadoukInput.Windows.csproj">
+      <Project>{85d723f7-83ef-4c75-82ba-9385d0ac8448}</Project>
+      <Name>HadoukInput.Windows</Name>
+    </ProjectReference>
     <ProjectReference Include="..\externals\MenuBuddy\Windows\MenuBuddy.Windows.csproj">
       <Project>{E83F9EAA-EB6B-4801-8BEF-C602D34EBFD3}</Project>
       <Name>MenuBuddy.Windows</Name>
@@ -111,6 +115,14 @@
     <ProjectReference Include="..\externals\ResolutionBuddy\Windows\ResolutionBuddy.Windows.csproj">
       <Project>{28342DF0-0089-4A2A-B3D4-6DCD65D6D8E4}</Project>
       <Name>ResolutionBuddy.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\TouchScreenBuddy\Windows\TouchScreenBuddy.Windows.csproj">
+      <Project>{764d3dc6-927a-45ee-901d-ea07966dde72}</Project>
+      <Name>TouchScreenBuddy.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\Vector2Extensions\Windows\Vector2Extensions.Windows.csproj">
+      <Project>{2c5acada-d15a-4193-ba0a-d36a362075f4}</Project>
+      <Name>Vector2Extensions.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
