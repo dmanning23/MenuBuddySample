@@ -9,7 +9,7 @@ namespace MenuBuddySample
 	/// <summary>
 	/// This screen displays on top of all the other screens
 	/// </summary>
-	internal class TopScreen : Screen
+	internal class TopScreen : Screen, IGameScreen
 	{
 		#region Fields
 
@@ -55,7 +55,7 @@ namespace MenuBuddySample
 		public override void LoadContent()
 		{
 			base.LoadContent();
-			_text.Font = ScreenManager.Game.Content.Load<SpriteFont>("ArialBlack48");
+			_text.Font = ScreenManager.Game.Content.Load<SpriteFont>(@"Fonts\ArialBlack48");
 
 			_textSize = _text.Font.MeasureString(Message);
 		}
@@ -91,12 +91,18 @@ namespace MenuBuddySample
 		{
 			base.Draw(gameTime);
 
-			Vector2 textpos = _textLocation - (_textSize / 2f);
-
 			//draw the text
 			ScreenManager.SpriteBatchBegin();
-			_text.Write(Message, textpos, Justify.Center, 1.0f, Color.Cyan, ScreenManager.SpriteBatch, Time);
+			_text.Write(Message, _textLocation, Justify.Center, 1.0f, Color.Cyan, ScreenManager.SpriteBatch, Time);
 			ScreenManager.SpriteBatchEnd();
+		}
+
+		public void HandleInput(HadoukInput.InputState input)
+		{
+		}
+
+		public void Click(Vector2 pos)
+		{
 		}
 
 		#endregion

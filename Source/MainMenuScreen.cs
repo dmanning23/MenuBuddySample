@@ -27,6 +27,13 @@ namespace MenuBuddySample
 			base.LoadContent();
 
 			// Create our menu entries.
+			var startGame = new MenuEntry("Start Game");
+			startGame.Selected += ((object sender, PlayerIndexEventArgs e) =>
+			{
+				LoadingScreen.Load(ScreenManager, true, null, new TopScreen());
+			});
+			AddMenuEntry(startGame);
+
 			var optionsMenuEntry = new MenuEntry("Options");
 			var touchMenuEntry = new MenuEntry("Touch Test");
 			var exitMenuEntry = new MenuEntry("Exit");
