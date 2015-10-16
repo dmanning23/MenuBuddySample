@@ -6,7 +6,7 @@ namespace MenuBuddySample
 	/// This is the main type for your game
 	/// </summary>
 	//public class Game1 : ControllerGame
-	public class Game1 : ControllerGame
+	public class Game1 : TouchGame
 	{
 		#region Methods
 
@@ -17,7 +17,10 @@ namespace MenuBuddySample
 		protected override void InitStyles()
 		{
 			base.InitStyles();
-			//GameStyle.GameStyle.HasOutline = true;
+			DefaultStyles.Instance().MainStyle.HasOutline = true;
+			DefaultStyles.Instance().MenuEntryStyle.HasOutline = true;
+			DefaultStyles.Instance().MenuTitleStyle.HasOutline = true;
+			DefaultStyles.Instance().MessageBoxStyle.HasOutline = true;
 		}
 
 		/// <summary>
