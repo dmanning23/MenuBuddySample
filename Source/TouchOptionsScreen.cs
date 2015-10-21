@@ -42,6 +42,131 @@ namespace MenuBuddySample
 			AddCancelButton();
 
 			touches = ScreenManager.Game.Services.GetService<ITouchManager>();
+
+			var stack = new StackLayout()
+			{
+				Alignment = StackAlignment.Bottom,
+				Horizontal =HorizontalAlignment.Left,
+				Vertical = VerticalAlignment.Bottom
+			};
+			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Left, ResolutionBuddy.Resolution.ScreenArea.Bottom);
+
+			var label = new Label("butt")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+
+			label = new Label("nuts")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+			AddItem(stack);
+
+			stack = new StackLayout()
+			{
+				Alignment = StackAlignment.Bottom,
+				Horizontal = HorizontalAlignment.Center,
+				Vertical = VerticalAlignment.Bottom
+			};
+			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Center.X, ResolutionBuddy.Resolution.ScreenArea.Bottom);
+
+			label = new Label("butt")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+
+			label = new Label("nuts")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+			AddItem(stack);
+
+			stack = new StackLayout()
+			{
+				Alignment = StackAlignment.Bottom,
+				Horizontal = HorizontalAlignment.Right,
+				Vertical = VerticalAlignment.Bottom
+			};
+			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Right, ResolutionBuddy.Resolution.ScreenArea.Bottom);
+
+			label = new Label("butt")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+
+			label = new Label("nuts")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+			AddItem(stack);
+
+			stack = new StackLayout()
+			{
+				Alignment = StackAlignment.Left,
+				Horizontal = HorizontalAlignment.Right,
+				Vertical = VerticalAlignment.Center
+			};
+			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Left, ResolutionBuddy.Resolution.ScreenArea.Center.Y);
+
+			label = new Label("butt")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+
+			label = new Label("nuts")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+			AddItem(stack);
+
+			stack = new StackLayout()
+			{
+				Alignment = StackAlignment.Right,
+				Horizontal = HorizontalAlignment.Right,
+				Vertical = VerticalAlignment.Center
+			};
+			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Right, ResolutionBuddy.Resolution.ScreenArea.Center.Y);
+
+			label = new Label("butt")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+
+			label = new Label("nuts")
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			label.Style.HasOutline = true;
+			label.Style.HasBackground = false;
+			stack.AddItem(label);
+			AddItem(stack);
 		}
 
 		#endregion
