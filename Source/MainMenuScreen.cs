@@ -99,7 +99,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Ignore the cancel message from the main menu
 		/// </summary>
-		public override void OnCancel(PlayerIndex? playerIndex)
+		public override void OnCancel(object sender, PlayerIndexEventArgs e)
 		{
 			//do nothing here!
 		}
