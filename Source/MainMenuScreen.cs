@@ -35,17 +35,22 @@ namespace MenuBuddySample
 			AddMenuEntry(startGame);
 
 			var optionsMenuEntry = new MenuEntry("Options");
-			var touchMenuEntry = new MenuEntry("Touch Test");
-			var exitMenuEntry = new MenuEntry("Exit");
-
-			// Hook up menu event handlers.
 			optionsMenuEntry.Selected += OptionsMenuEntrySelected;
-			touchMenuEntry.Selected += TouchMenuEntrySelected;
-			exitMenuEntry.Selected += OnExit;
-
-			// Add entries to the menu.
 			AddMenuEntry(optionsMenuEntry);
+
+			var touchMenuEntry = new MenuEntry("Touch Test");
+			touchMenuEntry.Selected += TouchMenuEntrySelected;
 			AddMenuEntry(touchMenuEntry);
+
+			var entry = new MenuEntry("Scroll Test");
+			entry.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new ScrollOptionsScreen());
+			});
+			AddMenuEntry(entry);
+
+			var exitMenuEntry = new MenuEntry("Exit");
+			exitMenuEntry.Selected += OnExit;
 			AddMenuEntry(exitMenuEntry);
 		}
 

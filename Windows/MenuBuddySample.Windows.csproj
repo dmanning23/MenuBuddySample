@@ -85,6 +85,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Source\ScrollOptionsScreen.cs">
+      <Link>ScrollOptionsScreen.cs</Link>
+    </Compile>
     <Compile Include="..\Source\TopScreen.cs">
       <Link>TopScreen.cs</Link>
     </Compile>
