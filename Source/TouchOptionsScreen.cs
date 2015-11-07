@@ -192,6 +192,8 @@ namespace MenuBuddySample
 			};
 			potion.Style.Transition = TransitionType.PopBottom;
 			AddItem(potion);
+
+			ScreenManager.AddScreen(new ErrorScreen(new Exception("Butt\nNuts")));
 		}
 
 		#endregion
