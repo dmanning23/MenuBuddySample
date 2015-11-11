@@ -18,8 +18,6 @@ namespace MenuBuddySample
 
 		private ScrollLayout _layout;
 
-		private Vector2 _scrollPos;
-
 		private const float _scrollDelta = 5f;
 
 		#endregion
@@ -45,32 +43,36 @@ namespace MenuBuddySample
 			var scroll = new MenuEntry("Scroll Up");
 			scroll.Selected += ((object obj, PlayerIndexEventArgs e) =>
 			{
-				_scrollPos.Y -= _scrollDelta;
-				_layout.ScrollPosition = _scrollPos;
+				var scrollPos = _layout.ScrollPosition;
+				scrollPos.Y -= _scrollDelta;
+				_layout.ScrollPosition = scrollPos;
 			});
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Down");
 			scroll.Selected += ((object obj, PlayerIndexEventArgs e) =>
 			{
-				_scrollPos.Y += _scrollDelta;
-				_layout.ScrollPosition = _scrollPos;
+				var scrollPos = _layout.ScrollPosition;
+				scrollPos.Y += _scrollDelta;
+				_layout.ScrollPosition = scrollPos;
             });
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Left");
 			scroll.Selected += ((object obj, PlayerIndexEventArgs e) =>
 			{
-				_scrollPos.X -= _scrollDelta;
-				_layout.ScrollPosition = _scrollPos;
+				var scrollPos = _layout.ScrollPosition;
+				scrollPos.X -= _scrollDelta;
+				_layout.ScrollPosition = scrollPos;
 			});
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Right");
 			scroll.Selected += ((object obj, PlayerIndexEventArgs e) =>
 			{
-				_scrollPos.X += _scrollDelta;
-				_layout.ScrollPosition = _scrollPos;
+				var scrollPos = _layout.ScrollPosition;
+				scrollPos.X += _scrollDelta;
+				_layout.ScrollPosition = scrollPos;
 			});
 			AddMenuEntry(scroll);
 
@@ -82,7 +84,7 @@ namespace MenuBuddySample
 				Vertical = VerticalAlignment.Top
 			};
 
-			var label = new Label("butt");
+			var label = new Label("buttnuts");
             var button = new RelativeLayoutButton()
 			{
 				Style = DefaultStyles.Instance().MessageBoxStyle,
@@ -97,7 +99,37 @@ namespace MenuBuddySample
 			});
 			stack.AddItem(button);
 
-			label = new Label("nuts");
+			label = new Label("catpants");
+			button = new RelativeLayoutButton()
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			button.Style.HasOutline = true;
+			button.Style.HasBackground = false;
+			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
+			button.AddItem(label);
+			button.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			{
+				ExitScreen();
+			});
+			stack.AddItem(button);
+
+			label = new Label("foo");
+			button = new RelativeLayoutButton()
+			{
+				Style = DefaultStyles.Instance().MessageBoxStyle,
+			};
+			button.Style.HasOutline = true;
+			button.Style.HasBackground = false;
+			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
+			button.AddItem(label);
+			button.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			{
+				ExitScreen();
+			});
+			stack.AddItem(button);
+
+			label = new Label("bleh");
 			button = new RelativeLayoutButton()
 			{
 				Style = DefaultStyles.Instance().MessageBoxStyle,
@@ -117,7 +149,7 @@ namespace MenuBuddySample
 			{
 				Horizontal = HorizontalAlignment.Right,
 				Vertical = VerticalAlignment.Bottom,
-                Size = new Vector2(stack.Rect.Width, stack.Rect.Height)
+                Size = new Vector2(label.Rect.Width, label.Rect.Height)
 			};
 			_layout.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Right, ResolutionBuddy.Resolution.ScreenArea.Bottom);
 
