@@ -1,5 +1,4 @@
 using MenuBuddy;
-using Microsoft.Xna.Framework;
 
 namespace MenuBuddySample
 {
@@ -28,29 +27,29 @@ namespace MenuBuddySample
 
 			// Create our menu entries.
 			var startGame = new MenuEntry("Start Game");
-			startGame.Selected += ((object sender, PlayerIndexEventArgs e) =>
+			startGame.OnSelect += ((object sender, SelectedEventArgs e) =>
 			{
 				LoadingScreen.Load(ScreenManager, true, null, new TopScreen());
 			});
 			AddMenuEntry(startGame);
 
 			var optionsMenuEntry = new MenuEntry("Options");
-			optionsMenuEntry.Selected += OptionsMenuEntrySelected;
+			optionsMenuEntry.OnSelect += OptionsMenuEntrySelected;
 			AddMenuEntry(optionsMenuEntry);
 
 			var touchMenuEntry = new MenuEntry("Touch Test");
-			touchMenuEntry.Selected += TouchMenuEntrySelected;
+			touchMenuEntry.OnSelect += TouchMenuEntrySelected;
 			AddMenuEntry(touchMenuEntry);
 
 			var entry = new MenuEntry("Scroll Test");
-			entry.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			entry.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				ScreenManager.AddScreen(new ScrollOptionsScreen());
 			});
 			AddMenuEntry(entry);
 
 			var exitMenuEntry = new MenuEntry("Exit");
-			exitMenuEntry.Selected += OnExit;
+			exitMenuEntry.OnSelect += OnExit;
 			AddMenuEntry(exitMenuEntry);
 		}
 
@@ -61,7 +60,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Event handler for when the High Scores menu entry is selected.
 		/// </summary>
-		private void OptionsMenuEntrySelected(object sender, PlayerIndexEventArgs e)
+		private void OptionsMenuEntrySelected(object sender, SelectedEventArgs e)
 		{
 			//screen to adjust mic sensitivity
 			ScreenManager.AddScreen(new OptionsScreen(), null);
@@ -70,7 +69,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Event handler for when the High Scores menu entry is selected.
 		/// </summary>
-		private void TouchMenuEntrySelected(object sender, PlayerIndexEventArgs e)
+		private void TouchMenuEntrySelected(object sender, SelectedEventArgs e)
 		{
 			//screen to adjust mic sensitivity
 			ScreenManager.AddScreen(new TouchOptionsScreen(), null);
@@ -79,11 +78,11 @@ namespace MenuBuddySample
 		/// <summary>
 		/// When the user cancels the main menu, ask if they want to exit the sample.
 		/// </summary>
-		protected void OnExit(object sender, PlayerIndexEventArgs e)
+		protected void OnExit(object sender, SelectedEventArgs e)
 		{
 			const string message = "Are you sure you want to exit?";
-			var confirmExitMessageBox = new MessageBoxScreen(message, false);
-			confirmExitMessageBox.Accepted += ConfirmExitMessageBoxAccepted;
+			var confirmExitMessageBox = new MessageBoxScreen(message);
+			confirmExitMessageBox.OnSelect += ConfirmExitMessageBoxAccepted;
 			ScreenManager.AddScreen(confirmExitMessageBox, e.PlayerIndex);
 		}
 
@@ -91,12 +90,7 @@ namespace MenuBuddySample
 		/// Event handler for when the user selects ok on the "are you sure
 		/// you want to exit" message box.
 		/// </summary>
-		private void ConfirmExitMessageBoxAccepted(object sender, PlayerIndexEventArgs e)
-		{
-			ScreenManager.Game.Exit();
-		}
-
-		private void MarketplaceDenied(object sender, PlayerIndexEventArgs e)
+		private void ConfirmExitMessageBoxAccepted(object sender, SelectedEventArgs e)
 		{
 			ScreenManager.Game.Exit();
 		}
@@ -104,7 +98,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Ignore the cancel message from the main menu
 		/// </summary>
-		public override void OnCancel(object sender, PlayerIndexEventArgs e)
+		public override void Cancelled(object obj, SelectedEventArgs e)
 		{
 			//do nothing here!
 		}

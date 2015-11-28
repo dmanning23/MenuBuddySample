@@ -43,3 +43,6 @@
 [submodule "externals/XmlBuddy"]
 	path = externals/XmlBuddy
 	url = git@github.com:dmanning23/XmlBuddy.git
+[submodule "externals/StateMachine"]
+	path = externals/StateMachine
+	url = git@github.com:dmanning23/StateMachine.git

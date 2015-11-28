@@ -41,7 +41,7 @@ namespace MenuBuddySample
 
 			//add the scroll options
 			var scroll = new MenuEntry("Scroll Up");
-			scroll.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			scroll.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
 				scrollPos.Y -= _scrollDelta;
@@ -50,7 +50,7 @@ namespace MenuBuddySample
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Down");
-			scroll.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			scroll.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
 				scrollPos.Y += _scrollDelta;
@@ -59,7 +59,7 @@ namespace MenuBuddySample
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Left");
-			scroll.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			scroll.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
 				scrollPos.X -= _scrollDelta;
@@ -68,7 +68,7 @@ namespace MenuBuddySample
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Right");
-			scroll.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			scroll.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
 				scrollPos.X += _scrollDelta;
@@ -93,7 +93,7 @@ namespace MenuBuddySample
 			button.Style.HasBackground = false;
 			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 			button.AddItem(label);
-			button.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			button.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				ExitScreen();
 			});
@@ -108,7 +108,7 @@ namespace MenuBuddySample
 			button.Style.HasBackground = false;
 			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 			button.AddItem(label);
-			button.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			button.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				ExitScreen();
 			});
@@ -123,7 +123,7 @@ namespace MenuBuddySample
 			button.Style.HasBackground = false;
 			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 			button.AddItem(label);
-			button.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			button.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				ExitScreen();
 			});
@@ -138,7 +138,7 @@ namespace MenuBuddySample
 			button.Style.HasBackground = false;
 			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 			button.AddItem(label);
-			button.Selected += ((object obj, PlayerIndexEventArgs e) =>
+			button.OnSelect += ((object obj, SelectedEventArgs e) =>
 			{
 				ExitScreen();
 			});

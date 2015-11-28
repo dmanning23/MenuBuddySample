@@ -1,10 +1,10 @@
-#region Using Statements
 using System;
-using System.Collections.Generic;
 
-#endregion
 namespace MenuBuddySample.Windows
 {
+	/// <summary>
+	/// The main class.
+	/// </summary>
 	static class Program
 	{
 		/// <summary>
