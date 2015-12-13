@@ -33,7 +33,6 @@ namespace MenuBuddySample
 		public OptionsScreen()
 			: base("Options")
 		{
-			MenuTitleOffset = new Point(0, -64);
 		}
 
 		public override void LoadContent()

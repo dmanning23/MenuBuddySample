@@ -30,7 +30,6 @@ namespace MenuBuddySample
 		public ScrollOptionsScreen()
 			: base("Scroll Layout Test")
 		{
-			MenuTitleOffset = new Point(0, -64);
 		}
 
 		public override void LoadContent()

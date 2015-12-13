@@ -32,7 +32,6 @@ namespace MenuBuddySample
 		public TouchOptionsScreen()
 			: base("Touch Options")
 		{
-			MenuTitleOffset = new Point(0, -64);
 		}
 
 		public override void LoadContent()
