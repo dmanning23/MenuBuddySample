@@ -18,8 +18,6 @@ namespace MenuBuddySample
 		/// <summary>
 		/// menu entry to change the buttnus
 		/// </summary>
-		private RelativeLayoutButton buttnutsEntry;
-		private int currentButtnuts = 0;
 		private ITouchManager touches;
 
 		#endregion

@@ -37,8 +37,10 @@ namespace MenuBuddySample
 			optionsMenuEntry.OnSelect += OptionsMenuEntrySelected;
 			AddMenuEntry(optionsMenuEntry);
 
-			var touchMenuEntry = new MenuEntry("Touch Test");
-			touchMenuEntry.OnSelect += TouchMenuEntrySelected;
+			var touchMenuEntry = new MenuEntry("Dropdown Test");
+			touchMenuEntry.OnSelect += ((obj, e) => {
+				ScreenManager.AddScreen(new DropdownTest(), null);
+			});
 			AddMenuEntry(touchMenuEntry);
 
 			var entry = new MenuEntry("Scroll Test");
@@ -71,8 +73,7 @@ namespace MenuBuddySample
 		/// </summary>
 		private void TouchMenuEntrySelected(object sender, SelectedEventArgs e)
 		{
-			//screen to adjust mic sensitivity
-			ScreenManager.AddScreen(new TouchOptionsScreen(), null);
+			
 		}
 
 		/// <summary>
