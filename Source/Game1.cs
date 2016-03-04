@@ -17,10 +17,10 @@ namespace MenuBuddySample
 		protected override void InitStyles()
 		{
 			base.InitStyles();
-			DefaultStyles.Instance().MainStyle.HasOutline = true;
-			DefaultStyles.Instance().MenuEntryStyle.HasOutline = true;
-			DefaultStyles.Instance().MenuTitleStyle.HasOutline = true;
-			DefaultStyles.Instance().MessageBoxStyle.HasOutline = true;
+			//DefaultStyles.Instance().MainStyle.HasOutline = true;
+			//DefaultStyles.Instance().MenuEntryStyle.HasOutline = true;
+			//DefaultStyles.Instance().MenuTitleStyle.HasOutline = true;
+			//DefaultStyles.Instance().MessageBoxStyle.HasOutline = true;
 		}
 
 		/// <summary>

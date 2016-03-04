@@ -32,7 +32,7 @@ namespace MenuBuddySample
 				{
 					Vertical = VerticalAlignment.Center,
 					Horizontal = HorizontalAlignment.Center,
-					Size = new Vector2(350, 128)
+					Size = new Vector2(350, 64)
 				};
 
 				var label = new Label(word)
