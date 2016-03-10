@@ -25,7 +25,7 @@ namespace MenuBuddySample
 			drop.Size = new Vector2(350, 128);
 			drop.Position = Resolution.ScreenArea.Center;
 
-			string[] words = { "cat", "pants", "buttnuts" };
+			string[] words = { "cat", "pants", "buttnuts", "cat1", "pants1", "whoa", "test1", "test2" };
 			foreach (var word in words)
 			{
 				var dropitem = new DropdownItem<string>(word, drop)
