@@ -85,8 +85,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Source\DropdownTest.cs">
+      <Link>DropdownTest.cs</Link>
+    </Compile>
     <Compile Include="..\Source\ScrollOptionsScreen.cs">
       <Link>ScrollOptionsScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\Source\SliderTest.cs">
+      <Link>SliderTest.cs</Link>
     </Compile>
     <Compile Include="..\Source\TopScreen.cs">
       <Link>TopScreen.cs</Link>
@@ -94,7 +100,6 @@
     <Compile Include="..\Source\TouchOptionsScreen.cs">
       <Link>TouchOptionsScreen.cs</Link>
     </Compile>
-    <Compile Include="DropdownTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\Source\Game1.cs">
@@ -133,6 +138,10 @@
     <ProjectReference Include="..\externals\MenuBuddy\Windows\MenuBuddy.Windows.csproj">
       <Project>{E83F9EAA-EB6B-4801-8BEF-C602D34EBFD3}</Project>
       <Name>MenuBuddy.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\externals\MouseBuddy\Windows\MouseBuddy.Windows.csproj">
+      <Project>{274f9781-c163-41f3-8922-2e4877486017}</Project>
+      <Name>MouseBuddy.Windows</Name>
     </ProjectReference>
     <ProjectReference Include="..\externals\ResolutionBuddy\Windows\ResolutionBuddy.Windows.csproj">
       <Project>{28342DF0-0089-4A2A-B3D4-6DCD65D6D8E4}</Project>

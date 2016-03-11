@@ -26,10 +26,10 @@ namespace MenuBuddySample
 			base.LoadContent();
 
 			// Create our menu entries.
-			var startGame = new MenuEntry("Start Game");
+			var startGame = new MenuEntry("Slider Test");
 			startGame.OnSelect += ((object sender, SelectedEventArgs e) =>
 			{
-				LoadingScreen.Load(ScreenManager, true, null, new TopScreen());
+				ScreenManager.AddScreen(new SliderTest(), null);
 			});
 			AddMenuEntry(startGame);
 
