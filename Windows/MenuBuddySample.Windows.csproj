@@ -100,6 +100,9 @@
     <Compile Include="..\Source\TouchOptionsScreen.cs">
       <Link>TouchOptionsScreen.cs</Link>
     </Compile>
+    <Compile Include="..\Source\TreeTest.cs">
+      <Link>TreeTest.cs</Link>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\Source\Game1.cs">
@@ -193,20 +196,16 @@
       <Link>Content\Fonts\ArialBlack72.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu move.xnb">
-      <Link>Content\menu move.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\externals\XNA\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu select.xnb">
-      <Link>Content\menu select.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="..\Source\Content\AButton.png">
       <Link>Content\AButton.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Source\Content\BackButton.png">
-      <Link>Content\BackButton.png</Link>
+    <Content Include="..\Source\Content\Collapse.png">
+      <Link>Content\Collapse.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Source\Content\Expand.png">
+      <Link>Content\Expand.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Source\Content\Potion3a.png">

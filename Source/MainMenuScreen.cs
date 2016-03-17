@@ -33,8 +33,10 @@ namespace MenuBuddySample
 			});
 			AddMenuEntry(startGame);
 
-			var optionsMenuEntry = new MenuEntry("Options");
-			optionsMenuEntry.OnSelect += OptionsMenuEntrySelected;
+			var optionsMenuEntry = new MenuEntry("Tree Test");
+			optionsMenuEntry.OnSelect += ((obj, e) => {
+				ScreenManager.AddScreen(new TreeTest(), null);
+			});
 			AddMenuEntry(optionsMenuEntry);
 
 			var touchMenuEntry = new MenuEntry("Dropdown Test");
