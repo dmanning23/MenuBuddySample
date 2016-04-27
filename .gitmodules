@@ -1,4 +1,0 @@
-[submodule "externals/XNA"]
-	path = externals/XNA
-	url = git@github.com:dmanning23/XnaCompiledResources.git
-
