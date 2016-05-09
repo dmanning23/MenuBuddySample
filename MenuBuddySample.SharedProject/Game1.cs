@@ -1,4 +1,6 @@
+using InputHelper;
 using MenuBuddy;
+using Microsoft.Xna.Framework;
 
 namespace MenuBuddySample
 {
@@ -6,12 +8,30 @@ namespace MenuBuddySample
 	/// This is the main type for your game
 	/// </summary>
 	//public class Game1 : ControllerGame
+
+#if __IOS__ || ANDROID || WINDOWS_UAP
 	public class Game1 : TouchGame
+#else
+	public class Game1 : MouseGame
+#endif
 	{
-		#region Methods
+#region Methods
 
 		public Game1()
 		{
+			//FullScreen = true;
+
+			var debug = new DebugInputComponent(this);
+		}
+
+		protected override void LoadContent()
+		{
+			base.LoadContent();
+		}
+
+		protected override void Initialize()
+		{
+			base.Initialize();
 		}
 
 		protected override void InitStyles()
@@ -32,7 +52,7 @@ namespace MenuBuddySample
 			return new IScreen[] { new BackgroundScreen(), new MainMenuScreen() };
 		}
 
-		#endregion //Methods
+#endregion //Methods
 	}
 }
 

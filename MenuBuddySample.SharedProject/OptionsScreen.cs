@@ -39,7 +39,7 @@ namespace MenuBuddySample
 
 			// Create our menu entries.
 			buttnutsEntry = new MenuEntry(string.Empty);
-			buttnutsEntry.OnSelect += ButtnutsEntrySelected;
+			buttnutsEntry.OnClick += ButtnutsEntrySelected;
 			SetMenuEntryText();
 			AddMenuEntry(buttnutsEntry);
 
@@ -50,7 +50,7 @@ namespace MenuBuddySample
 			AddMenuEntry(textRectEntry);
 
 			var backMenuEntry = new MenuEntry("Back");
-			backMenuEntry.OnSelect += Cancelled;
+			backMenuEntry.OnClick += Cancelled;
 			AddMenuEntry(backMenuEntry);
 		}
 
@@ -69,7 +69,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Event handler for when the buttnuts selection menu entry is selected.
 		/// </summary>
-		private void ButtnutsEntrySelected(object sender, SelectedEventArgs e)
+		private void ButtnutsEntrySelected(object sender, ClickEventArgs e)
 		{
 			//increment the mic
 			currentButtnuts++;

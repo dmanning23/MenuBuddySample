@@ -29,8 +29,8 @@ namespace MenuBuddySample
 		/// </summary>
 		public BackgroundScreen()
 		{
-			Transition.OnTime = TimeSpan.FromSeconds(0.5);
-			Transition.OffTime = TimeSpan.FromSeconds(0.5);
+			Transition.OnTime = 0.5f;
+			Transition.OffTime = 0.5f;
 
 			_titleText = new RainbowTextBuddy();
 			_dannobotText = new FontBuddy();

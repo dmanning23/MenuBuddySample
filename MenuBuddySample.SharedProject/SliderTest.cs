@@ -12,7 +12,8 @@ namespace MenuBuddySample
 		public SliderTest() : base("Slider Test")
 		{
 			CoverOtherScreens = true;
-			CoveredByOtherScreens = true;
+			CoveredByOtherScreens = false;
+			Transition.OffTime = 1f;
 		}
 
 		public override void LoadContent()

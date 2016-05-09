@@ -37,7 +37,7 @@ namespace MenuBuddySample
 
 			//add the scroll options
 			var scroll = new MenuEntry("Scroll Up");
-			scroll.OnSelect += ((object obj, SelectedEventArgs e) =>
+			scroll.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
 				scrollPos.Y -= _scrollDelta;
@@ -46,7 +46,7 @@ namespace MenuBuddySample
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Down");
-			scroll.OnSelect += ((object obj, SelectedEventArgs e) =>
+			scroll.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
 				scrollPos.Y += _scrollDelta;
@@ -55,7 +55,7 @@ namespace MenuBuddySample
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Left");
-			scroll.OnSelect += ((object obj, SelectedEventArgs e) =>
+			scroll.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
 				scrollPos.X -= _scrollDelta;
@@ -64,7 +64,7 @@ namespace MenuBuddySample
 			AddMenuEntry(scroll);
 
 			scroll = new MenuEntry("Scroll Right");
-			scroll.OnSelect += ((object obj, SelectedEventArgs e) =>
+			scroll.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
 				scrollPos.X += _scrollDelta;
@@ -80,61 +80,57 @@ namespace MenuBuddySample
 				Vertical = VerticalAlignment.Top
 			};
 
-			var label = new Label("buttnuts");
-            var button = new RelativeLayoutButton()
+			var label = new Label("buttnuts", FontSize.Small);
+			var button = new RelativeLayoutButton()
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			button.Style.HasOutline = true;
-			button.Style.HasBackground = false;
 			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 			button.AddItem(label);
-			button.OnSelect += ((object obj, SelectedEventArgs e) =>
+			button.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				ExitScreen();
 			});
 			stack.AddItem(button);
 
-			label = new Label("catpants");
+			label = new Label("catpants", FontSize.Small);
 			button = new RelativeLayoutButton()
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			button.Style.HasOutline = true;
-			button.Style.HasBackground = false;
 			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 			button.AddItem(label);
-			button.OnSelect += ((object obj, SelectedEventArgs e) =>
+			button.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				ExitScreen();
 			});
 			stack.AddItem(button);
 
-			label = new Label("foo");
+			label = new Label("foo", FontSize.Small);
 			button = new RelativeLayoutButton()
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			button.Style.HasOutline = true;
-			button.Style.HasBackground = false;
 			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 			button.AddItem(label);
-			button.OnSelect += ((object obj, SelectedEventArgs e) =>
+			button.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				ExitScreen();
 			});
 			stack.AddItem(button);
 
-			label = new Label("bleh");
+			label = new Label("bleh", FontSize.Small);
 			button = new RelativeLayoutButton()
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			button.Style.HasOutline = true;
-			button.Style.HasBackground = false;
 			button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 			button.AddItem(label);
-			button.OnSelect += ((object obj, SelectedEventArgs e) =>
+			button.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				ExitScreen();
 			});

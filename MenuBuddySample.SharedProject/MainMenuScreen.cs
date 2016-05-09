@@ -28,33 +28,35 @@ namespace MenuBuddySample
 
 			// Create our menu entries.
 			var startGame = new MenuEntry("Slider Test");
-			startGame.OnSelect += ((object sender, SelectedEventArgs e) =>
+			startGame.OnClick += ((object sender, ClickEventArgs e) =>
 			{
 				ScreenManager.AddScreen(new SliderTest(), null);
 			});
 			AddMenuEntry(startGame);
 
 			var optionsMenuEntry = new MenuEntry("Tree Test");
-			optionsMenuEntry.OnSelect += ((obj, e) => {
+			optionsMenuEntry.OnClick += ((obj, e) =>
+			{
 				ScreenManager.AddScreen(new TreeTest(), null);
 			});
 			AddMenuEntry(optionsMenuEntry);
 
 			var touchMenuEntry = new MenuEntry("Dropdown Test");
-			touchMenuEntry.OnSelect += ((obj, e) => {
+			touchMenuEntry.OnClick += ((obj, e) =>
+			{
 				ScreenManager.AddScreen(new DropdownTest(), null);
 			});
 			AddMenuEntry(touchMenuEntry);
 
 			var entry = new MenuEntry("Scroll Test");
-			entry.OnSelect += ((object obj, SelectedEventArgs e) =>
+			entry.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				ScreenManager.AddScreen(new ScrollOptionsScreen());
 			});
 			AddMenuEntry(entry);
 
 			var exitMenuEntry = new MenuEntry("Exit");
-			exitMenuEntry.OnSelect += OnExit;
+			exitMenuEntry.OnClick += OnExit;
 			AddMenuEntry(exitMenuEntry);
 		}
 
@@ -65,7 +67,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Event handler for when the High Scores menu entry is selected.
 		/// </summary>
-		private void OptionsMenuEntrySelected(object sender, SelectedEventArgs e)
+		private void OptionsMenuEntrySelected(object sender, ClickEventArgs e)
 		{
 			//screen to adjust mic sensitivity
 			ScreenManager.AddScreen(new OptionsScreen(), null);
@@ -74,15 +76,14 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Event handler for when the High Scores menu entry is selected.
 		/// </summary>
-		private void TouchMenuEntrySelected(object sender, SelectedEventArgs e)
+		private void TouchMenuEntrySelected(object sender, ClickEventArgs e)
 		{
-			
 		}
 
 		/// <summary>
 		/// When the user cancels the main menu, ask if they want to exit the sample.
 		/// </summary>
-		protected void OnExit(object sender, SelectedEventArgs e)
+		protected void OnExit(object sender, ClickEventArgs e)
 		{
 			const string message = "Are you sure you want to exit?";
 			var confirmExitMessageBox = new MessageBoxScreen(message);
@@ -94,7 +95,7 @@ namespace MenuBuddySample
 		/// Event handler for when the user selects ok on the "are you sure
 		/// you want to exit" message box.
 		/// </summary>
-		private void ConfirmExitMessageBoxAccepted(object sender, SelectedEventArgs e)
+		private void ConfirmExitMessageBoxAccepted(object sender, ClickEventArgs e)
 		{
 #if !__IOS__
 			ScreenManager.Game.Exit();
@@ -104,7 +105,7 @@ namespace MenuBuddySample
 		/// <summary>
 		/// Ignore the cancel message from the main menu
 		/// </summary>
-		public override void Cancelled(object obj, SelectedEventArgs e)
+		public override void Cancelled(object obj, ClickEventArgs e)
 		{
 			//do nothing here!
 		}

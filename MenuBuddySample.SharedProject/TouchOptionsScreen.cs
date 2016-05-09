@@ -48,20 +48,18 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Left, ResolutionBuddy.Resolution.ScreenArea.Bottom);
 
-			var label = new Label("butt")
+			var label = new Label("butt", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 
-			label = new Label("nuts")
+			label = new Label("nuts", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 			AddItem(stack);
 
@@ -73,20 +71,18 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Center.X, ResolutionBuddy.Resolution.ScreenArea.Bottom);
 
-			label = new Label("butt")
+			label = new Label("butt", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 
-			label = new Label("nuts")
+			label = new Label("nuts", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 			AddItem(stack);
 
@@ -98,20 +94,18 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Right, ResolutionBuddy.Resolution.ScreenArea.Bottom);
 
-			label = new Label("butt")
+			label = new Label("butt", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 
-			label = new Label("nuts")
+			label = new Label("nuts", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 			AddItem(stack);
 
@@ -123,20 +117,18 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Left, ResolutionBuddy.Resolution.ScreenArea.Center.Y);
 
-			label = new Label("butt")
+			label = new Label("butt", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 
-			label = new Label("nuts")
+			label = new Label("nuts", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 			AddItem(stack);
 
@@ -148,20 +140,18 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Right, ResolutionBuddy.Resolution.ScreenArea.Center.Y);
 
-			label = new Label("butt")
+			label = new Label("butt", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 
-			label = new Label("nuts")
+			label = new Label("nuts", FontSize.Small)
 			{
-				Style = DefaultStyles.Instance().MessageBoxStyle,
+				HasOutline = true,
+				HasBackground = false
 			};
-			label.Style.HasOutline = true;
-			label.Style.HasBackground = false;
 			stack.AddItem(label);
 			AddItem(stack);
 		}
@@ -187,7 +177,7 @@ namespace MenuBuddySample
 				Vertical = VerticalAlignment.Center,
 				Position = point.ToPoint()
 			};
-			potion.Style.Transition = TransitionType.PopBottom;
+			potion.Transition = new WipeTransitionObject(TransitionWipeType.PopBottom);
 			AddItem(potion);
 
 			ScreenManager.AddScreen(new ErrorScreen(new Exception("Butt\nNuts")));

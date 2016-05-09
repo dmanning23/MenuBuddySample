@@ -15,9 +15,10 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.0": {
+      "FontBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
+          "GameTimer": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
           "SharpDX": "[3.0.0]",
@@ -47,7 +48,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.0": {
+      "HadoukInput/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -62,11 +63,12 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.1": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -75,7 +77,7 @@
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.0": {
+      "MatrixExtensions/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -84,7 +86,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
@@ -93,7 +95,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.1": {
+      "MenuBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -395,7 +397,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.0.1678": {
+      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
         "type": "package",
         "compile": {
           "lib/netcore/MonoGame.Framework.dll": {}
@@ -404,13 +406,14 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
-      "MouseBuddy/1.0.0": {
+      "MouseBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
           "InputHelper": "1.0.1",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "StateMachineBuddy": "1.0.0"
         },
         "compile": {
@@ -436,7 +439,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.0": {
+      "RandomExtensions.dmanning23/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -448,7 +451,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.0": {
+      "ResolutionBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -458,7 +461,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll": {}
@@ -2128,12 +2131,13 @@
           }
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -2162,7 +2166,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.1": {
+      "XmlBuddy/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2190,9 +2194,10 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.0": {
+      "FontBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
+          "GameTimer": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
           "SharpDX": "[3.0.0]",
@@ -2222,7 +2227,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.0": {
+      "HadoukInput/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2237,11 +2242,12 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.1": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -2250,7 +2256,7 @@
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.0": {
+      "MatrixExtensions/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -2259,7 +2265,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
@@ -2268,7 +2274,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.1": {
+      "MenuBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2519,7 +2525,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.0.1678": {
+      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
         "type": "package",
         "compile": {
           "lib/netcore/MonoGame.Framework.dll": {}
@@ -2528,13 +2534,14 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
-      "MouseBuddy/1.0.0": {
+      "MouseBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
           "InputHelper": "1.0.1",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "StateMachineBuddy": "1.0.0"
         },
         "compile": {
@@ -2560,7 +2567,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.0": {
+      "RandomExtensions.dmanning23/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -2572,7 +2579,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.0": {
+      "ResolutionBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -2582,7 +2589,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll": {}
@@ -4169,12 +4176,13 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -4203,7 +4211,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.1": {
+      "XmlBuddy/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4231,9 +4239,10 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.0": {
+      "FontBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
+          "GameTimer": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
           "SharpDX": "[3.0.0]",
@@ -4263,7 +4272,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.0": {
+      "HadoukInput/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4278,11 +4287,12 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.1": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -4291,7 +4301,7 @@
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.0": {
+      "MatrixExtensions/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -4300,7 +4310,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
@@ -4309,7 +4319,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.1": {
+      "MenuBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4558,7 +4568,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.0.1678": {
+      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
         "type": "package",
         "compile": {
           "lib/netcore/MonoGame.Framework.dll": {}
@@ -4567,13 +4577,14 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
-      "MouseBuddy/1.0.0": {
+      "MouseBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
           "InputHelper": "1.0.1",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "StateMachineBuddy": "1.0.0"
         },
         "compile": {
@@ -4599,7 +4610,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.0": {
+      "RandomExtensions.dmanning23/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -4611,7 +4622,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.0": {
+      "ResolutionBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -4621,7 +4632,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll": {}
@@ -6167,12 +6178,13 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -6201,7 +6213,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.1": {
+      "XmlBuddy/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -6229,9 +6241,10 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.0": {
+      "FontBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
+          "GameTimer": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
           "SharpDX": "[3.0.0]",
@@ -6261,7 +6274,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.0": {
+      "HadoukInput/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -6276,11 +6289,12 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.1": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -6289,7 +6303,7 @@
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.0": {
+      "MatrixExtensions/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -6298,7 +6312,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
@@ -6307,7 +6321,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.1": {
+      "MenuBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -6564,7 +6578,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.0.1678": {
+      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
         "type": "package",
         "compile": {
           "lib/netcore/MonoGame.Framework.dll": {}
@@ -6573,13 +6587,14 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
-      "MouseBuddy/1.0.0": {
+      "MouseBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
           "InputHelper": "1.0.1",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "StateMachineBuddy": "1.0.0"
         },
         "compile": {
@@ -6605,7 +6620,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.0": {
+      "RandomExtensions.dmanning23/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -6617,7 +6632,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.0": {
+      "ResolutionBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -6627,7 +6642,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll": {}
@@ -8217,12 +8232,13 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -8251,7 +8267,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.1": {
+      "XmlBuddy/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -8279,9 +8295,10 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.0": {
+      "FontBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
+          "GameTimer": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
           "SharpDX": "[3.0.0]",
@@ -8311,7 +8328,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.0": {
+      "HadoukInput/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -8326,11 +8343,12 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.1": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -8339,7 +8357,7 @@
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.0": {
+      "MatrixExtensions/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -8348,7 +8366,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
@@ -8357,7 +8375,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.1": {
+      "MenuBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -8606,7 +8624,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.0.1678": {
+      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
         "type": "package",
         "compile": {
           "lib/netcore/MonoGame.Framework.dll": {}
@@ -8615,13 +8633,14 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
-      "MouseBuddy/1.0.0": {
+      "MouseBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
           "InputHelper": "1.0.1",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "StateMachineBuddy": "1.0.0"
         },
         "compile": {
@@ -8647,7 +8666,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.0": {
+      "RandomExtensions.dmanning23/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -8659,7 +8678,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.0": {
+      "ResolutionBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -8669,7 +8688,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll": {}
@@ -10215,12 +10234,13 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -10249,7 +10269,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.1": {
+      "XmlBuddy/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -10277,9 +10297,10 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.0": {
+      "FontBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
+          "GameTimer": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
           "SharpDX": "[3.0.0]",
@@ -10309,7 +10330,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.0": {
+      "HadoukInput/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -10324,11 +10345,12 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.1": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -10337,7 +10359,7 @@
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.0": {
+      "MatrixExtensions/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -10346,7 +10368,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
@@ -10355,7 +10377,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.1": {
+      "MenuBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -10612,7 +10634,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.0.1678": {
+      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
         "type": "package",
         "compile": {
           "lib/netcore/MonoGame.Framework.dll": {}
@@ -10621,13 +10643,14 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
-      "MouseBuddy/1.0.0": {
+      "MouseBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
           "InputHelper": "1.0.1",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "StateMachineBuddy": "1.0.0"
         },
         "compile": {
@@ -10653,7 +10676,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.0": {
+      "RandomExtensions.dmanning23/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -10665,7 +10688,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.0": {
+      "ResolutionBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -10675,7 +10698,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll": {}
@@ -12265,12 +12288,13 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -12299,7 +12323,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.1": {
+      "XmlBuddy/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12327,9 +12351,10 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.0": {
+      "FontBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
+          "GameTimer": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
           "SharpDX": "[3.0.0]",
@@ -12359,7 +12384,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.0": {
+      "HadoukInput/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12374,11 +12399,12 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "InputHelper/1.0.1": {
+      "InputHelper/1.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-          "MonoGame.Framework.WindowsUniversal": "3.5.0"
+          "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0"
         },
         "compile": {
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
@@ -12387,7 +12413,7 @@
           "lib/uap10.0/InputHelper.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.0": {
+      "MatrixExtensions/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -12396,7 +12422,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
@@ -12405,7 +12431,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.1": {
+      "MenuBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12654,7 +12680,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.0.1678": {
+      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
         "type": "package",
         "compile": {
           "lib/netcore/MonoGame.Framework.dll": {}
@@ -12663,13 +12689,14 @@
           "lib/netcore/MonoGame.Framework.dll": {}
         }
       },
-      "MouseBuddy/1.0.0": {
+      "MouseBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
           "InputHelper": "1.0.1",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "StateMachineBuddy": "1.0.0"
         },
         "compile": {
@@ -12695,7 +12722,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.0": {
+      "RandomExtensions.dmanning23/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -12707,7 +12734,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.0": {
+      "ResolutionBuddy/1.0.1": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -12717,7 +12744,7 @@
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]",
-          "Vector2Extensions": "1.0.0"
+          "Vector2Extensions": "1.0.1"
         },
         "compile": {
           "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll": {}
@@ -14263,12 +14290,13 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "TouchScreenBuddy/1.0.0": {
+      "TouchScreenBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "InputHelper": "1.0.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
           "MonoGame.Framework.WindowsUniversal": "3.5.0",
+          "PrimitiveBuddy": "1.0.0",
           "SharpDX": "[3.0.0]",
           "SharpDX.Direct2D1": "[3.0.0]",
           "SharpDX.Direct3D11": "[3.0.0]"
@@ -14297,7 +14325,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.1": {
+      "XmlBuddy/1.0.2": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -14330,11 +14358,11 @@
         "lib/uap10.0/FilenameBuddy.WindowsUniversal.pdb"
       ]
     },
-    "FontBuddy/1.0.0": {
-      "sha512": "h4HzylZfk+5k0eZgXOaIwwji/XRoGZYJJBnRR5pV71ejKZtNTSg+gY9KQHVZz/N0mGr1GK3UVzrMkvIQWkveDA==",
+    "FontBuddy/1.0.1": {
+      "sha512": "NAcQYSq/qKyfHrjG84ZeD17WLFOtpSMqRHjvH/OZCOrax30K9C52yHoxyMfh+5l8Qp8meUEfa75Dw/lF/F4Bwg==",
       "type": "package",
       "files": [
-        "FontBuddy.1.0.0.nupkg.sha512",
+        "FontBuddy.1.0.1.nupkg.sha512",
         "FontBuddy.nuspec",
         "lib/MonoAndroid10/FontBuddyLib.Android.dll",
         "lib/MonoAndroid10/FontBuddyLib.Android.pdb",
@@ -14362,11 +14390,11 @@
         "lib/uap10.0/GameTimer.WindowsUniversal.pdb"
       ]
     },
-    "HadoukInput/1.0.0": {
-      "sha512": "xy3qXRylTnEt59CKwX3peAN1VotKmAO2BcY+SEhDMsATkO5Ai3lxMoUX/9sMENIH3qKikfzBBBr89bwP8sf5oA==",
+    "HadoukInput/1.0.2": {
+      "sha512": "IekWy2awL7i4jSL/VPLN9raeyvzYzP1OVl5DUYh/8AgGQnv6Wz7MDo615yxxnDZiYv+H+LkJTF6PJfoEEv0bfw==",
       "type": "package",
       "files": [
-        "HadoukInput.1.0.0.nupkg.sha512",
+        "HadoukInput.1.0.2.nupkg.sha512",
         "HadoukInput.nuspec",
         "lib/MonoAndroid10/HadoukInput.Android.dll",
         "lib/MonoAndroid10/HadoukInput.Android.pdb",
@@ -14378,11 +14406,11 @@
         "lib/uap10.0/HadoukInput.WindowsUniversal.pdb"
       ]
     },
-    "InputHelper/1.0.1": {
-      "sha512": "8ByPR3vGgyCA4GgZLiYfTKyz6jqtVCSAs22iTa5eIIyp9o4lTo8RrY9QnfmuvPW7afl5OmPVtulYy6/UjigqYQ==",
+    "InputHelper/1.0.11": {
+      "sha512": "4ZAsiFPI1K5MnTFHvsA9h0u9YpW4sXmg8FY7aGWrichChoE79wL0449m6xIu2QmWXPj3qV9yoF7kGgMAOkHkZw==",
       "type": "package",
       "files": [
-        "InputHelper.1.0.1.nupkg.sha512",
+        "InputHelper.1.0.11.nupkg.sha512",
         "InputHelper.nuspec",
         "lib/MonoAndroid10/InputHelper.Android.dll",
         "lib/MonoAndroid10/InputHelper.Android.pdb",
@@ -14394,11 +14422,11 @@
         "lib/uap10.0/InputHelper.WindowsUniversal.pdb"
       ]
     },
-    "MatrixExtensions/1.0.0": {
-      "sha512": "ffXqfZhbBqmvTYVkrkbGrxaK9LrQOCsTrPJRbPq2NvNyAMHJYj/9vLK+fHf/W1S3oYRyEmGK2+v1zUARa/1MkA==",
+    "MatrixExtensions/1.0.1": {
+      "sha512": "Hzk/58vDlK5qGGKlU/sMm72HJv2hrrQvLP7Nw29iq0BKCpHlwAgq8SEepGeDHdq52MUJDy5jHj1CcoDCAQqcaQ==",
       "type": "package",
       "files": [
-        "MatrixExtensions.1.0.0.nupkg.sha512",
+        "MatrixExtensions.1.0.1.nupkg.sha512",
         "MatrixExtensions.nuspec",
         "lib/MonoAndroid10/MatrixExtensions.Android.dll",
         "lib/MonoAndroid10/MatrixExtensions.Android.pdb",
@@ -14410,11 +14438,11 @@
         "lib/uap10.0/MatrixExtensions.WindowsUniversal.pdb"
       ]
     },
-    "MenuBuddy/1.0.1": {
-      "sha512": "OrgX3SAhM6eM34WHvp5wPCoO+XUlI+cUUNLJkYhUuwlLDWzwl+ux5xF7KaidckxOWKKqMa8Uc9DZhY/bebu0Pg==",
+    "MenuBuddy/1.0.6": {
+      "sha512": "dONhZV1zPiorP2LL6++Sr3lgFa+DkjJZny3T/hDf+a32YosTma90/+XdtM8RJU14MIvBJa04ATSAopdQqJxUhQ==",
       "type": "package",
       "files": [
-        "MenuBuddy.1.0.1.nupkg.sha512",
+        "MenuBuddy.1.0.6.nupkg.sha512",
         "MenuBuddy.nuspec",
         "lib/MonoAndroid10/MenuBuddy.Android.dll",
         "lib/MonoAndroid10/MenuBuddy.Android.pdb",
@@ -15010,11 +15038,11 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "MonoGame.Framework.WindowsUniversal/3.5.0.1678": {
-      "sha512": "ZkxpPKeVCcDM0k5V+i5yyPryad12aOzYeGIVL/CewYCRAYYCVgX+/P9BsRYi4GPS8zBfbRgPIqdrcBYNz4rSog==",
+    "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
+      "sha512": "ocVIHOGX1PA4HdvpI3/uKQVp6x1CPbmKvSdpk2bmpqHZ2PIOKqp5BjbkbOwKbZp8IdaLNbWQjG3Aonkezn2eBQ==",
       "type": "package",
       "files": [
-        "MonoGame.Framework.WindowsUniversal.3.5.0.1678.nupkg.sha512",
+        "MonoGame.Framework.WindowsUniversal.3.5.1.1679.nupkg.sha512",
         "MonoGame.Framework.WindowsUniversal.nuspec",
         "lib/netcore/MonoGame.Framework.dll",
         "lib/netcore/MonoGame.Framework.pri",
@@ -15030,11 +15058,11 @@
         "readme.txt"
       ]
     },
-    "MouseBuddy/1.0.0": {
-      "sha512": "XfHV6iRlmda1FJrhWBy8jaPYHQ5Ky3pW5NOGbBYjtkVS2DP2BuHjQFK/xnA0YyeIKjE29OUW7uX/fbLF9teqQQ==",
+    "MouseBuddy/1.0.4": {
+      "sha512": "erR8Yxd3reYwmjOTdOiZzTW0Hz0ZhHKQ4hN+dqRB5EP7tWO0JmvZcANKCnRz46yoRf8k5wEeDBPaVC0frurL5Q==",
       "type": "package",
       "files": [
-        "MouseBuddy.1.0.0.nupkg.sha512",
+        "MouseBuddy.1.0.4.nupkg.sha512",
         "MouseBuddy.nuspec",
         "lib/MonoAndroid10/MouseBuddy.Android.dll",
         "lib/MonoAndroid10/MouseBuddy.Android.pdb",
@@ -15062,11 +15090,11 @@
         "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.pdb"
       ]
     },
-    "RandomExtensions.dmanning23/1.0.0": {
-      "sha512": "mv08W4mY0XUWyJyMI1PssDtikuFs7vy3wK42wg42bSUPOp8C93/bLnK7zLikohmqC0RY3yTAkMTkgl5ZGyXiqQ==",
+    "RandomExtensions.dmanning23/1.0.2": {
+      "sha512": "22haYdcKXA3NTlf00q8cNizCxlLPtCdFNaEmq7M8wB6uy3MgMwGMsGqb2jyIyY0oAsuaqq666bsbuPQ48z5Owg==",
       "type": "package",
       "files": [
-        "RandomExtensions.dmanning23.1.0.0.nupkg.sha512",
+        "RandomExtensions.dmanning23.1.0.2.nupkg.sha512",
         "RandomExtensions.dmanning23.nuspec",
         "lib/MonoAndroid10/RandomExtensions.Android.dll",
         "lib/MonoAndroid10/RandomExtensions.Android.pdb",
@@ -15078,11 +15106,11 @@
         "lib/uap10.0/RandomExtensions.WindowsUniversal.pdb"
       ]
     },
-    "ResolutionBuddy/1.0.0": {
-      "sha512": "E6hW/ZcoC5Dzq1rwSqd+kMksj8lYVoBzo24afou8rQ8yTyXeQYpds9dAHByy/JooexB4Jy5FyfYHJvZWK3Pl+g==",
+    "ResolutionBuddy/1.0.1": {
+      "sha512": "GHSebG6nngfD9uGYkZobPcIGmeTJDoOprXlJ9yYiKjYW1p7ZTcJDrOt7Z/Kx4fn8EYSdebNiNC4WIV8X4CfAPA==",
       "type": "package",
       "files": [
-        "ResolutionBuddy.1.0.0.nupkg.sha512",
+        "ResolutionBuddy.1.0.1.nupkg.sha512",
         "ResolutionBuddy.nuspec",
         "lib/MonoAndroid10/ResolutionBuddy.Android.dll",
         "lib/MonoAndroid10/ResolutionBuddy.Android.pdb",
@@ -17840,11 +17868,11 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "TouchScreenBuddy/1.0.0": {
-      "sha512": "i6gDcAgF9J9+RfX3/kR+htQ8gPvwFnwvsNMAdJ/NLJuvbeLC/QmX6HhHnWGmgd9b6lMzZ5MSkwV4lU7PtVhdBQ==",
+    "TouchScreenBuddy/1.0.3": {
+      "sha512": "je4zcFQVr9c48bwuJRI3CSIA9v3fBPkNF6nYUffJ9qxxwW8NvOCROWZxb0gL02+ONrA3ZbPfcABNPZ5brfCrLQ==",
       "type": "package",
       "files": [
-        "TouchScreenBuddy.1.0.0.nupkg.sha512",
+        "TouchScreenBuddy.1.0.3.nupkg.sha512",
         "TouchScreenBuddy.nuspec",
         "lib/MonoAndroid10/TouchScreenBuddy.Android.dll",
         "lib/MonoAndroid10/TouchScreenBuddy.Android.pdb",
@@ -17872,11 +17900,11 @@
         "lib/uap10.0/Vector2Extensions.WindowsUniversal.pdb"
       ]
     },
-    "XmlBuddy/1.0.1": {
-      "sha512": "u25jTVFSgj3ouP3x+ogtFRZ7JIWKj8EK2KCqSDY3X0UShG0iZHvUrNWPSwYxKhevs/8IX/1OSickmfDHoWd4ig==",
+    "XmlBuddy/1.0.2": {
+      "sha512": "wFt6mFpJxFcqCyRmoG5PiSiSjZsQQlNmlVfCqMQ9K/VG7ShxZKmFzwvaf35avdJ4fgvhUFJU4tTF5ck4KCgw2Q==",
       "type": "package",
       "files": [
-        "XmlBuddy.1.0.1.nupkg.sha512",
+        "XmlBuddy.1.0.2.nupkg.sha512",
         "XmlBuddy.nuspec",
         "lib/MonoAndroid10/XmlBuddy.Android.dll",
         "lib/MonoAndroid10/XmlBuddy.Android.pdb",
@@ -17892,11 +17920,22 @@
   "projectFileDependencyGroups": {
     "": [
       "FilenameBuddy >= 1.0.2",
+      "FontBuddy >= 1.0.1",
       "GameTimer >= 1.0.1",
-      "HadoukInput >= 1.0.0",
-      "InputHelper >= 1.0.1",
-      "MenuBuddy >= 1.0.1",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0"
+      "HadoukInput >= 1.0.2",
+      "InputHelper >= 1.0.11",
+      "MatrixExtensions >= 1.0.1",
+      "MenuBuddy >= 1.0.6",
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
+      "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
+      "MouseBuddy >= 1.0.4",
+      "PrimitiveBuddy >= 1.0.0",
+      "RandomExtensions.dmanning23 >= 1.0.2",
+      "ResolutionBuddy >= 1.0.1",
+      "StateMachineBuddy >= 1.0.0",
+      "TouchScreenBuddy >= 1.0.3",
+      "Vector2Extensions >= 1.0.1",
+      "XmlBuddy >= 1.0.2"
     ],
     "UAP,Version=v10.0": []
   }
