@@ -21,7 +21,7 @@ namespace MenuBuddySample
 		{
 			//FullScreen = true;
 
-			var debug = new DebugInputComponent(this);
+			var debug = new DebugInputComponent(this, ResolutionBuddy.Resolution.TransformationMatrix);
 		}
 
 		protected override void LoadContent()
