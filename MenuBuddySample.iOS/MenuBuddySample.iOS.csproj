@@ -107,7 +107,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FontBuddyLib.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontBuddy.1.0.1\lib\Xamarin.iOS10\FontBuddyLib.iOS.dll</HintPath>
+      <HintPath>..\packages\FontBuddy.1.0.4\lib\Xamarin.iOS10\FontBuddyLib.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="GameTimer.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -119,7 +119,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="InputHelper.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\InputHelper.1.0.11\lib\Xamarin.iOS10\InputHelper.iOS.dll</HintPath>
+      <HintPath>..\packages\InputHelper.1.0.15\lib\Xamarin.iOS10\InputHelper.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MatrixExtensions.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -127,7 +127,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MenuBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MenuBuddy.1.0.7\lib\Xamarin.iOS10\MenuBuddy.iOS.dll</HintPath>
+      <HintPath>..\packages\MenuBuddy.1.0.19\lib\Xamarin.iOS10\MenuBuddy.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MonoGame.Framework, Version=3.5.1.1679, Culture=neutral, processorArchitecture=MSIL">
@@ -135,7 +135,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MouseBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MouseBuddy.1.0.4\lib\Xamarin.iOS10\MouseBuddy.iOS.dll</HintPath>
+      <HintPath>..\packages\MouseBuddy.1.0.6\lib\Xamarin.iOS10\MouseBuddy.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PrimitiveBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -147,7 +147,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="ResolutionBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ResolutionBuddy.1.0.1\lib\Xamarin.iOS10\ResolutionBuddy.iOS.dll</HintPath>
+      <HintPath>..\packages\ResolutionBuddy.1.0.2\lib\Xamarin.iOS10\ResolutionBuddy.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="StateMachineBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -158,7 +158,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="TouchScreenBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TouchScreenBuddy.1.0.3\lib\Xamarin.iOS10\TouchScreenBuddy.iOS.dll</HintPath>
+      <HintPath>..\packages\TouchScreenBuddy.1.0.5\lib\Xamarin.iOS10\TouchScreenBuddy.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Vector2Extensions.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -167,7 +167,7 @@
     </Reference>
     <Reference Include="Xamarin.iOS" />
     <Reference Include="XmlBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\XmlBuddy.1.0.2\lib\Xamarin.iOS10\XmlBuddy.iOS.dll</HintPath>
+      <HintPath>..\packages\XmlBuddy.1.0.4\lib\Xamarin.iOS10\XmlBuddy.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

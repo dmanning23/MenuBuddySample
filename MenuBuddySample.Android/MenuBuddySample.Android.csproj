@@ -51,7 +51,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FontBuddyLib.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontBuddy.1.0.1\lib\MonoAndroid10\FontBuddyLib.Android.dll</HintPath>
+      <HintPath>..\packages\FontBuddy.1.0.4\lib\MonoAndroid10\FontBuddyLib.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="GameTimer.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -63,11 +63,15 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="InputHelper.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\InputHelper.1.0.14\lib\MonoAndroid10\InputHelper.Android.dll</HintPath>
+      <HintPath>..\packages\InputHelper.1.0.15\lib\MonoAndroid10\InputHelper.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MatrixExtensions.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MatrixExtensions.1.0.1\lib\MonoAndroid10\MatrixExtensions.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MenuBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MenuBuddy.1.0.19\lib\MonoAndroid10\MenuBuddy.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Mono.Android" />
@@ -76,7 +80,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MouseBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MouseBuddy.1.0.5\lib\MonoAndroid10\MouseBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\MouseBuddy.1.0.6\lib\MonoAndroid10\MouseBuddy.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
@@ -102,7 +106,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="TouchScreenBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TouchScreenBuddy.1.0.4\lib\MonoAndroid10\TouchScreenBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\TouchScreenBuddy.1.0.5\lib\MonoAndroid10\TouchScreenBuddy.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Vector2Extensions.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -110,7 +114,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="XmlBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\XmlBuddy.1.0.2\lib\MonoAndroid10\XmlBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\XmlBuddy.1.0.4\lib\MonoAndroid10\XmlBuddy.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -141,12 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\MenuBuddy\MenuBuddy\MenuBuddy.Android\MenuBuddy.Android.csproj">
-      <Project>{de97136f-6234-414f-bc5b-ed80e96c1d61}</Project>
-      <Name>MenuBuddy.Android</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="..\MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
