@@ -27,6 +27,14 @@ namespace MenuBuddySample
 			base.LoadContent();
 
 			// Create our menu entries.
+
+			var dragdrop = new MenuEntry("DragDropButton Test");
+			dragdrop.OnClick += ((object sender, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new DragDropScreen(), null);
+			});
+			AddMenuEntry(dragdrop);
+
 			var startGame = new MenuEntry("Slider Test");
 			startGame.OnClick += ((object sender, ClickEventArgs e) =>
 			{

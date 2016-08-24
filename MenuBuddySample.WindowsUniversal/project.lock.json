@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -15,7 +15,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.4": {
+      "FontBuddy/1.0.8": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -95,11 +95,11 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.19": {
+      "MenuBuddy/1.0.30": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
-          "FontBuddy": "1.0.0",
+          "FontBuddy": "1.0.8",
           "GameTimer": "1.0.0",
           "HadoukInput": "1.0.0",
           "InputHelper": "1.0.1",
@@ -2166,7 +2166,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.4": {
+      "XmlBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2182,7 +2182,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -2194,7 +2194,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.4": {
+      "FontBuddy/1.0.8": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -2274,11 +2274,11 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.19": {
+      "MenuBuddy/1.0.30": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
-          "FontBuddy": "1.0.0",
+          "FontBuddy": "1.0.8",
           "GameTimer": "1.0.0",
           "HadoukInput": "1.0.0",
           "InputHelper": "1.0.1",
@@ -4211,7 +4211,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.4": {
+      "XmlBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4227,7 +4227,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -4239,7 +4239,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.4": {
+      "FontBuddy/1.0.8": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -4319,11 +4319,11 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.19": {
+      "MenuBuddy/1.0.30": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
-          "FontBuddy": "1.0.0",
+          "FontBuddy": "1.0.8",
           "GameTimer": "1.0.0",
           "HadoukInput": "1.0.0",
           "InputHelper": "1.0.1",
@@ -6213,7 +6213,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.4": {
+      "XmlBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -6229,7 +6229,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -6241,7 +6241,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.4": {
+      "FontBuddy/1.0.8": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -6321,11 +6321,11 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.19": {
+      "MenuBuddy/1.0.30": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
-          "FontBuddy": "1.0.0",
+          "FontBuddy": "1.0.8",
           "GameTimer": "1.0.0",
           "HadoukInput": "1.0.0",
           "InputHelper": "1.0.1",
@@ -8267,7 +8267,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.4": {
+      "XmlBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -8283,7 +8283,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -8295,7 +8295,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.4": {
+      "FontBuddy/1.0.8": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -8375,11 +8375,11 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.19": {
+      "MenuBuddy/1.0.30": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
-          "FontBuddy": "1.0.0",
+          "FontBuddy": "1.0.8",
           "GameTimer": "1.0.0",
           "HadoukInput": "1.0.0",
           "InputHelper": "1.0.1",
@@ -10269,7 +10269,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.4": {
+      "XmlBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -10285,7 +10285,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -10297,7 +10297,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.4": {
+      "FontBuddy/1.0.8": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -10377,11 +10377,11 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.19": {
+      "MenuBuddy/1.0.30": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
-          "FontBuddy": "1.0.0",
+          "FontBuddy": "1.0.8",
           "GameTimer": "1.0.0",
           "HadoukInput": "1.0.0",
           "InputHelper": "1.0.1",
@@ -12323,7 +12323,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.4": {
+      "XmlBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12339,7 +12339,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "FilenameBuddy/1.0.2": {
+      "FilenameBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -12351,7 +12351,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FontBuddy/1.0.4": {
+      "FontBuddy/1.0.8": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -12431,11 +12431,11 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.19": {
+      "MenuBuddy/1.0.30": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
-          "FontBuddy": "1.0.0",
+          "FontBuddy": "1.0.8",
           "GameTimer": "1.0.0",
           "HadoukInput": "1.0.0",
           "InputHelper": "1.0.1",
@@ -14325,7 +14325,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.4": {
+      "XmlBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -14342,11 +14342,11 @@
     }
   },
   "libraries": {
-    "FilenameBuddy/1.0.2": {
-      "sha512": "LIi0aT1JeQx0UveBSXk+hf2oLdH0b9y4GfM7kbO6uLJoGOpRQhxOCPFitDHc8ewFmdR2yX7fCnyq+tOLwd0Kdg==",
+    "FilenameBuddy/1.0.3": {
+      "sha512": "1tFJley50a9gEVyNDKHkNt9PVbfkfXbhf4P3OCmJVntUVmTzffpjhWKPyANfRJHi9Qd5vmLe+cjg8hOSnDjOhA==",
       "type": "package",
       "files": [
-        "FilenameBuddy.1.0.2.nupkg.sha512",
+        "FilenameBuddy.1.0.3.nupkg.sha512",
         "FilenameBuddy.nuspec",
         "lib/MonoAndroid10/FilenameBuddy.Android.dll",
         "lib/MonoAndroid10/FilenameBuddy.Android.pdb",
@@ -14358,11 +14358,11 @@
         "lib/uap10.0/FilenameBuddy.WindowsUniversal.pdb"
       ]
     },
-    "FontBuddy/1.0.4": {
-      "sha512": "9OMa+Vy68Re75pDrWPMBS2curyv7aEk86LAHe7zSzhEi/ZY1z+42hrBvaYrLqNVPfEiQUsj5GTTVIKkqbnlpsw==",
+    "FontBuddy/1.0.8": {
+      "sha512": "HM9ho1Lql/ATe4P97V1/r1VSRNECCRIisVGGfS5+PiCdPkknDG1pwYqnad65gIkXwYx+ucF1Qg7y5HTfNbE6OQ==",
       "type": "package",
       "files": [
-        "FontBuddy.1.0.4.nupkg.sha512",
+        "FontBuddy.1.0.8.nupkg.sha512",
         "FontBuddy.nuspec",
         "lib/MonoAndroid10/FontBuddyLib.Android.dll",
         "lib/MonoAndroid10/FontBuddyLib.Android.pdb",
@@ -14438,11 +14438,11 @@
         "lib/uap10.0/MatrixExtensions.WindowsUniversal.pdb"
       ]
     },
-    "MenuBuddy/1.0.19": {
-      "sha512": "sqqAIRq+TTkf08v1z1rxR68NdKFwa2rtp37pONZIfMr3xlQGhbue7Kkfg9HHn4jOyOSv4p+LJ6R7MT2xwQONng==",
+    "MenuBuddy/1.0.30": {
+      "sha512": "LM0+em1v3w615i6LriDLUggRP/PVptmPsSDJuAWkTr0Z6nDg/CShEVM5XHsZkZ+B/Ja9lGYmtuQzYjaUwMCvDA==",
       "type": "package",
       "files": [
-        "MenuBuddy.1.0.19.nupkg.sha512",
+        "MenuBuddy.1.0.30.nupkg.sha512",
         "MenuBuddy.nuspec",
         "lib/MonoAndroid10/MenuBuddy.Android.dll",
         "lib/MonoAndroid10/MenuBuddy.Android.pdb",
@@ -17900,11 +17900,11 @@
         "lib/uap10.0/Vector2Extensions.WindowsUniversal.pdb"
       ]
     },
-    "XmlBuddy/1.0.4": {
-      "sha512": "ObH38ZqMHvV7sn3gC6AM56Tp8g786vRV8AWNGIbg8cjc23AfynxqZl9vs4/EwM16PD7ydk1kwIF5pt9j8oDf2g==",
+    "XmlBuddy/1.0.6": {
+      "sha512": "tA82k/7u/ESedzrmTM32aXj0CWow+lmwVjs/9DDFGxdoA66Cg5tTe7KE92RZTK/wqqtO+pocdDR49RUS6GGNhg==",
       "type": "package",
       "files": [
-        "XmlBuddy.1.0.4.nupkg.sha512",
+        "XmlBuddy.1.0.6.nupkg.sha512",
         "XmlBuddy.nuspec",
         "lib/MonoAndroid10/XmlBuddy.Android.dll",
         "lib/MonoAndroid10/XmlBuddy.Android.pdb",
@@ -17919,13 +17919,13 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "FilenameBuddy >= 1.0.2",
-      "FontBuddy >= 1.0.4",
+      "FilenameBuddy >= 1.0.3",
+      "FontBuddy >= 1.0.8",
       "GameTimer >= 1.0.1",
       "HadoukInput >= 1.0.2",
       "InputHelper >= 1.0.15",
       "MatrixExtensions >= 1.0.1",
-      "MenuBuddy >= 1.0.19",
+      "MenuBuddy >= 1.0.30",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
       "MouseBuddy >= 1.0.6",
@@ -17935,7 +17935,7 @@
       "StateMachineBuddy >= 1.0.0",
       "TouchScreenBuddy >= 1.0.5",
       "Vector2Extensions >= 1.0.1",
-      "XmlBuddy >= 1.0.4"
+      "XmlBuddy >= 1.0.6"
     ],
     "UAP,Version=v10.0": []
   }
