@@ -38,6 +38,8 @@ namespace MenuBuddySample.Android
 			global::InputHelper.Android.Resource.String.Hello = global::MenuBuddySample.Android.Resource.String.Hello;
 			global::MatrixExtensions.Android.Resource.String.ApplicationName = global::MenuBuddySample.Android.Resource.String.ApplicationName;
 			global::MatrixExtensions.Android.Resource.String.Hello = global::MenuBuddySample.Android.Resource.String.Hello;
+			global::MenuBuddy.Android.Resource.String.ApplicationName = global::MenuBuddySample.Android.Resource.String.ApplicationName;
+			global::MenuBuddy.Android.Resource.String.Hello = global::MenuBuddySample.Android.Resource.String.Hello;
 			global::MouseBuddy.Android.Resource.String.ApplicationName = global::MenuBuddySample.Android.Resource.String.ApplicationName;
 			global::MouseBuddy.Android.Resource.String.Hello = global::MenuBuddySample.Android.Resource.String.Hello;
 			global::PrimitiveBuddy.Android.Resource.String.ApplicationName = global::MenuBuddySample.Android.Resource.String.ApplicationName;
