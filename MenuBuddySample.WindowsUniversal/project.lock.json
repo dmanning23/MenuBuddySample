@@ -95,7 +95,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.31": {
+      "MenuBuddy/1.0.32": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2274,7 +2274,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.31": {
+      "MenuBuddy/1.0.32": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4319,7 +4319,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.31": {
+      "MenuBuddy/1.0.32": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -6321,7 +6321,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.31": {
+      "MenuBuddy/1.0.32": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -8375,7 +8375,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.31": {
+      "MenuBuddy/1.0.32": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -10377,7 +10377,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.31": {
+      "MenuBuddy/1.0.32": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12431,7 +12431,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.31": {
+      "MenuBuddy/1.0.32": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -14438,11 +14438,11 @@
         "lib/uap10.0/MatrixExtensions.WindowsUniversal.pdb"
       ]
     },
-    "MenuBuddy/1.0.31": {
-      "sha512": "/3YCozK5I4TjYoOfAJoUrCwcFGgxvje+UvwZ8qG/tR97Z5G8f8he6JVDI2LwWNjas+M0uqvT+HmsQ5nFoOU/6Q==",
+    "MenuBuddy/1.0.32": {
+      "sha512": "P+QT1ULUwUFlB0pdAombm/y+TfPA1qOBoMIeG+WstAehSPavlHe5eUTx/Nqu7/4bO4Vc05W3w/MGe1B2E7K4/g==",
       "type": "package",
       "files": [
-        "MenuBuddy.1.0.31.nupkg.sha512",
+        "MenuBuddy.1.0.32.nupkg.sha512",
         "MenuBuddy.nuspec",
         "lib/MonoAndroid10/MenuBuddy.Android.dll",
         "lib/MonoAndroid10/MenuBuddy.Android.pdb",
@@ -17925,7 +17925,7 @@
       "HadoukInput >= 1.0.2",
       "InputHelper >= 1.0.16",
       "MatrixExtensions >= 1.0.1",
-      "MenuBuddy >= 1.0.31",
+      "MenuBuddy >= 1.0.32",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
       "MouseBuddy >= 1.0.7",
