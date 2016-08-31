@@ -15,7 +15,7 @@ namespace MenuBuddySample
 	public class Game1 : MouseGame
 #endif
 	{
-#region Methods
+		#region Methods
 
 		public Game1()
 		{
@@ -52,7 +52,7 @@ namespace MenuBuddySample
 			return new IScreen[] { new BackgroundScreen(), new MainMenuScreen() };
 		}
 
-#endregion //Methods
+		#endregion //Methods
 	}
 }
 
