@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BackgroundScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DragDropScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DropdownTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EmptyMenuScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainMenuScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OptionsScreen.cs" />
