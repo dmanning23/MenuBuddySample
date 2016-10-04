@@ -95,7 +95,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.32": {
+      "MenuBuddy/1.0.35": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -451,7 +451,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -2274,7 +2274,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.32": {
+      "MenuBuddy/1.0.35": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2579,7 +2579,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -4319,7 +4319,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.32": {
+      "MenuBuddy/1.0.35": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4622,7 +4622,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -6321,7 +6321,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.32": {
+      "MenuBuddy/1.0.35": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -6632,7 +6632,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -8375,7 +8375,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.32": {
+      "MenuBuddy/1.0.35": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -8678,7 +8678,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -10377,7 +10377,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.32": {
+      "MenuBuddy/1.0.35": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -10688,7 +10688,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -12431,7 +12431,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.32": {
+      "MenuBuddy/1.0.35": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12734,7 +12734,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.2": {
+      "ResolutionBuddy/1.0.3": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -14375,7 +14375,7 @@
       ]
     },
     "GameTimer/1.0.1": {
-      "sha512": "6IhhpOqoe+JGY79fw0O8igx1RwAj3fZgCtpcwfaPMZdTkekUhPFkVZH3PKSyJuNGS5wNzqqr9ZrB/n52NfspQw==",
+      "sha512": "WrYJ7brNlAneO3L2eCd4ExsBNhcmEb2+NwLlTbhY1Eh8ivb0P2QiX1xnzzy4Ww24kXzYV+/EGla6g1ZMy9X2LA==",
       "type": "package",
       "files": [
         "GameTimer.1.0.1.nupkg.sha512",
@@ -14438,11 +14438,11 @@
         "lib/uap10.0/MatrixExtensions.WindowsUniversal.pdb"
       ]
     },
-    "MenuBuddy/1.0.32": {
-      "sha512": "P+QT1ULUwUFlB0pdAombm/y+TfPA1qOBoMIeG+WstAehSPavlHe5eUTx/Nqu7/4bO4Vc05W3w/MGe1B2E7K4/g==",
+    "MenuBuddy/1.0.35": {
+      "sha512": "28nsawTu6znluQ/CkcaNcAsDqfriMzb7QljrkeZzrW5xseXCX4bM+pujIp46q9yJMvAC5Ru8Lco09yO33AKpiQ==",
       "type": "package",
       "files": [
-        "MenuBuddy.1.0.32.nupkg.sha512",
+        "MenuBuddy.1.0.35.nupkg.sha512",
         "MenuBuddy.nuspec",
         "lib/MonoAndroid10/MenuBuddy.Android.dll",
         "lib/MonoAndroid10/MenuBuddy.Android.pdb",
@@ -15106,11 +15106,11 @@
         "lib/uap10.0/RandomExtensions.WindowsUniversal.pdb"
       ]
     },
-    "ResolutionBuddy/1.0.2": {
-      "sha512": "xyRgyyxMiCW8n5SwlH2PSa2BxGyD1X28P5fuw9lzMlrsacSuLoHu8hCrJEBT5w9+0YCJp9qSnRZVC9MKRXpATg==",
+    "ResolutionBuddy/1.0.3": {
+      "sha512": "IpeWsjYAGPzdxtcHLy1mwwX8bSxGNQmtDH2a1GDjZ3fmtgeuXO+ECsZNBG1z8IsdqhObCQemocjehJfg/PiCnQ==",
       "type": "package",
       "files": [
-        "ResolutionBuddy.1.0.2.nupkg.sha512",
+        "ResolutionBuddy.1.0.3.nupkg.sha512",
         "ResolutionBuddy.nuspec",
         "lib/MonoAndroid10/ResolutionBuddy.Android.dll",
         "lib/MonoAndroid10/ResolutionBuddy.Android.pdb",
@@ -17925,13 +17925,13 @@
       "HadoukInput >= 1.0.2",
       "InputHelper >= 1.0.17",
       "MatrixExtensions >= 1.0.1",
-      "MenuBuddy >= 1.0.32",
+      "MenuBuddy >= 1.0.35",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
       "MouseBuddy >= 1.0.7",
       "PrimitiveBuddy >= 1.0.0",
       "RandomExtensions.dmanning23 >= 1.0.2",
-      "ResolutionBuddy >= 1.0.2",
+      "ResolutionBuddy >= 1.0.3",
       "StateMachineBuddy >= 1.0.0",
       "TouchScreenBuddy >= 1.0.6",
       "Vector2Extensions >= 1.0.1",
