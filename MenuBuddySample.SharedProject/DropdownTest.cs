@@ -35,7 +35,7 @@ namespace MenuBuddySample
 					Size = new Vector2(350, 64)
 				};
 
-				var label = new Label(word)
+				var label = new Label(word, FontSize.Small)
 				{
 					Vertical = VerticalAlignment.Center,
 					Horizontal = HorizontalAlignment.Center

@@ -19,7 +19,7 @@ namespace MenuBuddySample
 			AddCancelButton();
 
 			//create the tree layout
-			var tree = new Tree<string>(this)
+			var tree = new Tree(this)
 			{
 				Vertical = VerticalAlignment.Center,
 				Horizontal = HorizontalAlignment.Center,
@@ -32,7 +32,7 @@ namespace MenuBuddySample
 			foreach (var word in words)
 			{
 				//create the item
-				var treeItem = new TreeItem<string>(tree, null);
+				var treeItem = new TreeItem(tree, null);
 
 				//just add a label for now
 				var label = new Label(word)
@@ -46,7 +46,7 @@ namespace MenuBuddySample
 				foreach (var subWord in subWords)
 				{
 					//create the item
-					var subTreeItem = new TreeItem<string>(tree, treeItem);
+					var subTreeItem = new TreeItem(tree, treeItem);
 
 					//just add a label for now
 					var subLabel = new Label(subWord)
