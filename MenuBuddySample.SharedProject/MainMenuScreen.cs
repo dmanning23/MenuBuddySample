@@ -59,7 +59,7 @@ namespace MenuBuddySample
 			var entry = new MenuEntry("Scroll Test");
 			entry.OnClick += ((object obj, ClickEventArgs e) =>
 			{
-				ScreenManager.AddScreen(new ScrollOptionsScreen());
+				ScreenManager.AddScreen(new BigScrollTest());
 			});
 			AddMenuEntry(entry);
 

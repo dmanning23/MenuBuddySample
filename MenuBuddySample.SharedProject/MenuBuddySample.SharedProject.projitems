@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)BackgroundScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BigScrollTest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DragDropScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DropdownTest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EmptyMenuScreen.cs" />
