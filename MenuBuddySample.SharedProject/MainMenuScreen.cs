@@ -28,6 +28,13 @@ namespace MenuBuddySample
 
 			// Create our menu entries.
 
+			var numEditTest = new MenuEntry("NumEdit Test");
+			numEditTest.OnClick += ((object sender, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new NumEditTest(), null);
+			});
+			AddMenuEntry(numEditTest);
+
 			var dragdrop = new MenuEntry("DragDropButton Test");
 			dragdrop.OnClick += ((object sender, ClickEventArgs e) =>
 			{

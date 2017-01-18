@@ -3,30 +3,30 @@
     "FilenameBuddy": "1.0.3",
     "FontBuddy": "1.0.8",
     "GameTimer": "1.0.1",
-    "HadoukInput": "1.0.2",
+    "HadoukInput": "1.0.3",
     "InputHelper": "1.0.17",
     "MatrixExtensions": "1.0.1",
-    "MenuBuddy": "1.0.42",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
+    "MenuBuddy": "1.0.46",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "MonoGame.Framework.WindowsUniversal": "3.5.1.1679",
     "MouseBuddy": "1.0.7",
     "PrimitiveBuddy": "1.0.0",
     "RandomExtensions.dmanning23": "1.0.2",
     "ResolutionBuddy": "1.0.3",
-    "StateMachineBuddy": "1.0.0",
+    "StateMachineBuddy": "1.0.1",
     "TouchScreenBuddy": "1.0.6",
     "Vector2Extensions": "1.0.1",
-    "XmlBuddy": "1.0.6"
+    "XmlBuddy": "1.0.13"
   },
   "frameworks": {
     "uap10.0": {}
   },
   "runtimes": {
-    "win10-arm": { },
-    "win10-arm-aot": { },
-    "win10-x86": { },
-    "win10-x86-aot": { },
-    "win10-x64": { },
-    "win10-x64-aot": { }
+    "win10-arm": {},
+    "win10-arm-aot": {},
+    "win10-x86": {},
+    "win10-x86-aot": {},
+    "win10-x64": {},
+    "win10-x64-aot": {}
   }
 }

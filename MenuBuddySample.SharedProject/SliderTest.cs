@@ -35,16 +35,16 @@ namespace MenuBuddySample
 			{
 				Min = 100,
 				Max = 200,
-				HandlePosition = 150,
+				SliderPosition = 150,
 				HandleSize = new Vector2(64, 64),
 				Size = new Vector2(512, 128)
 			};
 			stack.AddItem(_slider);
 
-			_label.Text = _slider.HandlePosition.ToString();
+			_label.Text = _slider.SliderPosition.ToString();
 
 			_slider.OnDrag += ((obj, e) => {
-				_label.Text = _slider.HandlePosition.ToString();
+				_label.Text = _slider.SliderPosition.ToString();
 			});
 
 			AddItem(stack);

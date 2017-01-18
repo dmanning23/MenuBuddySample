@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuBuddySample.WindowsUniversal", "MenuBuddySample.WindowsUniversal\MenuBuddySample.WindowsUniversal.csproj", "{930947D3-8593-409D-AFF8-D826A190CFEA}"
 EndProject
@@ -15,11 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuBuddySample.DesktopGL",
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{3c5b8db9-625b-4816-8030-edf61b8afd6b}*SharedItemsImports = 4
-		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{cb2f6293-4f9e-41a3-a4ec-412b64ca7f99}*SharedItemsImports = 4
-		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{930947d3-8593-409d-aff8-d826a190cfea}*SharedItemsImports = 4
-		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{698a58ed-326f-437c-ad53-641928fd0244}*SharedItemsImports = 4
 		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{19628cb8-b87d-471c-bdf1-c640a73ffe67}*SharedItemsImports = 13
+		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{3c5b8db9-625b-4816-8030-edf61b8afd6b}*SharedItemsImports = 4
+		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{698a58ed-326f-437c-ad53-641928fd0244}*SharedItemsImports = 4
+		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{930947d3-8593-409d-aff8-d826a190cfea}*SharedItemsImports = 4
+		MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems*{cb2f6293-4f9e-41a3-a4ec-412b64ca7f99}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
