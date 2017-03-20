@@ -88,7 +88,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MenuBuddy.DesktopGL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MenuBuddy.1.0.46\lib\net451\MenuBuddy.DesktopGL.dll</HintPath>
+      <HintPath>..\packages\MenuBuddy.1.0.54\lib\net451\MenuBuddy.DesktopGL.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MonoGame.Framework, Version=3.5.1.1679, Culture=neutral, processorArchitecture=MSIL">
@@ -130,7 +130,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Vector2Extensions.DesktopGL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vector2Extensions.1.0.1\lib\net451\Vector2Extensions.DesktopGL.dll</HintPath>
+      <HintPath>..\packages\Vector2Extensions.1.0.3\lib\net451\Vector2Extensions.DesktopGL.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="XmlBuddy.DesktopGL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

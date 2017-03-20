@@ -56,19 +56,19 @@ namespace MenuBuddySample
 			});
 			AddMenuEntry(optionsMenuEntry);
 
-			var touchMenuEntry = new MenuEntry("Dropdown Test");
-			touchMenuEntry.OnClick += ((obj, e) =>
-			{
-				ScreenManager.AddScreen(new DropdownTest(), null);
-			});
-			AddMenuEntry(touchMenuEntry);
+			//var touchMenuEntry = new MenuEntry("Dropdown Test");
+			//touchMenuEntry.OnClick += ((obj, e) =>
+			//{
+			//	ScreenManager.AddScreen(new DropdownTest(), null);
+			//});
+			//AddMenuEntry(touchMenuEntry);
 
-			var entry = new MenuEntry("Scroll Test");
-			entry.OnClick += ((object obj, ClickEventArgs e) =>
-			{
-				ScreenManager.AddScreen(new BigScrollTest());
-			});
-			AddMenuEntry(entry);
+			//var entry = new MenuEntry("Scroll Test");
+			//entry.OnClick += ((object obj, ClickEventArgs e) =>
+			//{
+			//	ScreenManager.AddScreen(new BigScrollTest());
+			//});
+			//AddMenuEntry(entry);
 
 			var exitMenuEntry = new MenuEntry("Exit");
 			exitMenuEntry.OnClick += OnExit;
