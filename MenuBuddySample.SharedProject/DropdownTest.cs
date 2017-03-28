@@ -42,7 +42,7 @@ namespace MenuBuddySample
 				};
 
 				dropitem.AddItem(label);
-				drop.DropdownList.Add(dropitem);
+				drop.AddDropdownItem(dropitem);
 			}
 
 			drop.SelectedItem = "buttnuts";

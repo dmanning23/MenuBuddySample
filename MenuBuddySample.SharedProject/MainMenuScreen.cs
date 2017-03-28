@@ -42,12 +42,12 @@ namespace MenuBuddySample
 			});
 			AddMenuEntry(dragdrop);
 
-			var startGame = new MenuEntry("Slider Test");
-			startGame.OnClick += ((object sender, ClickEventArgs e) =>
-			{
-				ScreenManager.AddScreen(new SliderTest(), null);
-			});
-			AddMenuEntry(startGame);
+			//var startGame = new MenuEntry("Slider Test");
+			//startGame.OnClick += ((object sender, ClickEventArgs e) =>
+			//{
+			//	ScreenManager.AddScreen(new SliderTest(), null);
+			//});
+			//AddMenuEntry(startGame);
 
 			var optionsMenuEntry = new MenuEntry("Tree Test");
 			optionsMenuEntry.OnClick += ((obj, e) =>
@@ -56,19 +56,26 @@ namespace MenuBuddySample
 			});
 			AddMenuEntry(optionsMenuEntry);
 
-			var touchMenuEntry = new MenuEntry("Dropdown Test");
-			touchMenuEntry.OnClick += ((obj, e) =>
-			{
-				ScreenManager.AddScreen(new DropdownTest(), null);
-			});
-			AddMenuEntry(touchMenuEntry);
+			//var touchMenuEntry = new MenuEntry("Dropdown Test");
+			//touchMenuEntry.OnClick += ((obj, e) =>
+			//{
+			//	ScreenManager.AddScreen(new DropdownTest(), null);
+			//});
+			//AddMenuEntry(touchMenuEntry);
 
-			var entry = new MenuEntry("Scroll Test");
-			entry.OnClick += ((object obj, ClickEventArgs e) =>
+			//var entry = new MenuEntry("Scroll Test");
+			//entry.OnClick += ((object obj, ClickEventArgs e) =>
+			//{
+			//	ScreenManager.AddScreen(new BigScrollTest());
+			//});
+			//AddMenuEntry(entry);
+
+			var entry1 = new MenuEntry("Text Edit Test");
+			entry1.OnClick += ((object obj, ClickEventArgs e) =>
 			{
-				ScreenManager.AddScreen(new BigScrollTest());
+				ScreenManager.AddScreen(new TextEditTest());
 			});
-			AddMenuEntry(entry);
+			AddMenuEntry(entry1);
 
 			var exitMenuEntry = new MenuEntry("Exit");
 			exitMenuEntry.OnClick += OnExit;

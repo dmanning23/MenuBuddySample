@@ -94,7 +94,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.46": {
+      "MenuBuddy/1.0.55": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2411,7 +2411,7 @@
           "lib/uap10.0/TouchScreenBuddy.WindowsUniversal.dll": {}
         }
       },
-      "Vector2Extensions/1.0.1": {
+      "Vector2Extensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -2536,7 +2536,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.46": {
+      "MenuBuddy/1.0.55": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4961,7 +4961,7 @@
           "lib/uap10.0/TouchScreenBuddy.WindowsUniversal.dll": {}
         }
       },
-      "Vector2Extensions/1.0.1": {
+      "Vector2Extensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -5086,7 +5086,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.46": {
+      "MenuBuddy/1.0.55": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -7550,7 +7550,7 @@
           "lib/uap10.0/TouchScreenBuddy.WindowsUniversal.dll": {}
         }
       },
-      "Vector2Extensions/1.0.1": {
+      "Vector2Extensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -7675,7 +7675,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.46": {
+      "MenuBuddy/1.0.55": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -10109,7 +10109,7 @@
           "lib/uap10.0/TouchScreenBuddy.WindowsUniversal.dll": {}
         }
       },
-      "Vector2Extensions/1.0.1": {
+      "Vector2Extensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -10234,7 +10234,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.46": {
+      "MenuBuddy/1.0.55": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12707,7 +12707,7 @@
           "lib/uap10.0/TouchScreenBuddy.WindowsUniversal.dll": {}
         }
       },
-      "Vector2Extensions/1.0.1": {
+      "Vector2Extensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -12832,7 +12832,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.46": {
+      "MenuBuddy/1.0.55": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -15266,7 +15266,7 @@
           "lib/uap10.0/TouchScreenBuddy.WindowsUniversal.dll": {}
         }
       },
-      "Vector2Extensions/1.0.1": {
+      "Vector2Extensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -15391,7 +15391,7 @@
           "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll": {}
         }
       },
-      "MenuBuddy/1.0.46": {
+      "MenuBuddy/1.0.55": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -17864,7 +17864,7 @@
           "lib/uap10.0/TouchScreenBuddy.WindowsUniversal.dll": {}
         }
       },
-      "Vector2Extensions/1.0.1": {
+      "Vector2Extensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -17996,10 +17996,10 @@
         "lib/uap10.0/MatrixExtensions.WindowsUniversal.pdb"
       ]
     },
-    "MenuBuddy/1.0.46": {
-      "sha512": "H5j6WBrb0c0dvjmV9N9G2O4U08xlLtbeNswdJWOLxcP+ywMm349g8KLsjykeU9+OGKBlFRGal/ZhXn1MH6gEpw==",
+    "MenuBuddy/1.0.55": {
+      "sha512": "rvVQ7IjGqfgxoIMgr5PKL17ZpYENHVirtMWsPXm2m/l2VvNjJeGCc97hVsmKB71iE7uER12Spg3PXC0k2NWLYQ==",
       "type": "package",
-      "path": "menubuddy/1.0.46",
+      "path": "menubuddy/1.0.55",
       "files": [
         "lib/MonoAndroid10/MenuBuddy.Android.dll",
         "lib/MonoAndroid10/MenuBuddy.Android.pdb",
@@ -18009,7 +18009,7 @@
         "lib/net451/MenuBuddy.DesktopGL.pdb",
         "lib/uap10.0/MenuBuddy.WindowsUniversal.dll",
         "lib/uap10.0/MenuBuddy.WindowsUniversal.pdb",
-        "menubuddy.1.0.46.nupkg.sha512",
+        "menubuddy.1.0.55.nupkg.sha512",
         "menubuddy.nuspec"
       ]
     },
@@ -24344,12 +24344,11 @@
         "lib/uap10.0/TouchScreenBuddy.WindowsUniversal.pdb"
       ]
     },
-    "Vector2Extensions/1.0.1": {
-      "sha512": "TOJFGeNhfeqUX93OdYXiro8bprLIy5NaqMPBEed72lJuISQe/3a8PZkucmA64IqyfcjWoHdT+QY7yXRhe933aA==",
+    "Vector2Extensions/1.0.3": {
+      "sha512": "usIFjdSKxBSzoDPSM0syhBqpRHV4iTlvIeHzLdI/iNf713+3B9UO+nju21sDvHb6DZjlGzCRH24j54qlzepPkQ==",
       "type": "package",
+      "path": "vector2extensions/1.0.3",
       "files": [
-        "Vector2Extensions.1.0.1.nupkg.sha512",
-        "Vector2Extensions.nuspec",
         "lib/MonoAndroid10/Vector2Extensions.Android.dll",
         "lib/MonoAndroid10/Vector2Extensions.Android.pdb",
         "lib/Xamarin.iOS10/Vector2Extensions.iOS.dll",
@@ -24357,7 +24356,9 @@
         "lib/net451/Vector2Extensions.DesktopGL.dll",
         "lib/net451/Vector2Extensions.DesktopGL.pdb",
         "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll",
-        "lib/uap10.0/Vector2Extensions.WindowsUniversal.pdb"
+        "lib/uap10.0/Vector2Extensions.WindowsUniversal.pdb",
+        "vector2extensions.1.0.3.nupkg.sha512",
+        "vector2extensions.nuspec"
       ]
     },
     "XmlBuddy/1.0.13": {
@@ -24386,7 +24387,7 @@
       "HadoukInput >= 1.0.3",
       "InputHelper >= 1.0.17",
       "MatrixExtensions >= 1.0.1",
-      "MenuBuddy >= 1.0.46",
+      "MenuBuddy >= 1.0.55",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
       "MouseBuddy >= 1.0.7",
@@ -24395,7 +24396,7 @@
       "ResolutionBuddy >= 1.0.3",
       "StateMachineBuddy >= 1.0.1",
       "TouchScreenBuddy >= 1.0.6",
-      "Vector2Extensions >= 1.0.1",
+      "Vector2Extensions >= 1.0.3",
       "XmlBuddy >= 1.0.13"
     ],
     "UAP,Version=v10.0": []

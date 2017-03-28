@@ -4,9 +4,9 @@ using ResolutionBuddy;
 
 namespace MenuBuddySample
 {
-	public class NumEditTest : WidgetScreen
+	public class TextEditTest : WidgetScreen
 	{
-		public NumEditTest() : base("NumEditTest")
+		public TextEditTest() : base("TextEditTest")
 		{
 			CoverOtherScreens = true;
 			CoveredByOtherScreens = true;
@@ -19,7 +19,7 @@ namespace MenuBuddySample
 			AddCancelButton();
 
 			//create the dropdown widget
-			var drop = new NumEdit();
+			var drop = new TextEdit();
 			drop.Vertical = VerticalAlignment.Center;
 			drop.Horizontal = HorizontalAlignment.Right;
 			drop.Size = new Vector2(350, 128);

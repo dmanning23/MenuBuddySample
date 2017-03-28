@@ -50,8 +50,6 @@ namespace MenuBuddySample.Android
 			global::StateMachineBuddy.Android.Resource.String.Hello = global::MenuBuddySample.Android.Resource.String.Hello;
 			global::TouchScreenBuddy.Android.Resource.String.ApplicationName = global::MenuBuddySample.Android.Resource.String.ApplicationName;
 			global::TouchScreenBuddy.Android.Resource.String.Hello = global::MenuBuddySample.Android.Resource.String.Hello;
-			global::Vector2Extensions.Android.Resource.String.ApplicationName = global::MenuBuddySample.Android.Resource.String.ApplicationName;
-			global::Vector2Extensions.Android.Resource.String.Hello = global::MenuBuddySample.Android.Resource.String.Hello;
 			global::XmlBuddy.Android.Resource.String.ApplicationName = global::MenuBuddySample.Android.Resource.String.ApplicationName;
 			global::XmlBuddy.Android.Resource.String.Hello = global::MenuBuddySample.Android.Resource.String.Hello;
 		}
