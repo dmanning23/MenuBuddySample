@@ -51,7 +51,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FontBuddyLib.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontBuddy.1.0.8\lib\MonoAndroid10\FontBuddyLib.Android.dll</HintPath>
+      <HintPath>..\packages\FontBuddy.1.0.11\lib\MonoAndroid10\FontBuddyLib.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="GameTimer.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -59,7 +59,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="HadoukInput.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\HadoukInput.1.0.3\lib\MonoAndroid10\HadoukInput.Android.dll</HintPath>
+      <HintPath>..\packages\HadoukInput.1.0.4\lib\MonoAndroid10\HadoukInput.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="InputHelper.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -67,30 +67,37 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MatrixExtensions.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MatrixExtensions.1.0.1\lib\MonoAndroid10\MatrixExtensions.Android.dll</HintPath>
+      <HintPath>..\packages\MatrixExtensions.1.0.2\lib\MonoAndroid10\MatrixExtensions.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MenuBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MenuBuddy.1.0.58\lib\MonoAndroid10\MenuBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\MenuBuddy.1.0.63\lib\MonoAndroid10\MenuBuddy.Android.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.5.1.1679, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.Android.3.5.1.1679\lib\MonoAndroid\MonoGame.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MouseBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MouseBuddy.1.0.7\lib\MonoAndroid10\MouseBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\MouseBuddy.1.0.8\lib\MonoAndroid10\MouseBuddy.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="OpenTK-1.0" />
     <Reference Include="PrimitiveBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PrimitiveBuddy.1.0.1\lib\MonoAndroid10\PrimitiveBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\PrimitiveBuddy.1.0.3\lib\MonoAndroid10\PrimitiveBuddy.Android.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="RandomExtensions.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.2\lib\MonoAndroid10\RandomExtensions.Android.dll</HintPath>
+      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.3\lib\MonoAndroid10\RandomExtensions.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ResolutionBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ResolutionBuddy.1.0.4\lib\MonoAndroid10\ResolutionBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\ResolutionBuddy.1.0.8\lib\MonoAndroid10\ResolutionBuddy.Android.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="StateMachineBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\StateMachineBuddy.1.0.1\lib\MonoAndroid10\StateMachineBuddy.Android.dll</HintPath>
@@ -105,11 +112,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Vector2Extensions.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vector2Extensions.1.0.3\lib\MonoAndroid10\Vector2Extensions.Android.dll</HintPath>
+      <HintPath>..\packages\Vector2Extensions.1.0.6\lib\MonoAndroid10\Vector2Extensions.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="XmlBuddy.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\XmlBuddy.1.0.13\lib\MonoAndroid10\XmlBuddy.Android.dll</HintPath>
+      <HintPath>..\packages\XmlBuddy.1.0.14\lib\MonoAndroid10\XmlBuddy.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -119,6 +126,45 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\bin\Android\AButton.xnb" />
+    <None Include="Content\bin\Android\AlphaGradient.xnb" />
+    <None Include="Content\bin\Android\BackButton.xnb" />
+    <None Include="Content\bin\Android\Cancel.xnb" />
+    <None Include="Content\bin\Android\Collapse.xnb" />
+    <None Include="Content\bin\Android\Expand.xnb" />
+    <None Include="Content\bin\Android\Fonts\ArialBlack10.xnb" />
+    <None Include="Content\bin\Android\Fonts\ArialBlack14.xnb" />
+    <None Include="Content\bin\Android\Fonts\ArialBlack24.xnb" />
+    <None Include="Content\bin\Android\Fonts\ArialBlack36.xnb" />
+    <None Include="Content\bin\Android\Fonts\ArialBlack48.xnb" />
+    <None Include="Content\bin\Android\Fonts\ArialBlack48Spanish.xnb" />
+    <None Include="Content\bin\Android\Fonts\ArialBlack72.xnb" />
+    <None Include="Content\bin\Android\Fonts\ArialBlack96.xnb" />
+    <None Include="Content\bin\Android\gradient.xnb" />
+    <None Include="Content\bin\Android\hourglass.xnb" />
+    <None Include="Content\bin\Android\MenuMove.xnb" />
+    <None Include="Content\bin\Android\MenuSelect.xnb" />
+    <None Include="Content\bin\Android\Potion3a.xnb" />
+    <None Include="Content\obj\Android\.mgcontent" />
+    <None Include="Content\obj\Android\AButton.mgcontent" />
+    <None Include="Content\obj\Android\AlphaGradient.mgcontent" />
+    <None Include="Content\obj\Android\BackButton.mgcontent" />
+    <None Include="Content\obj\Android\Cancel.mgcontent" />
+    <None Include="Content\obj\Android\Collapse.mgcontent" />
+    <None Include="Content\obj\Android\Expand.mgcontent" />
+    <None Include="Content\obj\Android\Fonts\ArialBlack10.mgcontent" />
+    <None Include="Content\obj\Android\Fonts\ArialBlack14.mgcontent" />
+    <None Include="Content\obj\Android\Fonts\ArialBlack24.mgcontent" />
+    <None Include="Content\obj\Android\Fonts\ArialBlack36.mgcontent" />
+    <None Include="Content\obj\Android\Fonts\ArialBlack48.mgcontent" />
+    <None Include="Content\obj\Android\Fonts\ArialBlack48Spanish.mgcontent" />
+    <None Include="Content\obj\Android\Fonts\ArialBlack72.mgcontent" />
+    <None Include="Content\obj\Android\Fonts\ArialBlack96.mgcontent" />
+    <None Include="Content\obj\Android\gradient.mgcontent" />
+    <None Include="Content\obj\Android\hourglass.mgcontent" />
+    <None Include="Content\obj\Android\MenuMove.mgcontent" />
+    <None Include="Content\obj\Android\MenuSelect.mgcontent" />
+    <None Include="Content\obj\Android\Potion3a.mgcontent" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
@@ -140,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\XmlBuddy.Content.dll" />
   </ItemGroup>
   <Import Project="..\MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />

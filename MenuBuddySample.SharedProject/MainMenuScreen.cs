@@ -28,6 +28,13 @@ namespace MenuBuddySample
 
 			// Create our menu entries.
 
+			var contextMenuTest = new MenuEntry("Context Menu Test");
+			contextMenuTest.OnClick += ((object sender, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new ContextMenuTest());
+			});
+			AddMenuEntry(contextMenuTest);
+
 			var numEditTest = new MenuEntry("NumEdit Test");
 			numEditTest.OnClick += ((object sender, ClickEventArgs e) =>
 			{
@@ -63,12 +70,19 @@ namespace MenuBuddySample
 			//});
 			//AddMenuEntry(touchMenuEntry);
 
-			//var entry = new MenuEntry("Scroll Test");
-			//entry.OnClick += ((object obj, ClickEventArgs e) =>
-			//{
-			//	ScreenManager.AddScreen(new BigScrollTest());
-			//});
-			//AddMenuEntry(entry);
+			var entry = new MenuEntry("Scroll Test");
+			entry.OnClick += ((object obj, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new ScrollOptionsScreen());
+			});
+			AddMenuEntry(entry);
+
+			var entry2 = new MenuEntry("Big Scroll Test");
+			entry2.OnClick += ((object obj, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new BigScrollTest());
+			});
+			AddMenuEntry(entry2);
 
 			var entry1 = new MenuEntry("Text Edit Test");
 			entry1.OnClick += ((object obj, ClickEventArgs e) =>

@@ -63,7 +63,8 @@ namespace MenuBuddySample
 					Vertical = VerticalAlignment.Center,
 					HasOutline = true,
 					HasBackground = false,
-					Layer = i				
+					Layer = i,
+					//Size = new Vector2(label.Rect.Width, label.Rect.Height)
 				};
 				button.Size = new Vector2(label.Rect.Width, label.Rect.Height);
 				button.AddItem(label);
