@@ -19,7 +19,7 @@ namespace MenuBuddySample
 		{
 			base.LoadContent();
 			
-			var image = new Image(ScreenManager.Game.Content.Load<Texture2D>("Potion3a"))
+			var image = new Image(Content.Load<Texture2D>("Potion3a"))
 			{
 				Horizontal = HorizontalAlignment.Center,
 				Vertical = VerticalAlignment.Center
@@ -36,7 +36,7 @@ namespace MenuBuddySample
 
 			AddItem(button);
 
-			image = new Image(ScreenManager.Game.Content.Load<Texture2D>("hourglass"))
+			image = new Image(Content.Load<Texture2D>("hourglass"))
 			{
 				Horizontal = HorizontalAlignment.Center,
 				Vertical = VerticalAlignment.Center
@@ -52,6 +52,8 @@ namespace MenuBuddySample
 			button.AddItem(image);
 
 			AddItem(button);
+
+			AddCancelButton();
 		}
 	}
 }

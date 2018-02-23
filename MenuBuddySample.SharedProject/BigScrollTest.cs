@@ -16,9 +16,7 @@ namespace MenuBuddySample
 		public override void LoadContent()
 		{
 			base.LoadContent();
-
-			AddCancelButton();
-
+			
 			var stack = GetStack();
 
 			//create the scroll layout and add the stack
@@ -36,6 +34,8 @@ namespace MenuBuddySample
 			var stack1 = GetStack();
 			stack1.Position = new Point(Resolution.ScreenArea.Center.X / 2, Resolution.ScreenArea.Top);
 			AddItem(stack1);
+
+			AddCancelButton();
 		}
 
 		private StackLayout GetStack()
@@ -51,7 +51,7 @@ namespace MenuBuddySample
 			for (int i = 100; i < 120; i++)
 			{
 				var text = i.ToString();
-				var label = new Label(text, FontSize.Small)
+				var label = new Label(text, Content, FontSize.Small)
 				{
 					Horizontal = HorizontalAlignment.Center,
 					Vertical = VerticalAlignment.Center,

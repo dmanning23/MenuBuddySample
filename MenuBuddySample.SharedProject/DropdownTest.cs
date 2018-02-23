@@ -19,7 +19,7 @@ namespace MenuBuddySample
 			AddCancelButton();
 
 			//create the dropdown widget
-			var drop = new Dropdown<string>();
+			var drop = new Dropdown<string>(this);
 			drop.Vertical = VerticalAlignment.Center;
 			drop.Horizontal = HorizontalAlignment.Center;
 			drop.Size = new Vector2(350, 128);
@@ -35,7 +35,7 @@ namespace MenuBuddySample
 					Size = new Vector2(350, 64)
 				};
 
-				var label = new Label(word, FontSize.Small)
+				var label = new Label(word, Content, FontSize.Small)
 				{
 					Vertical = VerticalAlignment.Center,
 					Horizontal = HorizontalAlignment.Center

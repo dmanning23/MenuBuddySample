@@ -36,7 +36,7 @@ namespace MenuBuddySample
 			AddCancelButton();
 
 			//add the scroll options
-			var scroll = new MenuEntry("Scroll Up");
+			var scroll = new MenuEntry("Scroll Up", Content);
 			scroll.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
@@ -45,7 +45,7 @@ namespace MenuBuddySample
 			});
 			AddMenuEntry(scroll);
 
-			scroll = new MenuEntry("Scroll Down");
+			scroll = new MenuEntry("Scroll Down", Content);
 			scroll.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
@@ -54,7 +54,7 @@ namespace MenuBuddySample
             });
 			AddMenuEntry(scroll);
 
-			scroll = new MenuEntry("Scroll Left");
+			scroll = new MenuEntry("Scroll Left", Content);
 			scroll.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
@@ -63,7 +63,7 @@ namespace MenuBuddySample
 			});
 			AddMenuEntry(scroll);
 
-			scroll = new MenuEntry("Scroll Right");
+			scroll = new MenuEntry("Scroll Right", Content);
 			scroll.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				var scrollPos = _layout.ScrollPosition;
@@ -80,7 +80,7 @@ namespace MenuBuddySample
 				Vertical = VerticalAlignment.Top
 			};
 
-			var label = new Label("buttnuts", FontSize.Small);
+			var label = new Label("buttnuts", Content, FontSize.Small);
 			var button = new RelativeLayoutButton()
 			{
 				HasOutline = true,
@@ -94,7 +94,7 @@ namespace MenuBuddySample
 			});
 			stack.AddItem(button);
 
-			label = new Label("catpants", FontSize.Small);
+			label = new Label("catpants", Content, FontSize.Small);
 			button = new RelativeLayoutButton()
 			{
 				HasOutline = true,
@@ -108,7 +108,7 @@ namespace MenuBuddySample
 			});
 			stack.AddItem(button);
 
-			label = new Label("foo", FontSize.Small);
+			label = new Label("foo", Content, FontSize.Small);
 			button = new RelativeLayoutButton()
 			{
 				HasOutline = true,
@@ -122,7 +122,7 @@ namespace MenuBuddySample
 			});
 			stack.AddItem(button);
 
-			label = new Label("bleh", FontSize.Small);
+			label = new Label("bleh", Content, FontSize.Small);
 			button = new RelativeLayoutButton()
 			{
 				HasOutline = true,

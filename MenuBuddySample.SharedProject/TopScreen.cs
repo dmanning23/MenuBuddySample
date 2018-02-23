@@ -55,7 +55,7 @@ namespace MenuBuddySample
 		public override void LoadContent()
 		{
 			base.LoadContent();
-			_text.Font = ScreenManager.Game.Content.Load<SpriteFont>(@"Fonts\ArialBlack48");
+			_text.Font = Content.Load<SpriteFont>(@"Fonts\ArialBlack48");
 
 			_textSize = _text.Font.MeasureString(Message);
 		}

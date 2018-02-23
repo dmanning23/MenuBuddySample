@@ -28,21 +28,28 @@ namespace MenuBuddySample
 
 			// Create our menu entries.
 
-			var contextMenuTest = new MenuEntry("Context Menu Test");
+			var entry2 = new MenuEntry("Big Scroll Test", Content);
+			entry2.OnClick += ((object obj, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new BigScrollTest());
+			});
+			AddMenuEntry(entry2);
+
+			var contextMenuTest = new MenuEntry("Context Menu Test", Content);
 			contextMenuTest.OnClick += ((object sender, ClickEventArgs e) =>
 			{
-				ScreenManager.AddScreen(new ContextMenuTest());
+				LoadingScreen.Load(ScreenManager, true, null, new ContextMenuTest());
 			});
 			AddMenuEntry(contextMenuTest);
 
-			var numEditTest = new MenuEntry("NumEdit Test");
+			var numEditTest = new MenuEntry("NumEdit Test", Content);
 			numEditTest.OnClick += ((object sender, ClickEventArgs e) =>
 			{
 				ScreenManager.AddScreen(new NumEditTest(), null);
 			});
 			AddMenuEntry(numEditTest);
 
-			var dragdrop = new MenuEntry("DragDropButton Test");
+			var dragdrop = new MenuEntry("DragDropButton Test", Content);
 			dragdrop.OnClick += ((object sender, ClickEventArgs e) =>
 			{
 				ScreenManager.AddScreen(new DragDropScreen(), null);
@@ -56,7 +63,7 @@ namespace MenuBuddySample
 			//});
 			//AddMenuEntry(startGame);
 
-			var optionsMenuEntry = new MenuEntry("Tree Test");
+			var optionsMenuEntry = new MenuEntry("Tree Test", Content);
 			optionsMenuEntry.OnClick += ((obj, e) =>
 			{
 				ScreenManager.AddScreen(new TreeTest(), null);
@@ -70,28 +77,23 @@ namespace MenuBuddySample
 			//});
 			//AddMenuEntry(touchMenuEntry);
 
-			var entry = new MenuEntry("Scroll Test");
+			var entry = new MenuEntry("Scroll Test", Content);
 			entry.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				ScreenManager.AddScreen(new ScrollOptionsScreen());
 			});
 			AddMenuEntry(entry);
 
-			var entry2 = new MenuEntry("Big Scroll Test");
-			entry2.OnClick += ((object obj, ClickEventArgs e) =>
-			{
-				ScreenManager.AddScreen(new BigScrollTest());
-			});
-			AddMenuEntry(entry2);
+		
 
-			var entry1 = new MenuEntry("Text Edit Test");
+			var entry1 = new MenuEntry("Text Edit Test", Content);
 			entry1.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				ScreenManager.AddScreen(new TextEditTest());
 			});
 			AddMenuEntry(entry1);
 
-			var exitMenuEntry = new MenuEntry("Exit");
+			var exitMenuEntry = new MenuEntry("Exit", Content);
 			exitMenuEntry.OnClick += OnExit;
 			AddMenuEntry(exitMenuEntry);
 		}

@@ -103,68 +103,56 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FilenameBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FilenameBuddy.1.0.3\lib\Xamarin.iOS10\FilenameBuddy.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\FilenameBuddy.1.0.11\lib\Xamarin.iOS10\FilenameBuddy.iOS.dll</HintPath>
     </Reference>
     <Reference Include="FontBuddyLib.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontBuddy.1.0.11\lib\Xamarin.iOS10\FontBuddyLib.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\FontBuddy.1.0.22\lib\Xamarin.iOS10\FontBuddyLib.iOS.dll</HintPath>
     </Reference>
     <Reference Include="GameTimer.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GameTimer.1.0.1\lib\Xamarin.iOS10\GameTimer.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\GameTimer.1.0.8\lib\Xamarin.iOS10\GameTimer.iOS.dll</HintPath>
     </Reference>
     <Reference Include="HadoukInput.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\HadoukInput.1.0.4\lib\Xamarin.iOS10\HadoukInput.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\HadoukInput.1.0.11\lib\Xamarin.iOS10\HadoukInput.iOS.dll</HintPath>
     </Reference>
     <Reference Include="InputHelper.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\InputHelper.1.0.17\lib\Xamarin.iOS10\InputHelper.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\InputHelper.1.0.21\lib\Xamarin.iOS10\InputHelper.iOS.dll</HintPath>
     </Reference>
     <Reference Include="MatrixExtensions.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MatrixExtensions.1.0.2\lib\Xamarin.iOS10\MatrixExtensions.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\MatrixExtensions.1.0.3\lib\Xamarin.iOS10\MatrixExtensions.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="MonoGame.Framework, Version=3.5.1.1679, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MonoGame.Framework.iOS.3.5.1.1679\lib\XamariniOS\MonoGame.Framework.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="MenuBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MenuBuddy.1.0.113\lib\Xamarin.iOS10\MenuBuddy.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.iOS.3.6.0.1625\lib\XamariniOS\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="MouseBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MouseBuddy.1.0.8\lib\Xamarin.iOS10\MouseBuddy.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\MouseBuddy.1.0.9\lib\Xamarin.iOS10\MouseBuddy.iOS.dll</HintPath>
     </Reference>
     <Reference Include="PrimitiveBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PrimitiveBuddy.1.0.3\lib\Xamarin.iOS10\PrimitiveBuddy.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\PrimitiveBuddy.1.0.4\lib\Xamarin.iOS10\PrimitiveBuddy.iOS.dll</HintPath>
     </Reference>
     <Reference Include="RandomExtensions.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.3\lib\Xamarin.iOS10\RandomExtensions.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\RandomExtensions.dmanning23.1.0.5\lib\Xamarin.iOS10\RandomExtensions.iOS.dll</HintPath>
     </Reference>
     <Reference Include="ResolutionBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ResolutionBuddy.1.0.8\lib\Xamarin.iOS10\ResolutionBuddy.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\ResolutionBuddy.1.0.16\lib\Xamarin.iOS10\ResolutionBuddy.iOS.dll</HintPath>
     </Reference>
     <Reference Include="StateMachineBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StateMachineBuddy.1.0.1\lib\Xamarin.iOS10\StateMachineBuddy.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\StateMachineBuddy.1.0.11\lib\Xamarin.iOS10\StateMachineBuddy.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="TouchScreenBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TouchScreenBuddy.1.0.6\lib\Xamarin.iOS10\TouchScreenBuddy.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\TouchScreenBuddy.1.0.7\lib\Xamarin.iOS10\TouchScreenBuddy.iOS.dll</HintPath>
     </Reference>
     <Reference Include="Vector2Extensions.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vector2Extensions.1.0.6\lib\Xamarin.iOS10\Vector2Extensions.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Vector2Extensions.1.0.9\lib\Xamarin.iOS10\Vector2Extensions.iOS.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.iOS" />
     <Reference Include="XmlBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\XmlBuddy.1.0.14\lib\Xamarin.iOS10\XmlBuddy.iOS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\XmlBuddy.1.0.20\lib\Xamarin.iOS10\XmlBuddy.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +176,14 @@
     <None Include="Content\bin\iOS\Fonts\ArialBlack96.xnb" />
     <None Include="Content\bin\iOS\gradient.xnb" />
     <None Include="Content\bin\iOS\hourglass.xnb" />
+    <None Include="Content\bin\iOS\icons\copy.xnb" />
+    <None Include="Content\bin\iOS\icons\leftright.xnb" />
+    <None Include="Content\bin\iOS\icons\paste.xnb" />
+    <None Include="Content\bin\iOS\icons\pasteSpecial.xnb" />
+    <None Include="Content\bin\iOS\icons\redo.xnb" />
+    <None Include="Content\bin\iOS\icons\save.xnb" />
+    <None Include="Content\bin\iOS\icons\undo.xnb" />
+    <None Include="Content\bin\iOS\icons\unkey.xnb" />
     <None Include="Content\bin\iOS\MenuMove.xnb" />
     <None Include="Content\bin\iOS\MenuSelect.xnb" />
     <None Include="Content\bin\iOS\Potion3a.xnb" />
@@ -208,6 +204,14 @@
     <None Include="Content\obj\iOS\Fonts\ArialBlack96.mgcontent" />
     <None Include="Content\obj\iOS\gradient.mgcontent" />
     <None Include="Content\obj\iOS\hourglass.mgcontent" />
+    <None Include="Content\obj\iOS\icons\copy.mgcontent" />
+    <None Include="Content\obj\iOS\icons\leftright.mgcontent" />
+    <None Include="Content\obj\iOS\icons\paste.mgcontent" />
+    <None Include="Content\obj\iOS\icons\pasteSpecial.mgcontent" />
+    <None Include="Content\obj\iOS\icons\redo.mgcontent" />
+    <None Include="Content\obj\iOS\icons\save.mgcontent" />
+    <None Include="Content\obj\iOS\icons\undo.mgcontent" />
+    <None Include="Content\obj\iOS\icons\unkey.mgcontent" />
     <None Include="Content\obj\iOS\MenuMove.mgcontent" />
     <None Include="Content\obj\iOS\MenuSelect.mgcontent" />
     <None Include="Content\obj\iOS\Potion3a.mgcontent" />
@@ -223,7 +227,6 @@
     <Content Include="Content\XmlBuddy.Content.dll" />
   </ItemGroup>
   <Import Project="..\MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems" Label="Shared" />
-  <Import Project="..\..\MenuBuddy\MenuBuddy\MenuBuddy.SharedProject\MenuBuddy.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
 </Project>

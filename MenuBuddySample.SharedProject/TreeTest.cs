@@ -35,7 +35,7 @@ namespace MenuBuddySample
 				var treeItem = new TreeItem<string>(word, tree, null);
 
 				//just add a label for now
-				var label = new Label(word)
+				var label = new Label(word, Content)
 				{
 					Vertical = VerticalAlignment.Center,
 					Horizontal = HorizontalAlignment.Center
@@ -49,7 +49,7 @@ namespace MenuBuddySample
 					var subTreeItem = new TreeItem<string>(subWord, tree, treeItem);
 
 					//just add a label for now
-					var subLabel = new Label(subWord)
+					var subLabel = new Label(subWord, Content)
 					{
 						Vertical = VerticalAlignment.Center,
 						Horizontal = HorizontalAlignment.Center

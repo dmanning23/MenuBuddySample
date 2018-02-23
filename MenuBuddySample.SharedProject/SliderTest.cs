@@ -27,7 +27,7 @@ namespace MenuBuddySample
 			stack.Position = new Point(Resolution.ScreenArea.Center.X, Resolution.TitleSafeArea.Top);
 
 			//add the label
-			_label = new Label();
+			_label = new Label("", Content);
 			stack.AddItem(_label);
 
 			//add the slider

@@ -48,14 +48,14 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Left, ResolutionBuddy.Resolution.ScreenArea.Bottom);
 
-			var label = new Label("butt", FontSize.Small)
+			var label = new Label("butt", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
 			};
 			stack.AddItem(label);
 
-			label = new Label("nuts", FontSize.Small)
+			label = new Label("nuts", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
@@ -71,14 +71,14 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Center.X, ResolutionBuddy.Resolution.ScreenArea.Bottom);
 
-			label = new Label("butt", FontSize.Small)
+			label = new Label("butt", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
 			};
 			stack.AddItem(label);
 
-			label = new Label("nuts", FontSize.Small)
+			label = new Label("nuts", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
@@ -94,14 +94,14 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Right, ResolutionBuddy.Resolution.ScreenArea.Bottom);
 
-			label = new Label("butt", FontSize.Small)
+			label = new Label("butt", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
 			};
 			stack.AddItem(label);
 
-			label = new Label("nuts", FontSize.Small)
+			label = new Label("nuts", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
@@ -117,14 +117,14 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Left, ResolutionBuddy.Resolution.ScreenArea.Center.Y);
 
-			label = new Label("butt", FontSize.Small)
+			label = new Label("butt", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
 			};
 			stack.AddItem(label);
 
-			label = new Label("nuts", FontSize.Small)
+			label = new Label("nuts", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
@@ -140,14 +140,14 @@ namespace MenuBuddySample
 			};
 			stack.Position = new Point(ResolutionBuddy.Resolution.ScreenArea.Right, ResolutionBuddy.Resolution.ScreenArea.Center.Y);
 
-			label = new Label("butt", FontSize.Small)
+			label = new Label("butt", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
 			};
 			stack.AddItem(label);
 
-			label = new Label("nuts", FontSize.Small)
+			label = new Label("nuts", Content, FontSize.Small)
 			{
 				HasOutline = true,
 				HasBackground = false
@@ -171,13 +171,13 @@ namespace MenuBuddySample
 
 		public void Click(Vector2 point)
 		{
-			var potion = new Image(ScreenManager.Game.Content.Load<Texture2D>("Potion3a"))
+			var potion = new Image(Content.Load<Texture2D>("Potion3a"))
 			{
 				Horizontal = HorizontalAlignment.Center,
 				Vertical = VerticalAlignment.Center,
 				Position = point.ToPoint()
 			};
-			potion.Transition = new WipeTransitionObject(TransitionWipeType.PopBottom);
+			potion.TransitionObject = new WipeTransitionObject(TransitionWipeType.PopBottom);
 			AddItem(potion);
 
 			ScreenManager.AddScreen(new ErrorScreen(new Exception("Butt\nNuts")));

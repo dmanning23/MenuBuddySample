@@ -19,7 +19,7 @@ namespace MenuBuddySample
 			AddCancelButton();
 
 			//create the dropdown widget
-			var drop = new NumEdit();
+			var drop = new NumEdit(0f, Content);
 			drop.Vertical = VerticalAlignment.Center;
 			drop.Horizontal = HorizontalAlignment.Right;
 			drop.Size = new Vector2(350, 128);

@@ -1,8 +1,8 @@
-﻿using MenuBuddySample;
-using System;
+﻿using System;
 
-namespace MenuBuddySample2.DesktopGL
+namespace MenuBuddySample.WindowsDX
 {
+#if WINDOWS || LINUX
     /// <summary>
     /// The main class.
     /// </summary>
@@ -18,4 +18,5 @@ namespace MenuBuddySample2.DesktopGL
                 game.Run();
         }
     }
+#endif
 }
