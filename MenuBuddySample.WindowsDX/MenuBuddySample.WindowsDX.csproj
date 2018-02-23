@@ -119,67 +119,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\XmlBuddy.Content.dll" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="app.manifest" />
-    <None Include="Content\bin\Windows\AButton.xnb" />
-    <None Include="Content\bin\Windows\AlphaGradient.xnb" />
-    <None Include="Content\bin\Windows\BackButton.xnb" />
-    <None Include="Content\bin\Windows\Cancel.xnb" />
-    <None Include="Content\bin\Windows\Collapse.xnb" />
-    <None Include="Content\bin\Windows\Expand.xnb" />
-    <None Include="Content\bin\Windows\Fonts\ArialBlack10.xnb" />
-    <None Include="Content\bin\Windows\Fonts\ArialBlack14.xnb" />
-    <None Include="Content\bin\Windows\Fonts\ArialBlack24.xnb" />
-    <None Include="Content\bin\Windows\Fonts\ArialBlack36.xnb" />
-    <None Include="Content\bin\Windows\Fonts\ArialBlack48.xnb" />
-    <None Include="Content\bin\Windows\Fonts\ArialBlack48Spanish.xnb" />
-    <None Include="Content\bin\Windows\Fonts\ArialBlack72.xnb" />
-    <None Include="Content\bin\Windows\Fonts\ArialBlack96.xnb" />
-    <None Include="Content\bin\Windows\gradient.xnb" />
-    <None Include="Content\bin\Windows\hourglass.xnb" />
-    <None Include="Content\bin\Windows\icons\copy.xnb" />
-    <None Include="Content\bin\Windows\icons\leftright.xnb" />
-    <None Include="Content\bin\Windows\icons\paste.xnb" />
-    <None Include="Content\bin\Windows\icons\pasteSpecial.xnb" />
-    <None Include="Content\bin\Windows\icons\redo.xnb" />
-    <None Include="Content\bin\Windows\icons\save.xnb" />
-    <None Include="Content\bin\Windows\icons\undo.xnb" />
-    <None Include="Content\bin\Windows\icons\unkey.xnb" />
-    <None Include="Content\bin\Windows\MenuMove.xnb" />
-    <None Include="Content\bin\Windows\MenuSelect.xnb" />
-    <None Include="Content\bin\Windows\Potion3a.xnb" />
-    <None Include="Content\obj\Windows\.mgcontent" />
-    <None Include="Content\obj\Windows\AButton.mgcontent" />
-    <None Include="Content\obj\Windows\AlphaGradient.mgcontent" />
-    <None Include="Content\obj\Windows\BackButton.mgcontent" />
-    <None Include="Content\obj\Windows\Cancel.mgcontent" />
-    <None Include="Content\obj\Windows\Collapse.mgcontent" />
-    <None Include="Content\obj\Windows\Expand.mgcontent" />
-    <None Include="Content\obj\Windows\Fonts\ArialBlack10.mgcontent" />
-    <None Include="Content\obj\Windows\Fonts\ArialBlack14.mgcontent" />
-    <None Include="Content\obj\Windows\Fonts\ArialBlack24.mgcontent" />
-    <None Include="Content\obj\Windows\Fonts\ArialBlack36.mgcontent" />
-    <None Include="Content\obj\Windows\Fonts\ArialBlack48.mgcontent" />
-    <None Include="Content\obj\Windows\Fonts\ArialBlack48Spanish.mgcontent" />
-    <None Include="Content\obj\Windows\Fonts\ArialBlack72.mgcontent" />
-    <None Include="Content\obj\Windows\Fonts\ArialBlack96.mgcontent" />
-    <None Include="Content\obj\Windows\gradient.mgcontent" />
-    <None Include="Content\obj\Windows\hourglass.mgcontent" />
-    <None Include="Content\obj\Windows\icons\copy.mgcontent" />
-    <None Include="Content\obj\Windows\icons\leftright.mgcontent" />
-    <None Include="Content\obj\Windows\icons\paste.mgcontent" />
-    <None Include="Content\obj\Windows\icons\pasteSpecial.mgcontent" />
-    <None Include="Content\obj\Windows\icons\redo.mgcontent" />
-    <None Include="Content\obj\Windows\icons\save.mgcontent" />
-    <None Include="Content\obj\Windows\icons\undo.mgcontent" />
-    <None Include="Content\obj\Windows\icons\unkey.mgcontent" />
-    <None Include="Content\obj\Windows\MenuMove.mgcontent" />
-    <None Include="Content\obj\Windows\MenuSelect.mgcontent" />
-    <None Include="Content\obj\Windows\Potion3a.mgcontent" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="..\MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems" Label="Shared" />

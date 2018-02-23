@@ -111,61 +111,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\bin\Android\AButton.xnb" />
-    <None Include="Content\bin\Android\AlphaGradient.xnb" />
-    <None Include="Content\bin\Android\BackButton.xnb" />
-    <None Include="Content\bin\Android\Cancel.xnb" />
-    <None Include="Content\bin\Android\Collapse.xnb" />
-    <None Include="Content\bin\Android\Expand.xnb" />
-    <None Include="Content\bin\Android\Fonts\ArialBlack10.xnb" />
-    <None Include="Content\bin\Android\Fonts\ArialBlack14.xnb" />
-    <None Include="Content\bin\Android\Fonts\ArialBlack24.xnb" />
-    <None Include="Content\bin\Android\Fonts\ArialBlack36.xnb" />
-    <None Include="Content\bin\Android\Fonts\ArialBlack48.xnb" />
-    <None Include="Content\bin\Android\Fonts\ArialBlack48Spanish.xnb" />
-    <None Include="Content\bin\Android\Fonts\ArialBlack72.xnb" />
-    <None Include="Content\bin\Android\Fonts\ArialBlack96.xnb" />
-    <None Include="Content\bin\Android\gradient.xnb" />
-    <None Include="Content\bin\Android\hourglass.xnb" />
-    <None Include="Content\bin\Android\icons\copy.xnb" />
-    <None Include="Content\bin\Android\icons\leftright.xnb" />
-    <None Include="Content\bin\Android\icons\paste.xnb" />
-    <None Include="Content\bin\Android\icons\pasteSpecial.xnb" />
-    <None Include="Content\bin\Android\icons\redo.xnb" />
-    <None Include="Content\bin\Android\icons\save.xnb" />
-    <None Include="Content\bin\Android\icons\undo.xnb" />
-    <None Include="Content\bin\Android\icons\unkey.xnb" />
-    <None Include="Content\bin\Android\MenuMove.xnb" />
-    <None Include="Content\bin\Android\MenuSelect.xnb" />
-    <None Include="Content\bin\Android\Potion3a.xnb" />
-    <None Include="Content\obj\Android\.mgcontent" />
-    <None Include="Content\obj\Android\AButton.mgcontent" />
-    <None Include="Content\obj\Android\AlphaGradient.mgcontent" />
-    <None Include="Content\obj\Android\BackButton.mgcontent" />
-    <None Include="Content\obj\Android\Cancel.mgcontent" />
-    <None Include="Content\obj\Android\Collapse.mgcontent" />
-    <None Include="Content\obj\Android\Expand.mgcontent" />
-    <None Include="Content\obj\Android\Fonts\ArialBlack10.mgcontent" />
-    <None Include="Content\obj\Android\Fonts\ArialBlack14.mgcontent" />
-    <None Include="Content\obj\Android\Fonts\ArialBlack24.mgcontent" />
-    <None Include="Content\obj\Android\Fonts\ArialBlack36.mgcontent" />
-    <None Include="Content\obj\Android\Fonts\ArialBlack48.mgcontent" />
-    <None Include="Content\obj\Android\Fonts\ArialBlack48Spanish.mgcontent" />
-    <None Include="Content\obj\Android\Fonts\ArialBlack72.mgcontent" />
-    <None Include="Content\obj\Android\Fonts\ArialBlack96.mgcontent" />
-    <None Include="Content\obj\Android\gradient.mgcontent" />
-    <None Include="Content\obj\Android\hourglass.mgcontent" />
-    <None Include="Content\obj\Android\icons\copy.mgcontent" />
-    <None Include="Content\obj\Android\icons\leftright.mgcontent" />
-    <None Include="Content\obj\Android\icons\paste.mgcontent" />
-    <None Include="Content\obj\Android\icons\pasteSpecial.mgcontent" />
-    <None Include="Content\obj\Android\icons\redo.mgcontent" />
-    <None Include="Content\obj\Android\icons\save.mgcontent" />
-    <None Include="Content\obj\Android\icons\undo.mgcontent" />
-    <None Include="Content\obj\Android\icons\unkey.mgcontent" />
-    <None Include="Content\obj\Android\MenuMove.mgcontent" />
-    <None Include="Content\obj\Android\MenuSelect.mgcontent" />
-    <None Include="Content\obj\Android\Potion3a.mgcontent" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
@@ -187,9 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\XmlBuddy.Content.dll" />
   </ItemGroup>
   <Import Project="..\MenuBuddySample.SharedProject\MenuBuddySample.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
