@@ -28,12 +28,19 @@ namespace MenuBuddySample
 
 			// Create our menu entries.
 
-			var entry2 = new MenuEntry("Big Scroll Test", Content);
+			var entry2 = new MenuEntry("Path Transition Test", Content);
 			entry2.OnClick += ((object obj, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new PointsTransitionTest());
+			});
+			AddMenuEntry(entry2);
+
+			var entry200 = new MenuEntry("Big Scroll Test", Content);
+			entry200.OnClick += ((object obj, ClickEventArgs e) =>
 			{
 				ScreenManager.AddScreen(new BigScrollTest());
 			});
-			AddMenuEntry(entry2);
+			AddMenuEntry(entry200);
 
 			var contextMenuTest = new MenuEntry("Context Menu Test", Content);
 			contextMenuTest.OnClick += ((object sender, ClickEventArgs e) =>

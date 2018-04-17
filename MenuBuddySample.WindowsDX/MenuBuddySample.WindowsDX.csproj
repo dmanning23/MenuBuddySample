@@ -85,7 +85,7 @@
       <HintPath>..\packages\MatrixExtensions.1.0.3\lib\net451\MatrixExtensions.WindowsDX.dll</HintPath>
     </Reference>
     <Reference Include="MenuBuddy.WindowsDX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MenuBuddy.1.0.117\lib\net451\MenuBuddy.WindowsDX.dll</HintPath>
+      <HintPath>..\packages\MenuBuddy.1.0.129\lib\net451\MenuBuddy.WindowsDX.dll</HintPath>
     </Reference>
     <Reference Include="MonoGame.Framework, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MonoGame.Framework.WindowsDX.3.6.0.1625\lib\net40\MonoGame.Framework.dll</HintPath>

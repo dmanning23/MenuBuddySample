@@ -14,6 +14,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ContextMenuTest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DragDropScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DropdownTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PointsTransitionTest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)EmptyMenuScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainMenuScreen.cs" />

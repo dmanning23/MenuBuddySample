@@ -121,7 +121,7 @@
       <HintPath>..\packages\MatrixExtensions.1.0.3\lib\Xamarin.iOS10\MatrixExtensions.iOS.dll</HintPath>
     </Reference>
     <Reference Include="MenuBuddy.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MenuBuddy.1.0.117\lib\Xamarin.iOS10\MenuBuddy.iOS.dll</HintPath>
+      <HintPath>..\packages\MenuBuddy.1.0.129\lib\Xamarin.iOS10\MenuBuddy.iOS.dll</HintPath>
     </Reference>
     <Reference Include="MonoGame.Framework, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MonoGame.Framework.iOS.3.6.0.1625\lib\XamariniOS\MonoGame.Framework.dll</HintPath>

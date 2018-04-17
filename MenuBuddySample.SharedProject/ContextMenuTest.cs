@@ -23,7 +23,8 @@ namespace MenuBuddySample
 			{
 				Horizontal = HorizontalAlignment.Center,
 				Vertical = VerticalAlignment.Center,
-				Position = Resolution.TitleSafeArea.Center
+				Position = Resolution.TitleSafeArea.Center,
+				Highlightable = false
 			});
 
 			var clicker = new RelativeLayoutButton()
