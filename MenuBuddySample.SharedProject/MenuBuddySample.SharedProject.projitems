@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)OptionsScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ScrollOptionsScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SliderTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextEditMessageBoxTest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TextEditTest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TopScreen.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TouchOptionsScreen.cs" />

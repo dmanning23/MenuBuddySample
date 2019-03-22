@@ -9,7 +9,7 @@
 		<string>GameThumbnail.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>project.MonoGame.MenuBuddySample.iOS</string>
+	<string>com.dannobotgames.MenuBuddySample.iOS</string>
 	<key>MinimumOSVersion</key>
 	<string>7.0</string>
 	<key>UISupportedInterfaceOrientations</key>

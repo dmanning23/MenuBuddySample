@@ -18,7 +18,6 @@ namespace MenuBuddySample
 		public PointsTransitionTest()
 			: base("Path Test Menu")
 		{
-			
 		}
 
 		public override void LoadContent()

@@ -6,9 +6,9 @@ namespace MenuBuddySample
 	/// <summary>
 	/// The main menu screen is the first thing displayed when the game starts up.
 	/// </summary>
-	internal class MainMenuScreen : MenuScreen, IMainMenu
+	public class MainMenuScreen : MenuScreen, IMainMenu
 	{
-		#region Initialization
+		#region Methods
 
 		/// <summary>
 		/// Constructor fills in the menu contents.
@@ -18,22 +18,18 @@ namespace MenuBuddySample
 		{
 		}
 
-		#endregion //Initialization
-
-		#region Methods
-
 		public override void LoadContent()
 		{
 			base.LoadContent();
 
 			// Create our menu entries.
 
-			var entry2 = new MenuEntry("Path Transition Test", Content);
-			entry2.OnClick += ((object obj, ClickEventArgs e) =>
+			var touchMenuEntry = new MenuEntry("Dropdown Test", Content);
+			touchMenuEntry.OnClick += ((obj, e) =>
 			{
-				ScreenManager.AddScreen(new PointsTransitionTest());
+				ScreenManager.AddScreen(new DropdownTest(), null);
 			});
-			AddMenuEntry(entry2);
+			AddMenuEntry(touchMenuEntry);
 
 			var entry200 = new MenuEntry("Big Scroll Test", Content);
 			entry200.OnClick += ((object obj, ClickEventArgs e) =>
@@ -42,10 +38,40 @@ namespace MenuBuddySample
 			});
 			AddMenuEntry(entry200);
 
+			var entry = new MenuEntry("Scroll Test", Content);
+			entry.OnClick += ((object obj, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new ScrollOptionsScreen());
+			});
+			AddMenuEntry(entry);
+
+			var optionsMenuEntry = new MenuEntry("Tree Test", Content);
+			optionsMenuEntry.OnClick += ((obj, e) =>
+			{
+				ScreenManager.AddScreen(new TreeTest(), null);
+			});
+			AddMenuEntry(optionsMenuEntry);
+
+			var entry3 = new MenuEntry("Text Edit W/ Dialog", Content);
+			entry3.OnClick += ((object obj, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new TextEditMessageBoxTest());
+			});
+			AddMenuEntry(entry3);
+
+			var entry2 = new MenuEntry("Path Transition Test", Content);
+			entry2.OnClick += ((object obj, ClickEventArgs e) =>
+			{
+				ScreenManager.AddScreen(new PointsTransitionTest());
+			});
+			AddMenuEntry(entry2);
+
+			
+
 			var contextMenuTest = new MenuEntry("Context Menu Test", Content);
 			contextMenuTest.OnClick += ((object sender, ClickEventArgs e) =>
 			{
-				LoadingScreen.Load(ScreenManager, true, null, new ContextMenuTest());
+				LoadingScreen.Load(ScreenManager, true, null, string.Empty, new ContextMenuTest());
 			});
 			AddMenuEntry(contextMenuTest);
 
@@ -69,29 +95,6 @@ namespace MenuBuddySample
 			//	ScreenManager.AddScreen(new SliderTest(), null);
 			//});
 			//AddMenuEntry(startGame);
-
-			var optionsMenuEntry = new MenuEntry("Tree Test", Content);
-			optionsMenuEntry.OnClick += ((obj, e) =>
-			{
-				ScreenManager.AddScreen(new TreeTest(), null);
-			});
-			AddMenuEntry(optionsMenuEntry);
-
-			//var touchMenuEntry = new MenuEntry("Dropdown Test");
-			//touchMenuEntry.OnClick += ((obj, e) =>
-			//{
-			//	ScreenManager.AddScreen(new DropdownTest(), null);
-			//});
-			//AddMenuEntry(touchMenuEntry);
-
-			var entry = new MenuEntry("Scroll Test", Content);
-			entry.OnClick += ((object obj, ClickEventArgs e) =>
-			{
-				ScreenManager.AddScreen(new ScrollOptionsScreen());
-			});
-			AddMenuEntry(entry);
-
-		
 
 			var entry1 = new MenuEntry("Text Edit Test", Content);
 			entry1.OnClick += ((object obj, ClickEventArgs e) =>
