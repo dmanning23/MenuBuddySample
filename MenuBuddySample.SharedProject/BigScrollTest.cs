@@ -48,7 +48,7 @@ namespace MenuBuddySample
 				Vertical = VerticalAlignment.Center
 			};
 
-			for (int i = 100; i < 120; i++)
+			for (int i = 100; i < 150; i++)
 			{
 				var text = i.ToString();
 				var label = new Label(text, Content, FontSize.Small)

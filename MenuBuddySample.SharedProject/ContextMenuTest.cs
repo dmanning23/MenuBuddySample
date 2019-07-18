@@ -41,7 +41,8 @@ namespace MenuBuddySample
 			cancel.OnClick += (obj, e) =>
 			{
 				var game1 = ScreenManager.Game as Game1;
-				LoadingScreen.Load(ScreenManager, true, null, string.Empty, game1.GetMainMenuScreenStack());
+				ScreenManager.ClearScreens();
+				LoadingScreen.Load(ScreenManager, null, string.Empty, game1.GetMainMenuScreenStack());
 			};
 		}
 

@@ -1,5 +1,6 @@
 using InputHelper;
 using MenuBuddy;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -16,6 +17,7 @@ namespace MenuBuddySample
 		public MainMenuScreen()
 			: base("Main Menu")
 		{
+			CoveredByOtherScreens = true;
 		}
 
 		public override void LoadContent()
@@ -23,6 +25,13 @@ namespace MenuBuddySample
 			base.LoadContent();
 
 			// Create our menu entries.
+
+			var loadingTest = new MenuEntry("Loading Screen Test", Content);
+			loadingTest.OnClick += ((obj, e) =>
+			{
+				LoadingScreen.Load(ScreenManager, new DropdownTestWithDelay());
+			});
+			AddMenuEntry(loadingTest);
 
 			var touchMenuEntry = new MenuEntry("Dropdown Test", Content);
 			touchMenuEntry.OnClick += ((obj, e) =>
@@ -71,7 +80,8 @@ namespace MenuBuddySample
 			var contextMenuTest = new MenuEntry("Context Menu Test", Content);
 			contextMenuTest.OnClick += ((object sender, ClickEventArgs e) =>
 			{
-				LoadingScreen.Load(ScreenManager, true, null, string.Empty, new ContextMenuTest());
+				ScreenManager.ClearScreens();
+				LoadingScreen.Load(ScreenManager, null, string.Empty, new ContextMenuTest());
 			});
 			AddMenuEntry(contextMenuTest);
 
