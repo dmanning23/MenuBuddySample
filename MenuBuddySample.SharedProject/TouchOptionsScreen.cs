@@ -3,6 +3,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using TouchScreenBuddy;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -32,9 +33,9 @@ namespace MenuBuddySample
 		{
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
+			await base.LoadContent();
 
 			AddCancelButton();
 

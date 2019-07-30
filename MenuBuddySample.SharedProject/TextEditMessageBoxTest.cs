@@ -5,6 +5,7 @@ using ResolutionBuddy;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -16,9 +17,9 @@ namespace MenuBuddySample
 			CoveredByOtherScreens = false;
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
+			await base.LoadContent();
 
 			AddCancelButton();
 

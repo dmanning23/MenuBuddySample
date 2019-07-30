@@ -1,6 +1,7 @@
 using InputHelper;
 using MenuBuddy;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace MenuBuddySample
 {
@@ -20,6 +21,8 @@ namespace MenuBuddySample
 		public Game1()
 		{
 			//FullScreen = true;
+
+			this.Graphics.GraphicsProfile = GraphicsProfile.Reach;
 
 			var debug = new DebugInputComponent(this, ResolutionBuddy.Resolution.TransformationMatrix);
 			debug.DrawOrder = 100;
@@ -53,7 +56,7 @@ namespace MenuBuddySample
 			return new IScreen[] { new BackgroundScreen(), new MainMenuScreen() };
 		}
 
-		#endregion //Methods
+#endregion //Methods
 	}
 }
 

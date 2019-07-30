@@ -15,10 +15,5 @@ namespace MenuBuddySample
 			: base("Empty Menu")
 		{
 		}
-
-		public override void LoadContent()
-		{
-			base.LoadContent();
-		}
 	}
 }

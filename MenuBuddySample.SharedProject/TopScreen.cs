@@ -3,6 +3,7 @@ using MenuBuddy;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ResolutionBuddy;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -52,9 +53,10 @@ namespace MenuBuddySample
 
 		#region Methods
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
+			await base.LoadContent();
+
 			_text.Font = Content.Load<SpriteFont>(@"Fonts\ArialBlack48");
 
 			_textSize = _text.Font.MeasureString(Message);

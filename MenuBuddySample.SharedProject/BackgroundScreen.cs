@@ -4,6 +4,7 @@ using FontBuddyLib;
 using MenuBuddy;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -43,9 +44,9 @@ namespace MenuBuddySample
 		/// used the shared ContentManager provided by the Game class, the content
 		/// would remain loaded forever.
 		/// </summary>
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
+			await base.LoadContent();
 
 			_titleText.Font = Content.Load<SpriteFont>(@"Fonts\ArialBlack48");
 			_titleText.ShadowOffset = new Vector2(-5.0f, 3.0f);

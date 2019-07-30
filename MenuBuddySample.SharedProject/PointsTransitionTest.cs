@@ -2,6 +2,7 @@
 using MenuBuddy;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -20,9 +21,9 @@ namespace MenuBuddySample
 		{
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
+			await base.LoadContent();
 
 			screenTransition = new ScreenTransition
 			{

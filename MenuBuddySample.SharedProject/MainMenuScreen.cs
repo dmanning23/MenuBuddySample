@@ -20,9 +20,9 @@ namespace MenuBuddySample
 			CoveredByOtherScreens = true;
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
+			await base.LoadContent();
 
 			// Create our menu entries.
 
@@ -74,8 +74,6 @@ namespace MenuBuddySample
 				ScreenManager.AddScreen(new PointsTransitionTest());
 			});
 			AddMenuEntry(entry2);
-
-			
 
 			var contextMenuTest = new MenuEntry("Context Menu Test", Content);
 			contextMenuTest.OnClick += ((object sender, ClickEventArgs e) =>

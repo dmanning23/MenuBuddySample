@@ -3,6 +3,7 @@ using MenuBuddy;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ResolutionBuddy;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -14,9 +15,9 @@ namespace MenuBuddySample
 			CoveredByOtherScreens = true;
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
+			await base.LoadContent();
 
 			//add a label with directions
 			AddItem(new Label("Click anywhere to pop up a context menu", Content, FontSize.Small)

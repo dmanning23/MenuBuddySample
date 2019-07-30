@@ -9,11 +9,11 @@ namespace MenuBuddySample
 		{
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			Thread.Sleep(5000);
+			await Task.Delay(5000);
 
-			base.LoadContent();
+			await base.LoadContent();
 		}
 	}
 }

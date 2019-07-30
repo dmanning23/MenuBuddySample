@@ -2,6 +2,7 @@
 using MenuBuddy;
 using Microsoft.Xna.Framework;
 using ResolutionBuddy;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -13,10 +14,10 @@ namespace MenuBuddySample
 			CoveredByOtherScreens = true;
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
-			
+			await base.LoadContent();
+
 			var stack = GetStack();
 
 			//create the scroll layout and add the stack

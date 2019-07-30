@@ -1,5 +1,6 @@
 using InputHelper;
 using MenuBuddy;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -33,9 +34,9 @@ namespace MenuBuddySample
 		{
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
+			await base.LoadContent();
 
 			// Create our menu entries.
 			buttnutsEntry = new MenuEntry(string.Empty, Content);

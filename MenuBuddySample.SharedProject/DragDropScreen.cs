@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
@@ -15,10 +16,10 @@ namespace MenuBuddySample
 			CoveredByOtherScreens = true;
 		}
 
-		public override void LoadContent()
+		public override async Task LoadContent()
 		{
-			base.LoadContent();
-			
+			await base.LoadContent();
+
 			var image = new Image(Content.Load<Texture2D>("Potion3a"))
 			{
 				Horizontal = HorizontalAlignment.Center,
