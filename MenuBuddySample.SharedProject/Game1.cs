@@ -2,6 +2,7 @@ using InputHelper;
 using MenuBuddy;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 
 namespace MenuBuddySample
 {
@@ -56,7 +57,31 @@ namespace MenuBuddySample
 			return new IScreen[] { new BackgroundScreen(), new MainMenuScreen() };
 		}
 
-#endregion //Methods
+		protected override void Update(GameTime gameTime)
+		{
+			try
+			{
+				base.Update(gameTime);
+			}
+			catch (Exception ex)
+			{
+				ScreenManager.ErrorScreen(ex);
+			}
+		}
+
+		protected override void Draw(GameTime gameTime)
+		{
+			try
+			{
+				base.Draw(gameTime);
+			}
+			catch (Exception ex)
+			{
+				ScreenManager.ErrorScreen(ex);
+			}
+		}
+
+		#endregion //Methods
 	}
 }
 

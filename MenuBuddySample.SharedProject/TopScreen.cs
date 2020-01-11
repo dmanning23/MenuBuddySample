@@ -1,4 +1,5 @@
 using FontBuddyLib;
+using HadoukInput;
 using MenuBuddy;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -57,9 +58,9 @@ namespace MenuBuddySample
 		{
 			await base.LoadContent();
 
-			_text.Font = Content.Load<SpriteFont>(@"Fonts\ArialBlack48");
+			_text.LoadContent(Content, @"Fonts\ArialBlack48");
 
-			_textSize = _text.Font.MeasureString(Message);
+			_textSize = _text.MeasureString(Message);
 		}
 
 		public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
@@ -99,7 +100,7 @@ namespace MenuBuddySample
 			ScreenManager.SpriteBatchEnd();
 		}
 
-		public void HandleInput(HadoukInput.InputState input)
+		public void HandleInput(IInputState input)
 		{
 		}
 

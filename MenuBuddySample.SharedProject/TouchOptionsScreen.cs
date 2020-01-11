@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using TouchScreenBuddy;
 using System.Threading.Tasks;
+using HadoukInput;
 
 namespace MenuBuddySample
 {
@@ -161,13 +162,13 @@ namespace MenuBuddySample
 
 		#region Handle Input
 
-		public void HandleInput(HadoukInput.InputState input)
+		public void HandleInput(IInputState input)
 		{
-			var player = new PlayerIndex();
-			if (input.IsMenuCancel(null, out player))
-			{
-				ExitScreen();
-			}
+			//var player = new PlayerIndex();
+			//if (input.IsMenuCancel(null, out player))
+			//{
+			//	ExitScreen();
+			//}
 		}
 
 		public void Click(Vector2 point)

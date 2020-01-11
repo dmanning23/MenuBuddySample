@@ -48,12 +48,12 @@ namespace MenuBuddySample
 		{
 			await base.LoadContent();
 
-			_titleText.Font = Content.Load<SpriteFont>(@"Fonts\ArialBlack48");
+			_titleText.LoadContent(Content, @"Fonts\ArialBlack48");
 			_titleText.ShadowOffset = new Vector2(-5.0f, 3.0f);
 			_titleText.ShadowSize = 1.025f;
 			_titleText.RainbowSpeed = 4.0f;
 
-			_dannobotText.Font = Content.Load<SpriteFont>(@"Fonts\ArialBlack24");
+			_dannobotText.LoadContent(Content, @"Fonts\ArialBlack24");
 		}
 
 		/// <summary>
@@ -91,7 +91,7 @@ namespace MenuBuddySample
 			//draw "dannobot games"
 			_dannobotText.Write("@DannobotGames",
 							   new Vector2((Resolution.TitleSafeArea.Right * 0.97f),
-										   ((Resolution.TitleSafeArea.Bottom) - (_dannobotText.Font.MeasureString("@DannobotGames").Y * 0.65f))),
+										   ((Resolution.TitleSafeArea.Bottom) - (_dannobotText.MeasureString("@DannobotGames").Y * 0.65f))),
 			                   Justify.Right,
 			                   0.5f,
 			                   new Color(0.85f, 0.85f, 0.85f, Transition.Alpha),
