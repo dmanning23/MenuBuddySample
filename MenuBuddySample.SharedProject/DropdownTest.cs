@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MenuBuddySample
 {
-	public class DropdownTest : WidgetScreen
+	public class DropdownTest : MenuScreen
 	{
 		public DropdownTest() : base("Dropdown Test")
 		{
@@ -49,6 +49,7 @@ namespace MenuBuddySample
 			drop.SelectedItem = "buttnuts";
 
 			AddItem(drop);
+			AddMenuItem(drop);
 		}
 	}
 }

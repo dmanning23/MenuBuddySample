@@ -10,7 +10,7 @@ namespace MenuBuddySample
 	/// screen, and gives the user a chance to configure the game
 	/// in various hopefully useful ways.
 	/// </summary>
-	internal class ScrollOptionsScreen : MenuScreen
+	internal class ScrollOptionsScreen : MenuStackScreen
 	{
 		#region Fields
 

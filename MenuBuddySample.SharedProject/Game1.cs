@@ -14,7 +14,7 @@ namespace MenuBuddySample
 #if __IOS__ || ANDROID || WINDOWS_UAP
 	public class Game1 : TouchGame
 #else
-	public class Game1 : MouseGame
+	public class Game1 : ControllerGame
 #endif
 	{
 		#region Methods
