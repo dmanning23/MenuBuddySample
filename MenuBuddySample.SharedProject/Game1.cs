@@ -25,8 +25,9 @@ namespace MenuBuddySample
 
 			this.Graphics.GraphicsProfile = GraphicsProfile.Reach;
 
-			var debug = new DebugInputComponent(this, ResolutionBuddy.Resolution.TransformationMatrix);
-			debug.DrawOrder = 100;
+#if DESKTOP
+			IsMouseVisible = true;
+#endif
 		}
 
 		protected override void LoadContent()
