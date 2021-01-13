@@ -2,6 +2,8 @@ using InputHelper;
 using MenuBuddy;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using PrimitiveBuddy;
+using ResolutionBuddy;
 using System;
 
 namespace MenuBuddySample
@@ -17,6 +19,12 @@ namespace MenuBuddySample
 	public class Game1 : ControllerGame
 #endif
 	{
+		#region Properties
+
+		Primitive titlesafe;
+
+		#endregion //Properties
+
 		#region Methods
 
 		public Game1()
@@ -28,11 +36,21 @@ namespace MenuBuddySample
 #if DESKTOP
 			IsMouseVisible = true;
 #endif
+			VirtualResolution = new Point(1080, 1920);
+			ScreenResolution = new Point(720, 1280);
+
+			var debug = new DebugInputComponent(this, Resolution.TransformationMatrix);
+
+			Fullscreen = false;
+			UseDeviceResolution = true;
+			Letterbox = false;
 		}
 
 		protected override void LoadContent()
 		{
 			base.LoadContent();
+
+			titlesafe = new Primitive(Graphics.GraphicsDevice, ScreenManager.SpriteBatch);
 		}
 
 		protected override void Initialize()
@@ -75,6 +93,19 @@ namespace MenuBuddySample
 			try
 			{
 				base.Draw(gameTime);
+
+				ScreenManager.SpriteBatch.Begin(SpriteSortMode.Immediate,
+							  BlendState.AlphaBlend,
+							  null, null, null, null,
+							  Resolution.TransformationMatrix());
+
+				titlesafe.Thickness = 3.0f;
+				titlesafe.Rectangle(Resolution.TitleSafeArea, Color.Red);
+
+				titlesafe.Thickness = 4.0f;
+				titlesafe.Rectangle(Resolution.ScreenArea, Color.Blue);
+
+				ScreenManager.SpriteBatch.End();
 			}
 			catch (Exception ex)
 			{
