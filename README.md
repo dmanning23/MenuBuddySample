@@ -1,4 +1,3 @@
-MenuBuddySample
-===============
+This project is deprecated and was moved to:
 
-quick sample game showing how to use the menubuddy game state management system.
+https://github.com/dmanning23/MenuBuddy/tree/master/MenuBuddySample
